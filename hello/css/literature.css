@@ -1,0 +1,40 @@
+.header__caption{
+	width: 150px;
+	top: 270px;
+}
+.header__ab:nth-child(7){
+	left: 690px;
+	top: 120px;
+	font-size: 24px;
+}
+.header__ab-link::before{
+	left: 350px;
+}
+.section__literature-caption{
+	margin: 0px;
+  font-size: 36px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Proxima_Nova_Thin;
+  position: relative;
+  cursor: pointer;
+}
+.section__literature-caption::before{
+	color: #383838;
+	position: absolute;
+	width: 100px;
+	height: 1px;
+	top: 78px;
+	display: block;
+	content: "";
+	transition: 0.5s;
+	left: 0px;
+	border-top: 1px dashed #383838;
+}
+.section__literature-caption:hover::before{
+	opacity: 0;
+}
+.literature-caption--index{
+	color: #b9b9b9;
+}
