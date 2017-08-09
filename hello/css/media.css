@@ -87,25 +87,80 @@ body, .footer, .main, .header, .section, .navigation,
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px){
-	body, .footer, .main, .header, .section, .navigation{
+	body, .footer, .main, .header, .section, .navigation, 
+	.header__wrapper, .footer-wrapper, .main__wrapper{
 		width: 768px;
+		margin: auto;
 	}
 	.header__wrapper, .section__wrapper, .footer-wrapper, .main__wrapper{
 		width: 768px;
 		margin: auto;
 	}
-	.header__text-box{
-		left: -420px;	
+	.header__text-box{	
 		position: relative;
 		width: 768px;
 	}
-
+	.section__wrapper{
+		padding-left: 80px;	
+		padding-right: 80px;
+		box-sizing: border-box;
+	}
+	.menu-toggle{
+ 	 right: 20px;
+	}
+	.section{
+	  display: table;
+	  clear: both;
+	}
+	.navigation{
+		padding-left: 20px;	
+		padding-right: 20px;	
+		box-sizing: border-box;
+	}
 	.section,.header{
 		box-sizing: border-box;
+	}
+	.link__article:nth-child(4){
+		margin-left: 0px;
 	}
 	.header__caption{
 		width: 600px;	
 	}
+		.header__ab:nth-child(1){
+	left: 50px;
+	top: 20px;
+	font-size: 24px;
+}
+.header__ab:nth-child(2){
+	left: 180px;
+	top: 130px;
+	font-size: 24px;
+}
+.header__ab:nth-child(3){
+	left: 40px;
+	top: 450px;
+	font-size: 24px;
+}
+.header__ab:nth-child(4){
+	left: 20px;
+	top: 360px;
+	font-size: 24px;
+}
+.header__ab:nth-child(5){
+	left: 500px;
+	top: 370px;
+	font-size: 24px;
+}
+.header__ab:nth-child(6){
+	left: 450px;
+	top: 500px;
+	font-size: 24px;
+}
+.header__ab:nth-child(7){
+	left: 490px;
+	top: 120px;
+	font-size: 24px;
+}
 
 }
 
@@ -120,6 +175,41 @@ body, .footer, .main, .header, .section, .navigation,
 	.header__caption{
 		width: 400px;	
 	}
+			.header__ab:nth-child(1){
+	left: 50px;
+	top: 20px;
+	font-size: 24px;
+}
+.header__ab:nth-child(2){
+	left: 180px;
+	top: 130px;
+	font-size: 24px;
+}
+.header__ab:nth-child(3){
+	left: 40px;
+	top: 450px;
+	font-size: 24px;
+}
+.header__ab:nth-child(4){
+	left: 20px;
+	top: 360px;
+	font-size: 24px;
+}
+.header__ab:nth-child(5){
+	left: 300px;
+	top: 370px;
+	font-size: 24px;
+}
+.header__ab:nth-child(6){
+	left: 300px;
+	top: 500px;
+	font-size: 24px;
+}
+.header__ab:nth-child(7){
+	left: 300px;
+	top: 120px;
+	font-size: 24px;
+}
 
 }
 
