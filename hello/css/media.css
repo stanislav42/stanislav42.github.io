@@ -17,7 +17,7 @@ body, .footer, .main, .header, .section, .navigation,
 		padding-right: 25px;
 	}
 	.link__article{
-		margin-left: 50px;
+		margin-left: 20px;
 	}
 
 }
@@ -194,66 +194,34 @@ body, .footer, .main, .header, .section, .navigation,
 		box-sizing: border-box;
 	}
 	.section__wrapper{
-		padding-left: 50px;	
-		padding-right: 40px;
 		box-sizing: border-box;
 	}
 	.section__article,.link__article{
 		width: 100%;
-		height: 200px;
+		height: 300px;
 		margin-left: 0px!important;
+		border-radius: 0px;
 	}
 	.article-name,.article-number{
 		top: 80%;
-
+		font-size: 22px;
 	}
-	.header__ab:nth-child(1){
-	left: 10px;
-	top: 90px;
-	font-size: 24px;
-}
-.header__ab:nth-child(2){
-	left: 80px;
-	top: 170px;
-	font-size: 24px;
-}
-.header__ab:nth-child(3){
-	left: 40px;
-	top: 450px;
-	font-size: 24px;
-}
-.header__ab:nth-child(4){
-	left: 20px;
-	top: 260px;
-	font-size: 24px;
-}
-.header__ab:nth-child(5){
-	left: 30px;
-	top: 520px;
-	font-size: 24px;
-}
-.header__ab:nth-child(6){
-	left: 200px;
-	top: 600px;
-	font-size: 24px;
-}
-.header__ab:nth-child(7){
-	left: 300px;
-	top: 140px;
-	font-size: 24px;
-}
 }
 @media only screen and (max-width: 400px) and (min-width: 321px){
 	.header__caption{
 		font-size: 40px;
 	}
+	.section__article,.link__article{
+		height: 250px;
+	}
 
 }
 
 @media only screen and (max-width: 320px){
-	body, .footer, .main, .header, .section, .navigation, 
+body, .footer, .main, .header, .section, .navigation, 
 	.header__wrapper, .footer-wrapper, .main__wrapper{
-		width: 320px;
+		width: 100%;
+		margin: auto;
 	}
 
 
