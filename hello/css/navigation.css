@@ -59,6 +59,9 @@
 .hidden {
   display: none;
 }
+.owerflow{
+  overflow: hidden;
+}
 .navigation__link {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
