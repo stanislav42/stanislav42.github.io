@@ -168,7 +168,7 @@ body, .footer, .main, .header, .section, .navigation,
 @media only screen and (max-width: 480px) and (min-width: 321px){
 body, .footer, .main, .header, .section, .navigation, 
 	.header__wrapper, .footer-wrapper, .main__wrapper{
-		width: 480px;
+		width: 100%;
 		margin: auto;
 	}
 
