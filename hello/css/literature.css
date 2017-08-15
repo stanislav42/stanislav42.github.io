@@ -1,114 +1,172 @@
-.header__caption{
-	width: 150px;
-	top: 270px;
-text-align: left;
+.header__caption {
+    width: 150px;
+    top: 270px;
+    text-align: left;
 }
-.header__ab:nth-child(7){
-	left: 690px;
-	top: 120px;
-	font-size: 24px;
+
+.header__ab:nth-child(1) {
+    left: 20%;
+    top: 20%;
+    font-size: 24px;
 }
-.header__ab-link::before{
-	left: 350px;
+
+.header__ab:nth-child(2) {
+    left: 8%;
+    top: 200px;
+    font-size: 24px;
 }
-.header__ab-link::before{
-	width: 22%;
+
+.header__ab:nth-child(3) {
+    left: 2%;
+    top: 500px;
+    font-size: 24px;
 }
-.section__literature-caption{
-	margin: 0px;
-  font-size: 36px;
-  letter-spacing: 1px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-family: Proxima_Nova_Thin;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
+
+.header__ab:nth-child(4) {
+    left: 5%;
+    top: 390px;
+    font-size: 24px;
 }
-.section__literature-caption::before{
-	color: #383838;
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	top: 78px;
-	display: block;
-	content: "";
-	transition: 0.5s;
-	left: 0px;
-	border-top: 1px dashed #383838;
+
+.header__ab:nth-child(5) {
+    left: 60%;
+    top: 420px;
+    font-size: 24px;
 }
-.section__literature-caption:hover::before{
-	opacity: 0;
+
+.header__ab:nth-child(6) {
+    left: 40%;
+    top: 490px;
+    font-size: 24px;
 }
-.literature-caption--index{
-	color: #b9b9b9;
+
+.header__ab:nth-child(7) {
+    left: 60%;
+    top: 120px;
+    font-size: 24px;
 }
-.book-info-box, .poster__book{
-	float: left;
+
+.header__ab-link::before {
+    left: 350px;
 }
-.article__literature, .article__wrapper{
-	display: table;
-	clear: both;
+
+.header__ab-link::before {
+    width: 22%;
 }
-.article__wrapper{
-	margin-bottom: 40px;
+
+.section__literature-caption {
+    margin: 0px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Proxima_Nova_Thin;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
-.book-info-box{
-	padding-left: 20px;
+
+.section__literature-caption::before {
+    color: #383838;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 78px;
+    display: block;
+    content: "";
+    transition: 0.5s;
+    left: 0px;
+    border-top: 1px dashed #383838;
 }
-.book-info-caption{
-	font-family: Proxima_Nova_Light;
-	font-size: 30px;
-	margin: 0px;
-	padding: 0px;
-	color: #1a1a1a;
+
+.section__literature-caption:hover::before {
+    opacity: 0;
 }
-.book-info-subtitle{
-	font-family: Proxima_Nova_Light;
-	font-size: 18px;
-	margin: 0px;
-	padding: 0px;
-	color: #969696;
+
+.literature-caption--index {
+    color: #b9b9b9;
 }
-.book-text{
-	font-size: 40px;
-	font-family: Proxima_Nova_Extrabold;
-	color: #1a1a1a;
+
+.book-info-box,
+.poster__book {
+    float: left;
 }
-.book-text--long{
-	font-size: 22px;
-	font-family: Proxima_Nova_Semibold;
+
+.article__literature,
+.article__wrapper {
+    display: table;
+    clear: both;
 }
-.book-text-box{
-	width: 740px;
-	position: relative;
+
+.article__wrapper {
+    margin-bottom: 40px;
 }
-.quote{
-	position: absolute;
-	opacity: 0.3;
-	width: 40px;
-	right: 0px;
-	bottom: 0px;
+
+.book-info-box {
+    padding-left: 20px;
 }
-.book-info-link{
-	color: #1a1a1a;
-	text-decoration: none;
-	position: relative;
-	font-size: 18px;
-	font-family: Proxima_Nova_Regular;
+
+.book-info-caption {
+    font-family: Proxima_Nova_Light;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    color: #1a1a1a;
 }
-.book-info-link:hover::before{
-	opacity: 0;
+
+.book-info-subtitle {
+    font-family: Proxima_Nova_Light;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    color: #969696;
 }
-.book-info-link::before{
-	color: #1a1a1a;
-	background: #1a1a1a;
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	top: 21px;
-	display: block;
-	content: "";
-	transition: 0.5s;
-	left: 0px;
+
+.book-text {
+    font-size: 40px;
+    font-family: Proxima_Nova_Extrabold;
+    color: #1a1a1a;
+}
+
+.book-text--long {
+    font-size: 22px;
+    font-family: Proxima_Nova_Semibold;
+}
+
+.book-text-box {
+    width: 740px;
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    opacity: 0.3;
+    width: 40px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.book-info-link {
+    color: #1a1a1a;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    font-family: Proxima_Nova_Regular;
+}
+
+.book-info-link:hover::before {
+    opacity: 0;
+}
+
+.book-info-link::before {
+    color: #1a1a1a;
+    background: #1a1a1a;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 21px;
+    display: block;
+    content: "";
+    transition: 0.5s;
+    left: 0px;
 }

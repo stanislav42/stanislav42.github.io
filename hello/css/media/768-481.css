@@ -1,0 +1,104 @@
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    body,
+    .footer,
+    .main,
+    .header,
+    .section,
+    .navigation,
+    .header__wrapper,
+    .footer-wrapper,
+    .main__wrapper,
+    .header__wrapper,
+    .section__wrapper,
+    .footer-wrapper,
+    .main__wrapper {
+        width: 100%;
+        margin: auto;
+    }
+    .header__text-box {
+        position: relative;
+        width: 100%;
+        display: none;
+    }
+    .section__wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+    .menu-toggle {
+        right: 5%;
+    }
+    .section {
+        display: table;
+        clear: both;
+    }
+    .navigation {
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+    .section,
+    .header {
+        box-sizing: border-box;
+    }
+    .link__article {
+        margin-left: 8%;
+        width: 46%;
+    }
+    .section__article {
+        width: 100%;
+        height: 200px;
+    }
+    .link__article:nth-child(4) {
+        margin-left: 0px;
+    }
+    .link__article:nth-child(5) {
+        margin-left: 8%;
+    }
+    .link__article:nth-child(6) {
+        margin-left: 0px;
+    }
+    .footer__text {
+        text-align: center;
+        float: none;
+    }
+    .footer__list {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__text {
+        text-align: center;
+        float: none;
+        font-size: 16px;
+    }
+    .footer__list-link {
+        font-size: 16px;
+    }
+    .footer__list-item {
+        line-height: 2;
+    }
+    .footer__list {
+        width: 100%;
+        text-align: center;
+    }
+    .footer {
+        height: 120px;
+    }
+    .footer-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 551px) {
+    .section__article {
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 481px) {
+    .section__article {
+        height: 140px;
+    }
+}
