@@ -24,6 +24,7 @@
 
 
 
+
 /*________________ Navigation menu ________________*/
 
 .navigation__list {
@@ -64,17 +65,19 @@
 
 
 
+
 /*________________ HEADER STYLE ________________*/
 
-.header {
-    position: relative;
+.header{
     padding-top: 70px;
     box-sizing: border-box;
-    height: 600px;
-    background: url(../img/header-bg.jpg);
-    background-size: cover;
     background-position: 0px -100px;
+    background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 640px;
 }
 
 .header__caption {
@@ -86,8 +89,9 @@
     font-family: Proxima-Nova-Bold;
     letter-spacing: 1.5px;
 }
-.header__caption-item{
-	font-family: Proxima-Nova-Black;
+
+.header__caption-item {
+    font-family: Proxima-Nova-Black;
 }
 
 .header__text {
@@ -117,15 +121,22 @@
 }
 
 
+.main {
+    top: 640px;
+    position: relative;
+    background: white;
+}
 
 
 /*________________ SECTION STYLE ________________*/
-.section__caption{
-	font-family: Proxima-Nova-Bold;
+
+.section__caption {
+    font-family: Proxima-Nova-Bold;
     letter-spacing: 1.5px;
 }
-.section__subtitle{
-	font-family: Proxima-Nova-Thin;
+
+.section__subtitle {
+    font-family: Proxima-Nova-Thin;
     letter-spacing: 1.5px;
 }
 
@@ -250,15 +261,16 @@
     float: left;
     margin-right: 30px;
 }
-.section--three__article:nth-child(5){
-	margin-right: 0px;
+
+.section--three__article:nth-child(5) {
+    margin-right: 0px;
 }
 
 .section--three__article__caption {
     text-align: center;
     color: white;
     font-size: 30px;
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .section--three__article__subtitle {
@@ -275,8 +287,9 @@
 .section-list {
     list-style-type: none;
 }
-.section-three__link{
-	border-radius: 4px;
+
+.section-three__link {
+    border-radius: 4px;
     background-color: rgb(251, 219, 68);
     width: 250px;
     height: 50px;
@@ -290,8 +303,9 @@
     margin: auto;
     margin-top: 20px;
 }
-.section-wrapper--three{
-	width: 965px;
+
+.section-wrapper--three {
+    width: 965px;
 }
 
 .section--for {
@@ -300,13 +314,11 @@
 }
 
 
-
-
-
-
 /*________________ FOOTER STYLE ________________*/
 
 .footer {
+    position: relative;
+    top: 640px;
     height: 80px;
     background: #001c2d;
 }
