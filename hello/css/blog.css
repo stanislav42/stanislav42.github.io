@@ -1,0 +1,42 @@
+.link__blog {
+    float: left;
+    display: block;
+    width: 450px;
+    margin-bottom: 50px;
+    position: relative;
+    background: grey;
+    float: left;
+    text-decoration: none;
+    height: 300px;
+}
+
+.section__data {
+    float: right;
+    right: 20px;
+    top: 5px;
+    position: absolute;
+    font-family: Proxima_Nova_Light;
+    font-size: 14px;
+    color: white;
+}
+
+.section__name {
+    text-align: center;
+    position: relative;
+    top: 190px;
+    font-family: Proxima_Nova_Regular;
+    font-size: 24px;
+    color: white;
+}
+
+.link__blog:nth-child(1),
+.link__blog:nth-child(3),
+.link__blog:nth-child(5) {
+    margin-right: 50px;
+}
+
+.main__wrapper {
+    width: 950px;
+    display: table;
+    clear: both;
+}

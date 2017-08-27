@@ -215,12 +215,18 @@
     .quote {
         width: 40px;
     }
+    .article__wrapper{
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .main {
         box-sizing: border-box;
         padding-left: 4%;
+    }
+    .header__caption{
+            width: 120px;
     }
     .book-info-box {
         padding-left: 0px;
@@ -246,5 +252,8 @@
     }
     .section__literature-caption{
         font-size: 30px;
+    }
+    .article__wrapper{
+        margin-bottom: 100px;
     }
 }
