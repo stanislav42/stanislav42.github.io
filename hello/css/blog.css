@@ -19,6 +19,9 @@
     font-size: 14px;
     color: white;
 }
+.section__data-inversion{
+    color: #383838;
+}
 
 .section__name {
     text-align: center;
@@ -34,9 +37,40 @@
 .link__blog:nth-child(5) {
     margin-right: 50px;
 }
+.link__blog:nth-child(1){
+    background: url(../img/blog/Post/arhitektor.jpg);
+    background-size: cover;
+}
 
 .main__wrapper {
     width: 950px;
     display: table;
     clear: both;
+}
+
+.section__paper {
+    width: 80%;
+}
+
+.header__paper {
+    font-family: Proxima_Nova_Regular;
+    font-size: 36px;
+}
+.paper__paragraph{
+    font-style: 18px;
+    font-family: helvetica;
+    line-height: 1.5;
+}
+.header__architect{
+    background: url(../img/blog/Covers/arhitektor.jpg);
+    background-size: cover;
+}
+.author{
+    font-size: 24px;
+    font-family: helvetica;
+    color: #383838;
+}
+.author__link{
+    text-decoration: none;
+    color: #383838;
 }

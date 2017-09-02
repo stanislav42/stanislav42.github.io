@@ -1,3 +1,9 @@
+@media only screen and (width: 1920px) and (height: 1080px){
+    .header__architect{
+        height: 1080px;
+    }
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
     .main__wrapper {
         width: 83%

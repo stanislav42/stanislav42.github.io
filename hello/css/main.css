@@ -228,10 +228,8 @@ body {
     background: url(../img/bg-article-2-two.jpg);
     background-size: cover;
 }
-
-.article-liter-one {
-    background: url(../img/bg-article-2-one.jpg);
-    background-size: cover;
+.article-blog-one{
+    background: url(../img/blog/Post/arhitektor.jpg);
 }
 
 .article-name {
