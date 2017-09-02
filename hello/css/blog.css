@@ -19,7 +19,8 @@
     font-size: 14px;
     color: white;
 }
-.section__data-inversion{
+
+.section__data-inversion {
     color: #383838;
 }
 
@@ -37,7 +38,8 @@
 .link__blog:nth-child(5) {
     margin-right: 50px;
 }
-.link__blog:nth-child(1){
+
+.link__blog:nth-child(1) {
     background: url(../img/blog/Post/arhitektor.jpg);
     background-size: cover;
 }
@@ -57,36 +59,44 @@
     font-family: Proxima_Nova_Regular;
     font-size: 42px;
 }
-.paper__paragraph{
+
+.paper__paragraph {
     font-size: 20px;
     font-family: helvetica;
     line-height: 1.5;
     margin-bottom: 40px;
 }
-.paper__img{
+
+.paper__img {
     width: 100%;
 }
-.paper__paragraph--caption{
+
+.paper__paragraph--caption {
     font-size: 28px;
 }
-.header__architect{
+
+.header__architect {
     background: url(../img/blog/Covers/arhitektor.jpg);
     background-size: cover;
 }
-.author{
+
+.author {
     font-size: 24px;
     font-family: helvetica;
     color: #383838;
     margin-bottom: 40px;
 }
-.author__link{
+
+.author__link {
     text-decoration: none;
     color: #383838;
     position: relative;
 }
+
 .author__link:hover::before {
     opacity: 0;
 }
+
 .author__link::before {
     color: #383838;
     background: #383838;

@@ -144,7 +144,8 @@ body {
     width: 1200px;
     margin: auto;
 }
-.main{
+
+.main {
     display: table;
     clear: both;
     margin: auto;
@@ -153,7 +154,7 @@ body {
 .section {
     display: block;
     position: relative;
-    height: 500px;
+    height: auto;
     width: 1200px;
     display: table;
     clear: both;
@@ -208,8 +209,7 @@ body {
     transition: 0.5s;
 }
 
-.link__article:hover {
-}
+.link__article:hover {}
 
 .link__article:nth-child(2) {
     margin-left: 0px;
@@ -228,7 +228,8 @@ body {
     background: url(../img/bg-article-2-two.jpg);
     background-size: cover;
 }
-.article-blog-one{
+
+.article-blog-one {
     background: url(../img/blog/Post/arhitektor.jpg);
 }
 
