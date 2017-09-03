@@ -117,7 +117,7 @@
 }
 
 .header__link {
-    background-color: #1cd7fa;
+    background-color: #f9c020;
     position: relative;
     top: 220px;
     width: 270px;
@@ -130,7 +130,7 @@
     text-decoration: none;
     font-size: 18px;
     border-radius: 50px;
-    border: 2px solid #1cd7fa;
+    border: 2px solid #f9c020;
     color: white;
     font-family: Proxima-Nova-Bold;
     letter-spacing: 1px;
@@ -138,7 +138,7 @@
 }
 .header__link:hover{
     background: rgba(0,0,0,0);
-    color: #1cd7fa;
+    color: #f9c020;
 }
 
 
@@ -554,4 +554,9 @@
     font-size: 16px;
     color: #a1a1a1;
     font-family: Proxima-Nova-Regular;
+}
+.logolink{
+    color: white;
+    text-decoration: none;
+    font-family: helvetica;
 }
