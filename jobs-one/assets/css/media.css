@@ -1,0 +1,87 @@
+@media only screen and (max-width: 1300px) and (min-width: 993px){
+	.section-wrapper, .header-wrapper, .footer-wrapper{
+		width: 90%;
+	}
+		.section--one__article{
+		width: 20%;
+	}
+	.section-wrapper--three{
+		width: 75%;
+	}
+	.section--three__article{
+		width: 30%;
+	}
+	.section-three__link{
+		width: 80%;
+	}
+
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+	body, .footer, .main, .header, .section{
+		width: 100%
+	}
+
+	.header-wrapper, .section-wrapper, .footer-wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.section, .header{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px){
+	body, .footer, .main, .header, .section{
+		width: 100%
+	}
+	.header-wrapper, .section-wrapper, .footer-wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.section,.header{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 321px){
+	body, .footer, .main, .header, .section{
+		width: 100%
+	}
+	.header-wrapper, .section-wrapper, .footer-wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.section,.header{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+}
+
+@media only screen and (max-width: 320px){
+	body, .footer, .main, .header, .section{
+		width: 100%
+	}
+	.header-wrapper, .section-wrapper, .footer-wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.section,.header{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+}

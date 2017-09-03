@@ -1,0 +1,152 @@
+* {
+    font-family: helvetica;
+    padding: 0px;
+    margin: 0px;
+}
+*::selection{
+    background: #c6c6c6;
+    color: white;
+}
+
+.header-wrapper,
+.section-wrapper,
+.footer-wrapper {
+    width: 1140px;
+    margin: auto;
+}
+
+.navigation-wrapper {
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+/*________________ Navigation menu ________________*/
+
+.navigation__list {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    list-style-type: none;
+    width: 380px;
+}
+
+.navigation__list-link {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 25px;
+    opacity: 0.6;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    border-bottom: 5px solid #6ebdef;
+}
+
+.navigation__list-item {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+}
+
+.navigation__list-link:hover {
+    border-bottom: 5px solid white;
+    opacity: 1;
+}
+
+.navigation__list-item:nth-child(1),
+.navigation__list-item:nth-child(2) {
+    margin-right: 60px;
+}
+
+
+
+
+
+
+
+
+
+/*________________ HEADER STYLE ________________*/
+
+.header {
+    padding-top: 70px;
+    box-sizing: border-box;
+    background-position: 0px -100px;
+    background-image: url('../img/header-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 640px;
+}
+
+.header__caption {
+
+}
+
+.header__caption-item {
+
+}
+
+.header__text {
+
+}
+
+.header__link {
+    background-color: #f9c020;
+    position: relative;
+    top: 220px;
+    width: 270px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 2px solid #f9c020;
+    color: white;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+.header__link:hover{
+    background: rgba(0,0,0,0);
+    color: #f9c020;
+}
+
+
+.main {
+    top: 640px;
+    position: relative;
+    background: white;
+}
+
+
+
+
+
+
+/*________________ SECTION STYLE ________________*/
+
+.section__caption {
+
+}
+
+.section__subtitle {
+
+
+
+
+
+/*________________ FOOTER STYLE ________________*/
