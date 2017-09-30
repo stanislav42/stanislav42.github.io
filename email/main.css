@@ -1,0 +1,121 @@
+*{
+	font-family: helvetica;
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width: 600px;
+	margin: auto;
+	background: white;
+}
+body{
+	background: #ededed;
+}
+/*________________ HEADER STYLE ________________*/
+.header{
+	height: 250px;
+	width: 600px;
+	background: white;
+	margin: auto;
+}
+.logo__box{
+	height: 100px;
+}
+.hellou__box{
+	height: 150px;
+	background: url(1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 65px;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+.caption__hellou{
+  text-shadow: 0px 2px 2px rgba(8, 10, 34, 0.5);
+	text-transform: uppercase;
+	font-size: 24px;
+	color: white;
+}
+/*________________ SECTION STYLE ________________*/
+.section{
+	width: 100%;
+}
+.section__one{
+	height: 180px;
+	padding-top: 40px;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.section__caption{
+	font-size: 20px;
+}
+.section__text{
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.4;
+}
+.section__two{
+	height: 750px;
+	background: url(2.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 650px;
+	box-sizing: border-box;
+}
+.section__button{
+	background: #3d9eff;
+	text-align: center;
+	width: 300px;
+	color: white;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/*________________ FOOTER STYLE ________________*/
+
+.footer{
+	height: 80px;
+	background: white;
+	width: 600px;
+	margin: auto;
+	box-sizing: border-box;
+}
+.footer__list{
+	position: relative;
+	top: 20px;
+	float: right;
+	list-style-type: none;
+}
+.footer__icon{
+	width: 30px;
+}
+.footer__list--item{
+	display: inline-block;
+	margin-right: 10px;
+	display: inline-block;
+}
+.footer__list--item:nth-last{
+	margin-left: 0px;
+}
+.footer__list--link{
+	opacity: 0.5;
+}
+.footer__list--link:hover{
+	opacity: 1;
+}
+.footer__text{
+	font-style: 12px;
+	float: left;
+	position: relative;
+	top: 30px;
+	color: #4b5d82;
+}
