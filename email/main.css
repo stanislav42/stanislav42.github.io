@@ -88,6 +88,8 @@ body{
 	width: 600px;
 	margin: auto;
 	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .footer__list{
 	position: relative;
