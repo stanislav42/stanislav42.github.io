@@ -25,14 +25,6 @@
     display: none;
 }
 
-.section{
-}
-
-
-
-
-
-
 
 
 
@@ -154,7 +146,7 @@
   background: url(../img/section-one.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 1100px;
+  background-size: 60%;
 }
 .section--three{
   height: 550px;
@@ -214,7 +206,7 @@
 
 .section--two__article {
     float: left;
-    width: 16%;
+    width: 15%;
     margin-right: 50px;
     text-align: center;
 }

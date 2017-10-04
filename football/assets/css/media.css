@@ -1,87 +1,74 @@
-@media only screen and (max-width: 1300px) and (min-width: 993px){
-	.section-wrapper, .header-wrapper, .footer-wrapper{
-		width: 90%;
-	}
-		.section--one__article{
-		width: 20%;
-	}
-	.section-wrapper--three{
-		width: 75%;
-	}
-	.section--three__article{
-		width: 30%;
-	}
-	.section-three__link{
-		width: 80%;
+@media only screen and (max-width: 1360px) and (min-width: 993px){
+
+.header-wrapper,
+.section-wrapper,
+.footer-wrapper{
+	width: 90%;
+}
+.section--three{
+	    background-position: 100% 100%;
+}
+.section--two__article{
+	width: 15%;
+}
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 993px){
+	.section--two{
+		height: 650px;
 	}
 
 }
-@media only screen and (max-width: 992px) and (min-width: 769px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
 
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
+@media only screen and (max-width: 1120px) and (min-width: 993px){
+	.section--two{
+		height: 1000px;
+	}
+	.section--two__article{
+		width: 42%;
+		height: 200px;
+	}
+	.section-wrapper--two{
+
+	}
+	.article--wrapper--two{
+		margin: auto;
+		width: 60%;
+		clear: both;
+	}
+	.section--two__article:nth-child(2n){
+		margin-right: 0px;
+		float: right;
+	}
+	.section--two__article:nth-child(5){
+		float: none;
+		text-align: center;
 		margin: auto;
 	}
-
-	.section, .header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
+	.section__caption--two{
+		text-align: center;
+		width: 100%;
 	}
+
+
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px){
+
 
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
-		margin: auto;
-	}
-
-	.section,.header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-	}
 
 }
 
 
 @media only screen and (max-width: 480px) and (min-width: 321px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
-		margin: auto;
-	}
 
-	.section,.header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-	}
 
 }
 
 @media only screen and (max-width: 320px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
-		margin: auto;
-	}
 
-	.section,.header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-	}
 
 }
