@@ -30,6 +30,9 @@
     position: relative;
     background: white;
 }
+.menu-toggle{
+    display: none;
+}
 
 
 /*________________ Navigation menu ________________*/
@@ -283,6 +286,10 @@
     font-size: 16px;
     color: white;
     margin-bottom: 80px;
+}
+.section--for{
+    height: 600px;
+    width: 100%;
 }
 
 

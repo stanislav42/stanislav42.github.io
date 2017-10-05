@@ -164,6 +164,10 @@
         height: 950px;
         background-position: bottom center;
     }
+    .menu-toggle,
+    .navigation--box {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 550px) and (min-width: 481px) {
@@ -253,22 +257,28 @@
         background-size: 120%;
         background-position: bottom center;
     }
-        .footer{
-    	height: 375px;
+    .footer {
+        height: 375px;
+    }
+    .menu-toggle,
+    .navigation--box {
+        display: block;
     }
 }
-@media only screen and (max-width: 375px) and (min-width: 321px){
-        .footer{
-    	height: 400px;
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+    .footer {
+        height: 400px;
     }
-        .section--two {
+    .section--two {
         height: 1500px;
-    }	
-    .section--two__article{
-    	margin-top: 45px;
-    	height: auto;
+    }
+    .section--two__article {
+        margin-top: 45px;
+        height: auto;
     }
 }
+
 @media only screen and (max-width: 320px) {
     .header-wrapper,
     .section-wrapper,
@@ -276,17 +286,17 @@
     .header__navigation {
         width: 90%;
     }
-    .header{
-    	height: 100%;
+    .header {
+        height: 100%;
     }
-    .header__caption{
-    	top: 165px;
+    .header__caption {
+        top: 165px;
     }
-    .header__text{
-    	top: 185px;
+    .header__text {
+        top: 185px;
     }
-    .header__link{
-    	top: 250px;
+    .header__link {
+        top: 250px;
     }
     .section--two {
         height: 1430px;
@@ -302,9 +312,9 @@
         width: 100%;
         clear: both;
     }
-    .section--two__article{
-		height: auto;
-		margin-top: 45px;
+    .section--two__article {
+        height: auto;
+        margin-top: 45px;
     }
     .section__caption--two {
         text-align: center;
@@ -341,10 +351,13 @@
     }
     .header__caption,
     .section__caption--two,
-    .section__caption--one, .section__caption--three {
+    .section__caption--one,
+    .section__caption--three {
         font-size: 22px;
     }
-    .section--one__text, .section--three__text, .header__text {
+    .section--one__text,
+    .section--three__text,
+    .header__text {
         font-size: 16px;
     }
     .section--one {
@@ -352,7 +365,11 @@
         background-size: 120%;
         background-position: bottom center;
     }
-    .footer{
-    	height: 400px;
+    .footer {
+        height: 400px;
+    }
+    .menu-toggle,
+    .navigation--box {
+        display: block;
     }
 }
