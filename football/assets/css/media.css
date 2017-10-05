@@ -208,10 +208,6 @@
         width: 100%;
         clear: both;
     }
-    .section--two__article:nth-child(5) {
-        text-align: center;
-        margin: auto;
-    }
     .section__caption--two {
         text-align: center;
         width: 100%;
@@ -266,8 +262,12 @@
     	height: 400px;
     }
         .section--two {
-        height: 1370px;
+        height: 1400px;
     }	
+    .section--two__article{
+    	margin-top: 45px;
+    	height: auto;
+    }
 }
 @media only screen and (max-width: 320px) {
     .header-wrapper,
