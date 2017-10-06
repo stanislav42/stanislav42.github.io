@@ -185,6 +185,13 @@
     .section__link--for, .section--for__text {
         display: block;
     }
+    .button__text{
+        top: 220px; 
+        text-align: center;
+    }
+    .button__text--green{
+        top: 80px;  
+    }
 }
 
 @media only screen and (max-width: 550px) and (min-width: 481px) {
@@ -290,6 +297,13 @@
     }
     .section--for{
         height: 440px;  
+    }
+    .button__text{
+        top: 220px; 
+        text-align: center;
+    }
+    .button__text--green{
+        top: 80px;  
     }
 }
 
@@ -414,5 +428,12 @@
     }
     .section--for{
         height: 400px;  
+    }
+    .button__text{
+        top: 260px; 
+        text-align: center;
+    }
+    .button__text--green{
+        top: 80px;  
     }
 }
