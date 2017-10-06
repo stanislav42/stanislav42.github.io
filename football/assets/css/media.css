@@ -182,7 +182,7 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for {
+    .section__link--for, .section--for__text {
         display: block;
     }
 }
@@ -285,11 +285,11 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for {
+    .section__link--for, .section--for__text{
         display: block;
     }
     .section--for{
-        height: 400px;  
+        height: 440px;  
     }
 }
 
@@ -403,7 +403,7 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for {
+    .section__link--for, .section--for__text {
         display: block;
     }
     .section__link--for{

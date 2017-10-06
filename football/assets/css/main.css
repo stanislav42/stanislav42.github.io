@@ -359,6 +359,14 @@
     margin: auto;
     display: none;
 }
+.section--for__text{
+    color: white;
+    font-size: 18px;
+    font-family: GraphikLCG-Light;
+    display: none;
+    text-align: center;
+    padding-top: 55px;  
+}
 
 
 
