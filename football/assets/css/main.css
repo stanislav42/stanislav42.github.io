@@ -3,7 +3,8 @@
     padding: 0px;
     margin: 0px;
 }
-*::selection{
+
+*::selection {
     background: #c6c6c6;
     color: white;
 }
@@ -30,32 +31,38 @@
     position: relative;
     background: white;
 }
-.menu-toggle{
+
+.menu-toggle {
     display: none;
 }
 
 
+
 /*________________ Navigation menu ________________*/
 
-.header__logo{
+.header__logo {
     padding-top: 10px;
     width: 150px;
     float: left;
 }
 
-.header__navigation{
+.header__navigation {
     position: absolute;
     height: 100px;
     width: 1200px;
 }
 
-.header__list--link{
+.header__list--link {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-family: GraphikLCG-Light;
     display: inline-block;
     position: relative;
+}
+.header__list--link:hover{
+    color: white;
+    text-decoration: none;
 }
 .header__list--link:hover::before {
     opacity: 0;
@@ -67,26 +74,29 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    top: 22px;
+    top: 24px;
     display: block;
     content: "";
     transition: 0.5s;
     opacity: 0.5;
 }
 
-.header__list--item{
+.header__list--item {
     display: inline-block;
     margin-right: 25px;
 }
-.header__list--item:nth-child(5){
+
+.header__list--item:nth-child(5) {
     margin-right: 0px;
 }
-.header__list{
+
+.header__list {
     padding-top: 30px;
     list-style-type: none;
     padding-left: 0px;
     float: right;
 }
+
 
 /*________________ HEADER STYLE ________________*/
 
@@ -126,7 +136,7 @@
 }
 
 .header__link {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     position: relative;
     top: 200px;
     width: 300px;
@@ -137,7 +147,7 @@
     text-transform: uppercase;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 22px;
     border-radius: 4px;
     border: 1px solid white;
     color: white;
@@ -145,10 +155,13 @@
     letter-spacing: 1px;
     transition: all 0.5s;
 }
-.header__link:hover{
+
+.header__link:hover {
     background: white;
     color: #62ac6f;
+    text-decoration: none;
 }
+
 
 
 
@@ -158,18 +171,19 @@
 
 /*________________ SECTION STYLE ________________*/
 
-.section{
-  clear: both;
+.section {
+    clear: both;
 }
-.section__link{
-    background: rgba(0,0,0,0);
+
+.section__link {
+    background: rgba(0, 0, 0, 0);
     position: relative;
     top: 70px;
     width: 300px;
     height: 80px;
     display: block;
     text-align: center;
-    padding-top: 26px;
+    padding-top: 22px;
     text-transform: uppercase;
     box-sizing: border-box;
     text-decoration: none;
@@ -179,54 +193,61 @@
     color: #62ac6f;
     font-family: GraphikLCG-Medium;
     letter-spacing: 1px;
-    transition: all 0.5s; 
+    transition: all 0.5s;
 }
-.section__link:hover{
+
+.section__link:hover {
     background: #62ac6f;
     color: white;
+    text-decoration: none;
 }
-.section--one{
-  height: 600px;
-  background: url(../img/section-one.svg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 60%;
+
+.section--one {
+    height: 600px;
+    background: url(../img/section-one.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 60%;
 }
-.section--three{
-  height: 550px;
-  background: url(../img/bilbord.png);
-  background-position: 80% 100%;
-  background-repeat: no-repeat;
-  
+
+.section--three {
+    height: 550px;
+    background: url(../img/bilbord.png);
+    background-position: 80% 100%;
+    background-repeat: no-repeat;
 }
-.section--one__text{
-    line-height: 1.4;   
-    margin-top: 40px;   
-    font-size: 24px;    
+
+.section--one__text {
+    line-height: 1.4;
+    margin-top: 40px;
+    font-size: 24px;
     color: #252525;
-    width: 60%; 
+    width: 60%;
 }
-.section--three__text{
-    line-height: 1.4;   
-    margin-top: 40px;   
-    font-size: 24px;    
+
+.section--three__text {
+    line-height: 1.4;
+    margin-top: 40px;
+    font-size: 24px;
     color: #252525;
-    width: 60%; 
+    width: 60%;
 }
 
 .section__caption {
     font-family: GraphikLCG-Bold;
     letter-spacing: 1.5px;
 }
+
 .section__caption--one {
-    padding-top: 60px;   
+    padding-top: 60px;
     font-size: 48px;
     color: #62ac6f;
 }
-.section__caption--three{
-   padding-top: 60px;   
+
+.section__caption--three {
+    padding-top: 60px;
     font-size: 48px;
-    color: #62ac6f; 
+    color: #62ac6f;
 }
 
 
@@ -241,7 +262,7 @@
     font-size: 48px;
     line-height: 1.3;
     width: 70%;
-        margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .section--two__article-icon {
@@ -276,9 +297,10 @@
     font-family: GraphikLCG-Regular;
     letter-spacing: 1.5px;
 }
-.article__caption--two{
+
+.article__caption--two {
     color: white;
-    font-size: 18px;    
+    font-size: 18px;
 }
 
 .section__subtitle--two {
@@ -287,10 +309,14 @@
     color: white;
     margin-bottom: 80px;
 }
-.section--for{
-    height: 600px;
+
+.section--for {
+    padding-top: 40px;
+    height: 300px;
     width: 100%;
+    background: #62ac6f;
 }
+
 
 
 
@@ -304,17 +330,20 @@
     padding-top: 50px;
     box-sizing: border-box;
 }
-.footer__list--right{
-    padding-left: 0px;  
+
+.footer__list--right {
+    padding-left: 0px;
     list-style-type: none;
 }
-.footer__list--item{
+
+.footer__list--item {
     font-family: GraphikLCG-Light;
-    line-height: 2.5;   
-    font-size: 18px;    
+    line-height: 2.5;
+    font-size: 18px;
     color: white;
 }
-.footer__list--link{
+
+.footer__list--link {
     font-family: GraphikLCG-Light;
     text-decoration: none;
     color: white;
@@ -324,6 +353,11 @@
 
 .footer__list--link:hover::before {
     opacity: 0;
+}
+
+.footer__list--link:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .footer__list--link::before {
@@ -339,12 +373,14 @@
     opacity: 0.5;
 }
 
+
 /*________________ ANIMATION ________________*/
-.section--two__article-text--animation{
+
+.section--two__article-text--animation {
     animation: lampa linear 2.5s infinite;
 }
 
-.article__link{
+.article__link {
     text-decoration: none;
     color: white;
 }
@@ -352,5 +388,8 @@
 @keyframes lampa {
     50% {
         opacity: 0.3;
-        }
+    }
 }
+
+
+/*________________ SLIDER ________________*/

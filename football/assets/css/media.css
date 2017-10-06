@@ -139,7 +139,7 @@
         text-align: center;
         width: 100%;
     }
-    .header__list {
+    .header__list, .slider {
         display: none;
     }
     .section--one {
@@ -216,7 +216,7 @@
         text-align: center;
         width: 100%;
     }
-    .header__list {
+    .header__list, .slider {
         display: none;
     }
     .section--one {
@@ -320,7 +320,7 @@
         text-align: center;
         width: 100%;
     }
-    .header__list {
+    .header__list, .slider {
         display: none;
     }
     .section--one {
@@ -342,7 +342,7 @@
         margin: auto;
         width: 270px;
         height: 60px;
-        padding-top: 18px;
+        padding-top: 15px;
     }
     .section--three {
         height: 680px;
