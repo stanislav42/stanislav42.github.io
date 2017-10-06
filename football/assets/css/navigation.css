@@ -76,6 +76,8 @@
 }
 .navigation__link:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: white;
 }
 
 .menu-section.on {
