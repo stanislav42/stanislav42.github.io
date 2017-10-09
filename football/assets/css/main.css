@@ -500,10 +500,12 @@
 /*________________ FOTO ________________*/
 
 .footer--foto {
-    top: 650px;
+    top: 0px;
+
 }
 
 .header--foto {
+    top: 0px;
     height: 650px;
 }
 
@@ -707,7 +709,9 @@
     }
 }
 
-
+.header--foto{
+    position: relative;
+}
 
 .arrow,
 .arrow:before {

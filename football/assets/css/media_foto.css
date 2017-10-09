@@ -18,9 +18,6 @@
     .box-subtitle--one, .box-subtitle--two{
         text-align: center;
     }
-    .footer--foto{
-        top:800px;
-    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px){
@@ -42,9 +39,6 @@
     .box-subtitle--one, .box-subtitle--two{
         text-align: center;
     }
-    .footer--foto{
-        top:800px;
-    }
 }
 @media only screen and (max-width: 480px) and (min-width: 321px){
     .header--foto{
@@ -65,9 +59,7 @@
     .box-subtitle--one, .box-subtitle--two{
         text-align: center;
     }
-    .footer--foto{
-        top:800px;
-    }
+
 }
 
 @media only screen and (max-width: 320px){
@@ -88,9 +80,6 @@
     }
     .box-subtitle--one, .box-subtitle--two{
         text-align: center;
-    }
-    .footer--foto{
-        top:800px;
     }
     .form--input, .form--button{
         width: 285px;
