@@ -1,16 +1,17 @@
-@media only screen and (max-width: 1550px) and (min-width: 950px){
-    .section__caption--three{
+@media only screen and (max-width: 1550px) and (min-width: 950px) {
+    .section__caption--three {
         width: 60%;
     }
-    .section--three__text{
+    .section--three__text {
         width: 50%;
     }
-    .section--three{
+    .section--three {
         height: 650px;
-        background-position:100% 100%;
+        background-position: 100% 100%;
     }
 }
-@media only screen and (max-width: 950px) and (min-width: 769px){
+
+@media only screen and (max-width: 950px) and (min-width: 769px) {
     .header-wrapper,
     .section-wrapper,
     .footer-wrapper,
@@ -50,46 +51,50 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for, .section--for__text {
+    .section__link--for,
+    .section--for__text {
         display: block;
     }
-    .button__text{
-        top: 220px; 
+    .button__text {
+        top: 220px;
         text-align: center;
     }
-    .button__text--green{
-        top: 80px;  
+    .button__text--green {
+        top: 80px;
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 481px){
-        .section--three {
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .section--three {
         height: 1050px;
         background-position: bottom center;
     }
-
 }
-@media only screen and (max-width: 580px) and (min-width: 481px){
-        .section--three {
+
+@media only screen and (max-width: 580px) and (min-width: 481px) {
+    .section__caption--three{
+        font-size: 36px;   
+    }
+
+    .section--three {
         height: 1150px;
         background-position: bottom center;
     }
-
 }
-@media only screen and (max-width: 480px) and (min-width: 321px){
-            .section--three {
+
+@media only screen and (max-width: 480px) and (min-width: 321px) {
+    .section--three {
         height: 1250px;
         background-position: bottom center;
     }
-
-
-
+    .section__caption--three{
+        font-size: 26px;   
+    }
 }
 
-@media only screen and (max-width: 320px){
-                .section--three {
+@media only screen and (max-width: 320px) {
+    .section--three {
         height: 750px;
         background-position: bottom center;
     }
-
 }

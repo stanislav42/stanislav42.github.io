@@ -91,9 +91,9 @@
     .section__for--link {
         top: -70px;
     }
-    .slick-next:before,
-    .slick-prev:before {
-        display: none;
+    .slick-next,
+    .slick-prev {
+        display: none!important;
     }
     .section--three{
         background-position: 110% 100%;
