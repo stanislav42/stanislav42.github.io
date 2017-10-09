@@ -1,8 +1,7 @@
 @media only screen and (max-width: 1360px) and (min-width: 993px) {
     .header-wrapper,
     .section-wrapper,
-    .footer-wrapper,
-    .header__navigation {
+    .footer-wrapper {
         width: 90%;
     }
     .section--three {
