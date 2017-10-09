@@ -11,11 +11,17 @@
     .section--two__article {
         width: 15%;
     }
+    .section--three {
+        background-position: 100% 100%;
+    }
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 993px) {
     .section--two {
         height: 650px;
+    }
+    .section--three {
+        background-position: 120% 100%;
     }
 }
 
@@ -95,33 +101,37 @@
     .slick-prev {
         display: none!important;
     }
-    .section--three{
-        background-position: 110% 100%;
+    .section--three {
+        background-position: 160% 100%;
     }
 }
-@media only screen and (max-width: 900px) and (min-width: 769px){
-    .header--foto{
+
+@media only screen and (max-width: 900px) and (min-width: 769px) {
+    .header--foto {
         height: 800px;
     }
-    .box--one, .box--two{
+    .box--one,
+    .box--two {
         width: 90%;
         margin-bottom: 30px;
         top: 100px;
     }
-    .box--caption{
+    .box--caption {
         font-size: 36px;
         text-align: center;
     }
-    .arrow{
+    .arrow {
         display: none;
     }
-    .box-subtitle--one, .box-subtitle--two{
+    .box-subtitle--one,
+    .box-subtitle--two {
         text-align: center;
     }
-    .footer--foto{
-        top:800px;
+    .footer--foto {
+        top: 800px;
     }
 }
+
 @media only screen and (max-width: 840px) and (min-width: 769px) {
     .section--two {
         height: 1000px;
@@ -207,15 +217,16 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for, .section--for__text {
+    .section__link--for,
+    .section--for__text {
         display: block;
     }
-    .button__text{
-        top: 220px; 
+    .button__text {
+        top: 220px;
         text-align: center;
     }
-    .button__text--green{
-        top: 80px;  
+    .button__text--green {
+        top: 80px;
     }
 }
 
@@ -317,18 +328,19 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for, .section--for__text{
+    .section__link--for,
+    .section--for__text {
         display: block;
     }
-    .section--for{
-        height: 440px;  
+    .section--for {
+        height: 440px;
     }
-    .button__text{
-        top: 220px; 
+    .button__text {
+        top: 220px;
         text-align: center;
     }
-    .button__text--green{
-        top: 80px;  
+    .button__text--green {
+        top: 80px;
     }
 }
 
@@ -442,23 +454,24 @@
     .menu-toggle,
     .navigation--box,
     .icon--doc,
-    .section__link--for, .section--for__text {
+    .section__link--for,
+    .section--for__text {
         display: block;
     }
-    .section__link--for{
-        top: 50px;  
+    .section__link--for {
+        top: 50px;
     }
-    .icon--doc{
-        width: 40%;    
+    .icon--doc {
+        width: 40%;
     }
-    .section--for{
-        height: 400px;  
+    .section--for {
+        height: 400px;
     }
-    .button__text{
-        top: 260px; 
+    .button__text {
+        top: 260px;
         text-align: center;
     }
-    .button__text--green{
-        top: 80px;  
+    .button__text--green {
+        top: 80px;
     }
 }
