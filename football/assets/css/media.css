@@ -95,6 +95,9 @@
     .slick-prev:before {
         display: none;
     }
+    .section--three{
+        background-position: 110% 100%;
+    }
 }
 @media only screen and (max-width: 900px) and (min-width: 769px){
     .header--foto{

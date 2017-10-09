@@ -95,7 +95,7 @@
     margin-right: 25px;
 }
 
-.header__list--item:nth-child(5) {
+.header__list--item:nth-child(4) {
     margin-right: 0px;
 }
 
@@ -498,6 +498,38 @@
 
 
 /*________________ FOTO ________________*/
+
+.policy__link {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: GraphikLCG-Light;
+    display: inline-block;
+    position: relative;
+}
+
+.policy__link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.policy__link:hover::before {
+    opacity: 0;
+}
+
+.policy__link::before {
+    color: white;
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 15px;
+    display: block;
+    content: "";
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
 
 .footer--foto {
     top: 0px;
