@@ -1,0 +1,98 @@
+
+@media only screen and (max-width: 900px) and (min-width: 769px){
+    .header--foto{
+        height: 800px;
+    }
+    .box--one, .box--two{
+        width: 100%;
+        margin-bottom: 30px;
+        top: 100px;
+    }
+    .box--caption{
+        font-size: 36px;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+    .box-subtitle--one, .box-subtitle--two{
+        text-align: center;
+    }
+    .footer--foto{
+        top:800px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    .header--foto{
+        height: 800px;
+    }
+    .box--one, .box--two{
+        width: 100%;
+        margin-bottom: 30px;
+        top: 100px;
+    }
+    .box--caption{
+        font-size: 36px;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+    .box-subtitle--one, .box-subtitle--two{
+        text-align: center;
+    }
+    .footer--foto{
+        top:800px;
+    }
+}
+@media only screen and (max-width: 480px) and (min-width: 321px){
+    .header--foto{
+        height: 800px;
+    }
+    .box--one, .box--two{
+        width: 100%;
+        margin-bottom: 30px;
+        top: 100px;
+    }
+    .box--caption{
+        font-size: 28px;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+    .box-subtitle--one, .box-subtitle--two{
+        text-align: center;
+    }
+    .footer--foto{
+        top:800px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .header--foto{
+        height: 800px;
+    }
+    .box--one, .box--two{
+        width: 100%;
+        margin-bottom: 30px;
+        top: 100px;
+    }
+    .box--caption{
+        font-size: 28px;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+    .box-subtitle--one, .box-subtitle--two{
+        text-align: center;
+    }
+    .footer--foto{
+        top:800px;
+    }
+    .form--input, .form--button{
+        width: 285px;
+    }
+}
