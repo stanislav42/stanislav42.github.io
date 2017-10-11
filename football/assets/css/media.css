@@ -129,9 +129,6 @@
     .box-subtitle--two {
         text-align: center;
     }
-    .footer--foto {
-        top: 800px;
-    }
 }
 
 @media only screen and (max-width: 840px) and (min-width: 769px) {

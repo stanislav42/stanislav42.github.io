@@ -498,6 +498,9 @@
 
 
 /*________________ FOTO ________________*/
+.body-foto{
+    background: #62ac6f; 
+}
 
 .policy__link {
     color: white;
@@ -532,13 +535,13 @@
 
 
 .footer--foto {
-    top: 0px;
+    top: -56px;
 
 }
 
 .header--foto {
     top: 0px;
-    height: 650px;
+    height: 500px;
 }
 
 .foto--form {
@@ -573,10 +576,9 @@
     color: white;
 }
 
-.box--one,
-.box--two {
+.box--one {
     float: left;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 200px;
     position: relative;
@@ -740,6 +742,11 @@
         transform: translateY(0);
     }
 }
+@keyframes arrowss {
+    50% {
+        transform: translateY(5px) rotate(45deg);
+    }
+}
 
 .header--foto{
     position: relative;
@@ -748,15 +755,17 @@
 .arrow,
 .arrow:before {
   position: absolute;
-  left: 100%;
+  left: 50%;
+  top:110%;
+  animation: arrowss 1s ease-out infinite;
 }
 
 .arrow {
   width: 60px;
   height: 60px;
-  top: 50%;
+  top: 110%;
   margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
@@ -768,7 +777,7 @@
   width: 35px;
   height: 35px;
   top: 100%;
-  margin: -35px 0 0 -35px;
+  margin: -35px 0 0 -6px;
   border-left: none;
   border-top: none;
   border-right: 1px #fff solid;
