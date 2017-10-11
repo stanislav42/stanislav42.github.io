@@ -1,0 +1,80 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+
+.main{
+	width: 240px; 
+	height: 400px; 
+	position: relative; 
+	border: none; 
+	overflow: hidden; 
+	cursor: pointer; 
+	border: 0px;
+}
+
+.main__top{
+	width: 240px;
+	height: 265px;
+	position: relative;
+	border: none;
+	overflow: hidden;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	border: 0px;
+	background: url(img/bg.jpg);
+}
+
+.main__bottom{
+	width: 240px;
+	height: 135px;
+	position: relative;
+	top: 0px;
+	border: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(img/footer.gif);
+	background-position: 0px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	
+}
+.blur{
+	height: 100%;
+	width: 100%;
+	animation: glare ease-in 4s infinite;
+	background: url(img/1.svg);
+	background-position: -1000%;
+	background-repeat: no-repeat;
+
+}
+.gologramma{
+	position: absolute;
+	top: 8px;
+	left: 12px;
+	animation: gologramma ease-in 4s infinite;
+	transform-origin: 90% 90%;
+	transform: scale(0.9);
+}
+
+@keyframes glare {
+
+  45% {
+    background-position:  2050%;
+  }
+
+  100%{
+  	background-position:  3500%;
+  }
+}
+
+@keyframes gologramma {
+50%{
+	transform: scale(1);
+}
+}
