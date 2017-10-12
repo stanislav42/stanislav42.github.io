@@ -498,6 +498,79 @@
 
 
 /*________________ FOTO ________________*/
+
+    .data-mob,
+    .data-email {
+        text-decoration: none;
+        color: white;
+        font-size: 28px;
+        display: inline-block;
+        position: relative;
+        display: inline-block;
+    }
+
+    .data-link:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .data-link:hover::before {
+        opacity: 0;
+    }
+
+    .data-link::before {
+        color: white;
+        background: white;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 30px;
+        display: block;
+        content: "";
+        transition: 0.5s;
+        opacity: 0.5;
+    }
+
+
+    .data-box {
+        position: relative;
+        top: 175px;
+    }
+
+    .data-box--section {
+        position: relative;
+        top: 35px;
+    }
+
+    .button__text--green {
+        top: 80px;
+    }
+
+    .data-link--section {
+        color: #252525;
+    }
+
+    .data-link--section:hover {
+        color: #252525;
+        text-decoration: none;
+    }
+
+    .data-link--section:hover::before {
+        opacity: 0;
+    }
+
+    .data-link--section::before {
+        color: #252525;
+        background: #252525;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 30px;
+        display: block;
+        content: "";
+        transition: 0.5s;
+        opacity: 0.5;
+    }
 .body-foto{
     background: #62ac6f; 
 }
