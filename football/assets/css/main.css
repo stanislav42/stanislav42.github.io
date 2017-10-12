@@ -398,10 +398,16 @@
     padding-top: 50px;
     box-sizing: border-box;
 }
+.footer__list--left{
+    padding-left: 0px;
+    list-style-type: none;
+    float: right;
+}
 
 .footer__list--right {
     padding-left: 0px;
     list-style-type: none;
+    float: left;
 }
 
 .footer__list--item {
