@@ -2,13 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-56CLT79');
+    </script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="shortcut icon" href="assets/img/title.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/title.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <style type="text/css">
     html,
@@ -38,7 +56,7 @@
     .slick-next:before {
         color: white;
         font-size: 40px;
-        padding-bottom: 20px;   
+        padding-bottom: 20px;
     }
 
 
@@ -62,6 +80,17 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56CLT79" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="modal_form">
+        <span id="modal_close">Закрыть</span>
+        <h5 class="form-modal--caption">Заполните форму для участия в проекте Лица&#160;Футбола&#160;2018</h5>
+        <script type="text/javascript" src="https://form.jotformeu.com/jsform/72824596712363" class="formafoto"></script>
+    </div>
+    <div id="overlay"></div>
     <div class="navigation--box">
         <div class="menu-section">
             <nav>
@@ -82,7 +111,7 @@
     <header class="header header-paralax">
         <div class="header-wrapper">
             <nav class="header__navigation">
-                <img src="assets/img/logo-white-1.svg" alt="" class="header__logo">
+                <img src="assets/img/logo.png" alt="" class="header__logo">
                 <ul class="header__list">
                     <li class="header__list--item"><a href="#" class="header__list--link">Главная</a></li>
                     <li class="header__list--item"><a href="partners.html" class="header__list--link">Партнерам</a></li>
@@ -92,7 +121,7 @@
             </nav>
             <h1 class="header__caption">Стань участником грандиозного проекта 2018 года. Впиши себя в&#160;историю футбола</h1>
             <p class="header__text">некоммерческий проект</p>
-            <a href="#" class="header__link button-link">Участвовать</a>
+            <a href="#" class="header__link button-link modal">Участвовать</a>
             <p class="button__text">Участие бесплатно</p>
         </div>
     </header>
@@ -100,9 +129,9 @@
         <div class="main-wrapper">
             <section class="section section--one">
                 <div class="section-wrapper section-wrapper--one">
-                    <h2 class="section__caption section__caption--one">Кто мы?</h2>
-                    <p class="section--one__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <a href="#" class="section__link section__link--one">Участвовать</a>
+                    <h2 class="section__caption section__caption--one">Некоммерческий проект</h2>
+                    <p class="section--one__text">Любой желающий может прислать нам фотографию. Мы&#160;из&#160;присланных вами фотографий делаем коллажи (фотомозаики) на&#160;фоне рисунков футбольной тематики от&#160;профессиональных художников и&#160;размещаем на&#160;билбордах и&#160;экранах&#160;в городах-участниках. Участие в&#160;проекте бесплатно: достаточно отправить своё фото. Всё остальное мы&#160;сделаем за&#160;Вас!</p>
+                    <a href="#" class="section__link section__link--one modal">Участвовать</a>
                     <p class="button__text button__text--green">Участие бесплатно</p>
                 </div>
             </section>
@@ -144,16 +173,14 @@
                 <div class="section-wrapper section-wrapper--three">
                     <h2 class="section__caption section__caption--three">Что потом?</h2>
                     <p class="section--three__text">Вы увидите себя на центральных улицах города, на плакатах и большеформатных мониторах. При желании сможете заказать сувениры с изображением у наших спонсоров.</p>
-                    <a href="#" class="section__link section__link--three">Участвовать</a>
+                    <a href="#" class="section__link section__link--three modal">Участвовать</a>
                     <p class="button__text button__text--green">Участие бесплатно</p>
-
                 </div>
             </section>
             <section class="section section--for">
                 <div class="section-wrapper section-wrapper--for">
                     <h2 class="section__caption section__caption--for">Документация по проекту</h2>
-
-                    <a href="assets/img/doc/full-doc.pdf" ><img src="assets/img/search.svg" alt="" class="icon--doc"></a>
+                    <a href="assets/img/doc/full-doc.pdf"><img src="assets/img/search.svg" alt="" class="icon--doc"></a>
                     <a href="assets/img/doc/full-doc.pdf" class="header__link button-link section__link--for">Читать</a>
                     <p class="section--for__text">PDF 5 мегабайт</p>
                     <section class="center slider">
@@ -213,7 +240,7 @@
             <ul class="footer__list footer__list--right">
                 <li class="footer__list--item footer__list--item--left">Создатель проекта Рогонов А. Н. тел. <a href="tel:89049280330" class="footer__list--link">8 904 928-03-30</a></li>
                 <li class="footer__list--item footer__list--item--left"><a href="" class="footer__list--link">Группа проекта Вконтакте</a></li>
-                <li class="footer__list--item footer__list--item--left">По вопросам рекламы — <a href="" class="footer__list--link">facesfootbol@mail.ru</a></li>
+                <li class="footer__list--item footer__list--item--left">По вопросам рекламы — <a href="mailto:facesfb2018@mail.ru" class="footer__list--link">facesfb2018@mail.ru</a></li>
                 <li class="footer__list--item footer__list--item--left"><a href="illustrator.html" class="footer__list--link">Художникам</a></li>
                 <li class="footer__list--item footer__list--item--left"><a href="partners.html" class="footer__list--link">Партнерам</a></li>
             </ul>
@@ -280,6 +307,7 @@
         });
     });
     </script>
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

@@ -796,3 +796,55 @@
     transform: translate(-10px, -10px);
   }
 }
+
+
+/* модальное окно*/
+
+#modal_form {
+    width: 90%; 
+    height: 50%;
+    background: #fff;
+    position: fixed;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    margin-left: 5%;
+}
+ 
+#modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+    display: block;
+}
+ 
+#overlay {
+    z-index:3;
+    position:fixed;
+    background-color:#000;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter:alpha(opacity=80);
+    width:100%; 
+    height:100%;
+    top:0;
+    left:0;
+    cursor:pointer;
+    display:none;
+}
+
+.form-modal--caption{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: #62ac6f;
+    top: 10%;
+    font-family: GraphikLCG-Bold;
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10%;
+    line-height: 1.3;
+}
