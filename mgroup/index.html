@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>Комплексная настройка контекстной рекламы от партнера Яндекс — MGroup</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/sites_slider.css">
+    <link rel="stylesheet" href="css/animate.css" media="all and (min-device-width: 768px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/media/1200.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/decima_modal.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="form/submitform.js"></script>
+    <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script src="js/js-lib.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!--ГЕОТАРГЕТИНГ-->
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <!--ГЕОТАРГЕТИНГ-->
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-59XF52');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59XF52" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--МОДАЛЬНОЕ-->
+    <div class="modal_background"></div>
+    <div class="modal_background_frame">
+        <div class="modal_exit"></div>
+        <div class="modal_h1"></div>
+        <div class="modal_h2"></div>
+        <form action='' method='POST' name='form' class="orderForm" id="cfCALL">
+            <input class="clientPhone" id="phone" placeholder="Введите Ваш номер телефона">
+            <input class="btn_cell orderSubmit btn" name="submit2" type="submit" value="" id="modalbtnchecscan1">
+            <div class="clear"></div>
+            <input type="checkbox" id="checkboxmodal" onclick='if (document.getElementById("checkboxmodal").checked) {document.getElementById("modalbtnchecscan1").disabled = false;}else {document.getElementById("modalbtnchecscan1").disabled = true;}' checked>
+            <p>Я даю согласие на обработку своих персональных данных и ознакомлен с
+                <br><a href="politic.html" target="_blank">политикой конфиденциальности</a></p>
+        </form>
+    </div>
+    <!--МОДАЛЬНОЕ-->
+    <header class="clone header">
+        <div class="wrap">
+            <div class="adress">
+                Нижний Новгород,
+                <br>
+                <b>пер. Охотский, дом 3</b>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="scroll_to_elem('reasons')">Наша сила</li>
+                    <li onclick="scroll_to_elem('settings')">Как работают эксперты</li>
+                    <li onclick="scroll_to_elem('command')">Команда</li>
+                    <li onclick="scroll_to_elem('sites')">Мощные сайты</li>
+                    <li onclick="scroll_to_elem('reviews')">Отзывы</li>
+                    <li onclick="scroll_to_elem('map')">Контакты</li>
+                </ul>
+            </nav>
+            <div class="number">
+                <span><a href="tel:89056619428" class="tel-link--top">8 905 661 94 28</a></span>
+                <br>работаем по всей России
+            </div>
+        </div>
+    </header>
+    <div class="title block">
+        <div class="segmenter" style="background-image: url(img/title.jpg)"></div>
+        <div class="wrap">
+            <header class="header">
+                <div class="adress">
+                    Нижний Новгород,
+                    <br>
+                    <b>пер. Охотский, дом 3</b>
+                </div>
+                <nav>
+                    <ul>
+                        <li onclick="scroll_to_elem('reasons')">Наша сила</li>
+                        <li onclick="scroll_to_elem('settings')">Как работают эксперты</li>
+                        <li onclick="scroll_to_elem('command')">Команда</li>
+                        <li onclick="scroll_to_elem('sites')">Мощные сайты</li>
+                        <li onclick="scroll_to_elem('reviews')">Отзывы</li>
+                        <li onclick="scroll_to_elem('map')">Контакты</li>
+                    </ul>
+                </nav>
+                <div class="number">
+                    <span><a href="tel:89056619428" class="tel-link">8 905 661 94 28</a></span>
+                    <br>работаем по всей России
+                </div>
+            </header>
+            <div class="header--box">
+                <img class="box--logo" src="img/logo-1.svg">
+                <h1 class="logo--caption">Агентство интернет-маркетинга</h1>
+                <div class="box--one">
+                    <img src="img/calendar.svg" alt="" class="box--icon">
+                    <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
+                </div>
+                <div class="box--two">
+                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
+                </div>
+                <div class="box--three">
+                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
+                </div>
+                <div class="box--for">
+                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
+                </div>
+            </div>
+            <!--
+			<div class="logo"></div>
+			<div class="btn btn_title btn--trigger">Агентство интернет-маркетинга</div>
+			<div class="links">
+				<div class="campaign" onclick="scroll_to_elem('settings')">
+					<span>Рекламная кампания</span><br>настройка и ведение
+				</div>
+				<div class="websites" onclick="scroll_to_elem('sites')">
+					<span>Продающие сайты</span><br>создание и поддержка
+				</div>
+			</div> 
+			-->
+            <div class="mouse" onclick="scroll_to_elem('clients')"></div>
+        </div>
+    </div>
+    <div class="clients block" id="clients">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Довольны нашей работой</h1>
+            <p>Уже более 70-ти клиентов</p>
+        </div>
+        <div class="logos">
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/logos/lider.png">
+                    <img src="img/logos/onis.png">
+                    <img src="img/logos/septikbio.png">
+                    <img src="img/logos/sport.png">
+                </div>
+                <div class="slide">
+                    <img src="img/logos/avangard.png">
+                    <img src="img/logos/bezopasnost.png">
+                    <img src="img/logos/razgulyay.png">
+                    <img src="img/logos/terrasint.png">
+                </div>
+                <div class="slide">
+                    <img src="img/logos/plast.png">
+                    <img src="img/logos/kabini.png">
+                    <img src="img/logos/sigma.png">
+                </div>
+                <div class="slide">
+                    <img src="img/logos/sotsnab.png">
+                    <img src="img/logos/town.png">
+                    <img src="img/logos/viator.png">
+                </div>
+                <div class="slide small">
+                    <img src="img/logos/armstrong.png">
+                    <img src="img/logos/kamder.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reasons block" id="reasons">
+        <div id="opt">
+            <div id="video-box">
+                <video autoplay loop muted id="bgvid" style="opacity: 1;">
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+                <div class="mask"> </div>
+            </div>
+        </div>
+        <div class="mask"></div>
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>5 причин, ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС</h1>
+            <p>Наша сила - в знаниях, которыми обладают только избранные рекламные агентства</p>
+            <div class="slider">
+                <div class="slide" step="1">
+                    <a href="https://yandex.ru/adv/contact/agency/partner?url=mgroup5.ru&cities%5B%5D=47&services%5B%5D=direct" target="_blank"> <img src="https://avatars.mds.yandex.net/get-adv/126209/2a0000015b5c85b4897f92d416e481d43110/a_certif" alt="Сертифицированное агентство" border="0" width="198" height="214" /></a>
+                    <h2>1. Сертифицированное агентство Яндекс.Директ</h2>
+                    <p>Каждые три месяца наши специалисты проходят переподготовку и обучаются новым стандартам и правилам Яндекс.Директ</p>
+                </div>
+                <div class="slide" step="2">
+                    <img src="img/reason2.png">
+                    <h2>2. Забота о каждой настроенной кампании</h2>
+                    <p>После того как рекламная кампания настроена и запущена, мы анализируем и дорабатываем ее, совершенствуя и доводя до нужного результата</p>
+                </div>
+                <div class="slide" step="3">
+                    <img src="img/reason3.png">
+                    <h2>3. Высокий уровень аудитории</h2>
+                    <p>Многие наши клиенты настолько известны и велики, что говорить о них опасно</p>
+                </div>
+                <div class="slide" step="4">
+                    <img src="img/reason4.png">
+                    <h2>4. Комплексный подход к продвижению</h2>
+                    <p>Часто мы работаем с клиентами как автономный маркетинговый отдел - начиная с аудита ниши, разработки продающего сайта и заканчивая ведением и аналитикой всех рекламных каналов</p>
+                </div>
+                <div class="slide" step="5">
+                    <img src="img/reason5.png">
+                    <h2>5. Зеленый свет для нового бизнеса</h2>
+                    <p>Мы идем навстречу начинающим предпринимателям и тем компаниям, которые хотят протестировать свою новую нишу. Поэтому готовы предоставить рассрочку по оплате за наши услуги</p>
+                </div>
+            </div>
+            <div class="btn" h1="Узнайте больше о преимуществах работы с нами" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Узнать больше">Узнать больше</div>
+        </div>
+    </div>
+    <div class="settings block" id="settings">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Настройка и ведение рекламы в интернете</h1>
+            <p>Яндекс.Директ, Google AdWords, MyTarget</p>
+            <div class="laurels">
+                <div class="laurel wow fadeInUp"><b>19</b>
+                    <br>видов рекламы
+                    <br>в интернете</div>
+                <div class="laurel big wow fadeInDown"><b>97</b>
+                    <br>клиентов
+                    <br>за 2016 г</div>
+                <div class="laurel wow fadeInUp"><b>4</b>
+                    <br>года
+                    <br>на рынке</div>
+            </div>
+            <h2>Что мы будем делать</h2>
+            <ul class="boolets">
+                <div class="top">
+                    <li><img src="img/settings_bool1.png"><b>Предварительный<br>Аудит</b>
+                        <br>Погружение в бизнес, анализ ниши, рынка, конкурентов</li>
+                    <li><img src="img/settings_bool2.png"><b>Внедрение<br>маркетинговой стратегии</b>
+                        <br>Подбор и настройка наиболее эффективных каналов для рекламы</li>
+                    <li><img src="img/settings_bool3.png"><b>PRO-разработка<br>рекламы</b>
+                        <br>Доскональная проработка при создании рекламных инструментов</li>
+                    <li><img src="img/settings_bool4.png"><b>Настройка доп.<br>маркетинговых инструментов</b>
+                        <br>Подключение счетчиков аналитики, колтрекинга, продающих скриптов</li>
+                </div>
+                <div class="bottom">
+                    <li><img src="img/settings_bool5.png"><b>Анализ показателей<br>эффективности</b>
+                        <br>Тщательная работа с системами аналитики</li>
+                    <li><img src="img/settings_bool6.png"><b>Исчерпывающая<br>отчётность</b>
+                        <br>Предоставление детальных данных о потраченных средствах</li>
+                    <li><img src="img/settings_bool7.png"><b>Работа с готовыми<br>Рекламными кампаниями</b>
+                        <br>Применение методов снижения стоимости затрат на рекламу, проведение А / В тестов и др.</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="mark block" id="command">
+        <h2>Работайте с экспертами в области контекстной рекламы</h2>
+        <div class="wrap">
+            <div class="slider">
+                <div class="slide" style="background: url(img/man2.png) no-repeat left bottom;">
+                    <h3><b>Марк Воздвиженский</b><br>Основатель компании «Мgroup»</h3>
+                    <ul class="boolets">
+                        <li>
+                            <div class="laurel wow fadeInUp">8</div>Лет опыта
+                            <br>работы</li>
+                        <li>
+                            <div class="laurel big wow fadeInDown">25</div>Мастер-классов</li>
+                        <li>
+                            <div class="laurel wow fadeInUp">2</div>Авторские
+                            <br>методики</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>А также Марк консультирует начинающих предпринимателей
+                        <br>по эффективному распределению средств в рекламных кампаниях</p>
+                    <h2>Сертификаты:</h2>
+                    <div class="serts">
+                        <a href="img/sert_mark.jpg" rel="lightbox"><img src="img/sert_mark.jpg"></a>
+                    </div>
+                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Марком</div>
+                </div>
+                <div class="slide" style="background: url(img/man1.png) no-repeat left bottom;">
+                    <h3><b>Александр Черненко</b><br>Начальник отдела контекстной рекламы</h3>
+                    <ul class="boolets">
+                        <li>
+                            <div class="laurel wow fadeInUp">5</div>Лет опыта
+                            <br>работы</li>
+                        <li>
+                            <div class="laurel big wow fadeInDown">5</div>Персональных
+                            <br>сертификатов</li>
+                        <li>
+                            <div class="laurel wow fadeInUp">75</div>Настроенных
+                            <br>кампаний</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>Александр имеет всесторонний опыт вывода компаний в интернет: от спец-скриптов до наладки систем PRO-аналитики</p>
+                    <h2>Сертификаты:</h2>
+                    <div class="serts">
+                        <a href="img/sert_aleksandr.jpg" rel="lightbox"><img src="img/sert_aleksandr.jpg"></a>
+                        <a href="img/sert_aleksandr2.jpg" rel="lightbox"><img src="img/sert_aleksandr2.jpg"></a>
+                    </div>
+                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Александром</div>
+                </div>
+                <div class="slide" style="background: url(img/girl1.png) no-repeat left bottom;">
+                    <h3><b>Елена Громова</b><br>Специалист по настройке контекстной рекламы</h3>
+                    <ul class="boolets">
+                        <li>
+                            <div class="laurel wow fadeInUp">7</div>Типов
+                            <br>настраиваемой
+                            <br>рекламы</li>
+                        <li>
+                            <div class="laurel big wow fadeInDown">2</div>Персональных
+                            <br>сертификата</li>
+                        <li>
+                            <div class="laurel wow fadeInUp">43</div>Настроенных
+                            <br>кампаний</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>Елена не перестаёт приятно удивлять клиентов рекордными показателями рекламных кампаний</p>
+                    <h2>Сертификаты:</h2>
+                    <div class="serts">
+                        <a href="img/sert_elena.jpg" rel="lightbox"><img src="img/sert_elena.jpg"></a>
+                        <a href="img/sert_elena2.jpg" rel="lightbox"><img src="img/sert_elena2.jpg"></a>
+                    </div>
+                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Еленой</div>
+                </div>
+                <div class="slide" style="background: url(img/girl2.png) no-repeat left bottom;">
+                    <h3><b>Екатерина Старчикова</b><br>Специалист по настройке контекстной рекламы</h3>
+                    <ul class="boolets">
+                        <li>
+                            <div class="laurel wow fadeInUp">7</div>Типов
+                            <br>настраиваемой
+                            <br>рекламы</li>
+                        <li>
+                            <div class="laurel big wow fadeInDown">2</div>Персональных
+                            <br>сертификата</li>
+                        <li>
+                            <div class="laurel wow fadeInUp">39</div>Настроенных
+                            <br>кампаний</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>Екатерина имеет опыт работы с рекламными кампаниями, выводя даже крупных заказчиков на новый уровень бизнеса</p>
+                    <h2>Сертификаты:</h2>
+                    <div class="serts">
+                        <a href="img/sert_ekaterina.jpg" rel="lightbox"><img src="img/sert_ekaterina.jpg"></a>
+                    </div>
+                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Екатериной</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer block">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Давайте мы рассчитаем стоимоcть</h1>
+            <p>Вашей рекламной кампании</p>
+            <form action='' method='POST' name='form' class="orderForm" id="cfCALL">
+                <input class="clientPhone" id="phone" placeholder="Введите Ваш номер телефона">
+                <input class="btn_cell orderSubmit btn" name="submit2" type="submit" value="Рассчитать стоимость" onclic="attrib=''" id="modalbtnchecscan">
+                <br>
+                <input type="checkbox" id="checkboxmodal1" onclick='if (document.getElementById("checkboxmodal1").checked) {document.getElementById("modalbtnchecscan").disabled = false;}else {document.getElementById("modalbtnchecscan").disabled = true;}' checked>
+                <p>Я даю согласие на обработку своих персональных данных и ознакомлен с
+                    <br><a href="politic.html" target="_blank">политикой конфиденциальности</a></p>
+            </form>
+            <div class="text">
+                <b>нужна реклама для теста новой ниши?<br>У нас есть для Вас специальные условия</b>
+            </div>
+        </div>
+    </div>
+    <div class="sites block" id="sites">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Чтобы реклама работала эффективнее,<br>Вам нужен продающий сайт</h1>
+            <p>Мы являемся официальными партнерами компании DECIMA.DIGITAL MARKETING
+                <br>по разработке и поддержке высококонверсионных сайтов</p>
+            <ul class="icons">
+                <li class="wow fadeIn" data-wow-delay="0s"><img src="img/sites_bool1.png"><b>Погружение</b>
+                    <br>в проект</li>
+                <li class="wow fadeIn" data-wow-delay="0.2s"><img src="img/sites_bool2.png"><b>Исследование</b>
+                    <br>конкурентов</li>
+                <li class="wow fadeIn" data-wow-delay="0.4s"><img src="img/sites_bool3.png"><b>Разработка</b>
+                    <br>сайта</li>
+                <li class="wow fadeIn" data-wow-delay="0.6s"><img src="img/sites_bool4.png"><b>Аналитика</b>
+                    <br>и тестирование</li>
+                <li class="wow fadeIn" data-wow-delay="0.8s"><img src="img/sites_bool5.png"><b>Ведение</b>
+                    <br>и поддержка</li>
+            </ul>
+            <h2><b>Мы разрабатываем и продвигаем проекты любых масштабов - от<br>простого landing-page до крупного многофункционального портала</b></h2>
+        </div>
+        <div class="container">
+            <div id="slideshow" class="slideshow">
+                <div class="slide voilok">
+                    <h2 class="slide__title slide__title--preview"><b>Landing Page КАФЕ «ВОЙЛОК»</b><br>г. Нижний Новгород</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_voilok.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_voilok.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Landing Page КАФЕ «ВОЙЛОК»</b><br>г. Нижний Новгород</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://voilokcafe.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=voilok" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slide sigma">
+                    <h2 class="slide__title slide__title--preview"><b>Landing Page ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ «ПОД КЛЮЧ»</b><br>г. Нижний Новгород</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_sigma.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_sigma.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Landing Page ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ «ПОД КЛЮЧ»</b><br>г. Нижний Новгород</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://sigmann.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=sigma" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                        <!-- slide__content-scroller -->
+                    </div>
+                    <!-- slide__content -->
+                </div>
+                <div class="slide kuhni">
+                    <h2 class="slide__title slide__title--preview"><b>Landing Page КУХНИ НА ЗАКАЗ</b><br>г. Санкт-Петербург</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_kuhni.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_kuhni.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Landing Page КУХНИ НА ЗАКАЗ</b><br>г. Санкт-Петербург</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://kuhen-morgen.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kuhni" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slide gx">
+                    <h2 class="slide__title slide__title--preview"><b>Landing Page ПРОИЗВОДСТВО ВЫСТАВОЧНЫХ СТЕНДОВ</b><br>г. Москва</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_gx.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_gx.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Landing Page ПРОИЗВОДСТВО ВЫСТАВОЧНЫХ СТЕНДОВ</b><br>г. Москва</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://s5.gxgroup.org/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=gxgroup" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slide beprint">
+                    <h2 class="slide__title slide__title--preview"><b>Корпоративный сайт ТИПОГРАФИЯ ПОЛНОГО ЦИКЛА</b><br>г. Москва</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_beprint.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_beprint.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Корпоративный сайт ТИПОГРАФИЯ ПОЛНОГО ЦИКЛА</b><br>г. Москва</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://beprint.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=beprint" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slide kraud">
+                    <h2 class="slide__title slide__title--preview"><b>Landing Page ПРОИЗВОДСТВО МОДУЛЬНЫХ КОТЕЛЬНЫХ</b><br>г. Москва</h2>
+                    <div class="slide__item">
+                        <div class="slide__inner">
+                            <img class="slide__img slide__img--small" src="img/sites_kraud.jpg" alt="Some image" />
+                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__content-scroller">
+                            <img class="slide__img slide__img--large" src="img/sites_kraud.jpg" alt="Some image" />
+                            <div class="slide__details">
+                                <h2 class="slide__title slide__title--main"><b>Landing Page ПРОИЗВОДСТВО МОДУЛЬНЫХ КОТЕЛЬНЫХ</b><br>г. Москва</h2>
+                                <p class="slide__description"></p>
+                                <div>
+                                    <span class="slide__price slide__price--large"></span>
+                                    <div class="button button--buy">
+                                        <a href="http://decima.pro/kraud/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kraud" target="_blank">
+                                            <div class="btn see">Посмотреть сайт</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /slide__details -->
+                        </div>
+                    </div>
+                </div>
+                <button class="action action--close" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <!-- Related demos -->
+        </div>
+        <!-- /container -->
+        <div class="btn" h1="Рассчитайте стоимость разработки сайта" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Рассчитать стоимость разработки сайта</div>
+    </div>
+    <div class="reviews block" id="reviews">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Отзывы о нашей работе</h1>
+            <p>Вы можете позвонить любому клиенту и убедиться лично</p>
+            <div class="containe">
+                <div class="review">
+                    <div class="photo" style="background-image:url(img/client_sotsnab.jpg);"></div>
+                    <div class="info">
+                        <h2>ООО «СотСнаб»</h2>
+                        <!--<h3>Генеральный директор<br>ООО «Очконавт»</h3>-->
+                        <h3 class="adress">г. Дзержинск<!--<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a>--></h3>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="rev">
+                        Пришли в данную компанию по рекомендации. На первых этапах проконсультировали по ведению контекстной рекламы. Далее начала работать, за 2 года существенно увеличили оборот и прибыль компании. Отдельное спасибо Марку или Елене за помощь и быструю связь!
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="photo" style="background-image:url(img/client_svetlana.jpg);"></div>
+                    <div class="info">
+                        <h2>ИП Цыбанова С. Н.</h2>
+                        <!--<h3>Генеральный директор<br>ООО «Очконавт»</h3>-->
+                        <h3 class="adress">г. Нижний Новгород<!--<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a>--></h3>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="rev">
+                        Знаю Марка как ответственного и очень замороченного (в хорошем смысле) на рекламе человека. Уже 3 ниши рекламирую через него, показатели рекламы меня вполне устраивают. Бывает, даже, сам звонит и предлагает что-то изменить в торговых преждлоениях, или на сайте. Меняем - и отдача растёт! В общем я довольна сотрудничеством с Марком и его компанием MGroup.
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="photo" style="background-image:url(img/client_artem.jpg);"></div>
+                    <div class="info">
+                        <h2>Артем Бабанский</h2>
+                        <h3>Директор<br>Экспертный центр «Лито»</h3>
+                        <h3 class="adress">г. Нижний Новгород<!--<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a>--></h3>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="rev">
+                        Большое спасибо ООО "МГрупп" и лично её руководителю Марку Воздвиженскому, за то что вы и ваши сотрудники успешно настроили и запустили контекстную рекламу для нашей компании. Результаты работы в сложных конкурентных условиях экспертно-оценочной ниши превзошли мои ожидания, сейчас мы получаем заявок с сайта в неделю больше чем за месяц до начала сотрудничества с МГрупп. Отдельное двойное спасибо за автономность вашей работы и то что были Были учтены все мои пожелания и уточнения, которые появились в процессе. Я остался доволен полученным результатом, продолжаю сотрудничество и рекомендую обращаться в эту компанию.
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--<div class="containe_hidden">
+					<div class="review">
+						<div class="photo" style="background-image:url(img/client.png);"></div>
+						<div class="info">
+							<h2>Денис Иванов</h2>
+							<h3>Генеральный директор<br>ООО «Очконавт»</h3>
+							<h3 class="adress">г. Нижний Новгород<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a></h3>
+						</div>
+						<div class="clear"></div>
+						<p class="rev">
+							Мало заказать контекстную рекламу и выполнить настройку, нужно еще грамотно вести. Цель ведения – постоянное увеличение прибыли. Причём тут есть две стороны: если кампанию в контекстной рекламе остановить, то все показатели начнут уменьшаться. Если же продолжать ведение – они могут улучшаться либо оставаться стабильным. Под показателями мы понимаем не только CTR и цену за клик, но и многое другое: ROI, PPV, CV, количество отказов, возвраты на сайт, глубина просмотра и продолжительность визита и т. д. Ведение происходит за счёт аналитики трафика, распределения бюджета, А/Б тестов, оптимизации всех процессов.
+						</p>
+					</div>	
+
+
+
+					<div class="clear"></div>
+				</div>
+				<div class="btn all_reviews">Посмотреть больше отзывов</div>-->
+        </div>
+    </div>
+    <div class="faq block">
+        <div class="wrap">
+            <div class="line"></div>
+            <h1>Ответы на частые вопросы наших клиентов</h1>
+            <div class="containe">
+                <h2 class="question">А сколько я буду тратить на рекламу?</h2>
+                <p class="answer">Настройка контекстной рекламы - от 25 000 рублей. Рекламный бюджет зависит от разных параметров, о которых мы Вам расскажем.</p>
+                <h2 class="question">Вы ведь не будете делать рекламу моим конкурентам?</h2>
+                <p class="answer">Конечно мы не будем делать рекламу вашим конкурентам, при условии, что будем иметь долю в вашем бизнесе в размере 30%.</p>
+                <h2 class="question">Я оставил старый сайт из 90-х годов, и заявок нет!!!</h2>
+                <p class="answer">Количество и качество заявок напрямую зависит от грамотно разработанного сайта. Посетители откроют и сразу закроют ваш сайт, даже если он будет на ведущих поисковых позициях, так как на нем нет нужной им информации или шрифт нечитабельный, или цвета раздражают глаза и так далее.</p>
+                <h2 class="question">Вы ведь сделаете мне 20 000 ключевиков? я в БМ смотрел</h2>
+                <p class="answer">Огромное количество ключевых слов далеко не всегда говорит о качестве настройки. Достаточный показатель ключевых слов для старта рекламной кампании - 3000. В процессе тестирования мы постепенно увеличиваем этот показатель.</p>
+            </div>
+            <div class="btn" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
+        </div>
+    </div>
+    <div class="map block" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba7f39df9315c17f9244d5503425edfc20d9722a53f7be7b1b38575e95d7a3de&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="containe">
+            <div class="line"></div>
+            <h1>Мы всегда рады видеть Вас в нашем уютном офисе!</h1>
+            <h2 class="number">звоните<br><b><a href="tel:89056619428" class="tel-link--map">8 905 661 94 28</a></b><br><span>консультация бесплатно</span></h2>
+            <h2 class="mail">пишите<br><a href="mailto:mgroup5@ya.ru">mgroup5@ya.ru</a></h2>
+            <h2 class="adress">приходите<br><b>Нижний Новгород,<br>пер. Охотский, дом 3</b></h2>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="logo">
+                <a href="index.html">
+						<img src="img/logo_white.png">
+					</a>
+            </div>
+            <div class="rekviz">
+                ООО «МГрупп»
+                <br> ОГРН 1145257005046
+                <br> ИНН: 5257147685 КПП 525701001
+            </div>
+            <div class="btn" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
+            <div class="decima">
+                <a href="http://decima.pro/?utm_source=drevodacha&utm_medium=banner&utm_campaign=klients&utm_term=mark" target="_blank" title="Разработка продающих страниц">
+                    <h4>Сайт создан в</h4>
+                    <img src="img/decima.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script_slick.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/main_sites.js"></script>
+    <script>
+    (function() {
+        document.documentElement.className = 'js';
+        var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+    })();
+    </script>
+    <script>
+    (function() {
+        var headline = document.querySelector('.trigger-headline'),
+            trigger = document.querySelector('.btn--trigger'),
+            segmenter = new Segmenter(document.querySelector('.segmenter'), {
+                pieces: 9,
+                positions: [
+                    { top: 30, left: 5, width: 40, height: 80 },
+                    { top: 50, left: 25, width: 30, height: 30 },
+                    { top: 5, left: 75, width: 40, height: 20 },
+                    { top: 30, left: 45, width: 40, height: 20 },
+                    { top: 45, left: 15, width: 50, height: 40 },
+                    { top: 10, left: 40, width: 10, height: 20 },
+                    { top: 20, left: 50, width: 30, height: 70 },
+                    { top: 0, left: 10, width: 50, height: 60 },
+                    { top: 70, left: 40, width: 30, height: 30 }
+                ],
+                animation: {
+                    duration: 2000,
+                    easing: 'easeInOutCubic',
+                    delay: 0,
+                    opacity: 1,
+                    translateZ: 85,
+                    translateX: { min: -20, max: 20 },
+                    translateY: { min: -20, max: 20 }
+                },
+                parallax: true,
+                parallaxMovement: { min: -10, max: -5 },
+                onReady: function() {
+                    trigger.classList.remove('btn--hidden');
+                    trigger.addEventListener('click', function() {
+                        segmenter.animate();
+                        headline.classList.remove('trigger-headline--hidden');
+                        this.classList.add('btn--hidden');
+                    });
+                }
+            });
+    })();
+    </script>
+    <script type="text/javascript">
+    (function($) {
+        $(window).on("scroll", function() {
+            var fromTop = $(document).scrollTop();
+            $("header.clone").toggleClass("active", (fromTop > 250));
+        });
+    })(jQuery);
+    </script>
+    <script language="javascript">
+    var utm_array = [];
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+            utm_array.push(decodeURIComponent(vars[key]));
+
+        });
+        utm_array = String(" Откуда: " + utm_array[0] + " Тип Трафика: " + utm_array[1] + " Ключ: " + utm_array[2] + " Компания: " + utm_array[3] + " " + utm_array[4]);
+        return vars;
+    }
+    getUrlVars()
+
+    var attrib = '';
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if (screen.width < 768) {
+            $('*').removeClass('wow');
+
+        }
+    });
+    </script>
+    <!--
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('.reviews .containe').imagesLoaded(function() {
+		$('.reviews .containe').masonry({
+			gutter: 30,
+			itemSelector: '.review'
+		});
+	});
+});
+
+
+</script>
+-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.reviews .containe_hidden, .faq p.answer').hide();
+        $('.all_reviews').click(function() {
+            $('.reviews .containe_hidden').slideToggle();
+
+        });
+
+        $('.faq h2.question').click(function() {
+            $('.answer').slideUp();
+            if ($(this).next('.answer').is(':visible')) $(this).next('.answer').slideUp;
+            else $(this).next('.answer').slideToggle();
+
+
+
+        });
+
+
+
+        $('.reasons .slick-arrow').on('click', function() {
+            var step = +$('.reasons .slick-slide.slick-current').attr('step');
+            $('.reasons .slick-prev').attr('step', step - 1);
+            if (step == 5) step = 0;
+            $('.reasons .slick-next').attr('step', step + 1);
+
+        });
+
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.slideshow .navbutton').on('click', function() {
+            if ($('.slideshow .slide.voilok').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_kraud.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_sigma.jpg)' });
+            }
+
+            if ($('.slideshow .slide.sigma').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_voilok.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_kuhni.jpg)' });
+            }
+
+            if ($('.slideshow .slide.kuhni').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_sigma.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_gx.jpg)' });
+            }
+
+            if ($('.slideshow .slide.gx').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_kuhni.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_beprint.jpg)' });
+            }
+
+            if ($('.slideshow .slide.beprint').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_gx.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_kraud.jpg)' });
+            }
+
+            if ($('.slideshow .slide.kraud').hasClass('visible')) {
+                $(".deco--circle-left").css({ 'background-image': 'url(img/sites_beprint.jpg)' });
+                $(".deco--circle-right").css({ 'background-image': 'url(img/sites_voilok.jpg)' });
+            }
+        });
+    });
+    </script>
+    <script src="js/fade.js"></script>
+</body>
+
+</html>
