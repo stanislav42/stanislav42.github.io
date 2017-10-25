@@ -1,4 +1,4 @@
-      @media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (max-width: 768px) and (min-width: 481px) {
 .segmenter, html{
 	min-width: 100%;
 	width: 100%;
@@ -9,7 +9,9 @@
     padding-right: 2%;
 }
 .reviews .review{
-	width: 30%;
+	width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .top__menu{
 	display: none;
@@ -23,5 +25,17 @@
 }
 .map{
 	height: 500px;
+}
+.mark, .map{
+	display: none;
+}
+.sites{
+	height: 1280px;
+}
+.sites .icons, footer .btn{
+	display: none;
+}
+.section--site--caption{
+	font-size: 28px;
 }
 }

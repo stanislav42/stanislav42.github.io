@@ -1,4 +1,4 @@
-      @media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (max-width: 992px) and (min-width: 769px) {
 .segmenter, html{
 	min-width: 100%;
 	width: 100%;
@@ -23,5 +23,20 @@
 }
 .map{
 	height: 500px;
+}
+.mark, .map{
+	display: none;
+}
+.sites{
+	height: 1200px;
+}
+.section--site--caption{
+	font-size: 22px;
+}
+.sites .icons, footer .btn{
+	display: none;
+}
+.sites h2 b{
+	font-size: 14px;
 }
 }

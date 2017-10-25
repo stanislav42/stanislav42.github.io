@@ -1354,10 +1354,10 @@ footer .btn {
 }
 
 .logo--caption {
+    width: 100%;
     position: absolute;
     text-align: center;
     top: 45%;
-    left: 29%;
     font-size: 20px;
 }
 
