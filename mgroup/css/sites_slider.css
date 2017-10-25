@@ -196,9 +196,9 @@
 	bottom: 0;
 	margin: 0 40px 40px 0;
 	color: #fff;
-	border-radius: 50%;
+	border-radius: 20px;
 	cursor: pointer;
-	background: #b1d2ec url(../img/plus.png) no-repeat center;
+	background: #b1d2ec no-repeat center;
 	-webkit-transition: -webkit-transform 0.1s, background 0.1s, opacity 0.1s;
 	transition: transform 0.1s, background 0.1s, opacity 0.1s;
 	-webkit-transition-delay: 0.1s;
@@ -320,7 +320,18 @@ position: fixed;
 	background: none;
 	cursor: pointer;
 }
-
+@keyframes nexts {
+    50% {
+    -webkit-transform: translate3d(235px,-125px,0);
+	transform: translate3d(235px,-125px,0);
+    }
+}
+@keyframes prevs {
+    50% {
+    -webkit-transform: translate3d(-100%, 0, 0) translate3d(-205px,137px,0);
+	transform: translate3d(-100%, 0, 0) translate3d(-205px,137px,0);
+    }
+}
 .navbutton__line {
 	-webkit-transition: stroke 0.2s;
 	transition: stroke 0.2s;
@@ -335,11 +346,13 @@ position: fixed;
 }
 
 .navbutton--next {
+	animation: nexts 2s infinite;
 	-webkit-transform: translate3d(220px,-125px,0);
 	transform: translate3d(220px,-125px,0);
 }
 
 .navbutton--prev {
+	animation: prevs 2s infinite;
 	-webkit-transform: translate3d(-100%, 0, 0) translate3d(-220px,137px,0);
 	transform: translate3d(-100%, 0, 0) translate3d(-220px,137px,0);
 } /* +12 of difference */

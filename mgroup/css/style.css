@@ -531,6 +531,7 @@ header .number span {
 
 
 
+
 /* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
 
 @supports (object-fit: cover) {
@@ -1099,6 +1100,7 @@ footer .btn {
 
 
 
+
 /*МОДАЛЬНОЕ ОКНО НАЧАЛО*/
 
 .modal_background {
@@ -1202,6 +1204,7 @@ footer .btn {
 
 
 
+
 /*
 .clientPhone.error::-webkit-input-placeholder {color:red;}
 .clientPhone.error::-moz-placeholder          {color:red;}
@@ -1237,6 +1240,7 @@ footer .btn {
     left: 122px;
     top: 73px;
 }
+
 
 
 
@@ -1339,6 +1343,7 @@ footer .btn {
     position: relative;
     height: 90%;
 }
+
 .box--logo {
     position: absolute;
     width: 300px;
@@ -1347,6 +1352,7 @@ footer .btn {
     top: 24%;
     background-repeat: no-repeat;
 }
+
 .logo--caption {
     position: absolute;
     text-align: center;
@@ -1354,22 +1360,33 @@ footer .btn {
     left: 29%;
     font-size: 20px;
 }
+
 .box--one,
 .box--two,
 .box--three,
 .box--for {
-	padding-top: 5%;
+    padding-top: 5%;
     width: 49%;
     height: 435px;
     display: inline-block;
     box-sizing: border-box;
+    transition: all 1s;
 }
-.box--icon{
-	width: 20%;
+
+.box--one:hover,
+.box--two:hover,
+.box--three:hover,
+.box--for:hover {
+    transform: scale(1.05);
 }
-.box--caption{
-	font-size: 16px;
-	padding-left: 12%;	
+
+.box--icon {
+    width: 20%;
+}
+
+.box--caption {
+    font-size: 16px;
+    padding-left: 12%;
     padding-right: 12%;
     color: white;
 }
@@ -1390,66 +1407,122 @@ footer .btn {
     animation: faide--for 3s linear;
 }
 
+.logo--footer {
+    width: 70px;
+}
+
+
 @keyframes faide--one {
     0% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 0;
     }
     60% {
-    	transform: translate(60px,60px);
+        transform: translate(60px, 60px);
         opacity: 0;
-
     }
     100% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 1;
     }
 }
 
 @keyframes faide--two {
     0% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 0;
     }
-   70% {
-    	transform: translate(-60px,60px);
+    70% {
+        transform: translate(-60px, 60px);
         opacity: 0;
-
     }
     100% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 1;
     }
 }
 
 @keyframes faide--three {
     0% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 0;
     }
     80% {
-    	transform: translate(60px,-60px);
+        transform: translate(60px, -60px);
         opacity: 0;
-
     }
     100% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 1;
     }
 }
 
 @keyframes faide--for {
     0% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 0;
     }
     90% {
-    	transform: translate(-60px,-60px);
+        transform: translate(-60px, -60px);
         opacity: 0;
-
     }
     100% {
-    	transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         opacity: 1;
     }
+}
+
+.buttun__link {
+    background-image: url(../img/glare.svg);
+    background-position: -150%;
+    background-color: #b1d2ec;
+    animation: glare ease-in 4s infinite;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 0px #95b3ca;
+    position: relative;
+    transition: 0.5s all;
+}
+
+@keyframes glare {
+    45% {
+        background-position: 250%;
+    }
+    100% {
+        background-position: 1500%;
+    }
+}
+
+.action {
+    width: 240px;
+    height: 40px;
+    line-height: 30px;
+    background-color: #b1d2ec;
+    box-shadow: 0px 4px 0px #95b3ca;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.fa-plus {
+    font-style: normal!important;
+    color: #000;
+}
+
+@keyframes colors {
+    50% {
+    color: #b1d2ec;
+    }
+}
+.section--one-caption{
+   animation: colors 4s infinite ease-in-out; 
 }

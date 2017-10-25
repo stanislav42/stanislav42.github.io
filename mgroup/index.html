@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width">-->
     <title>Комплексная настройка контекстной рекламы от партнера Яндекс — MGroup</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/ficon.png" type="">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/sites_slider.css">
     <link rel="stylesheet" href="css/animate.css" media="all and (min-device-width: 768px)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media/320.css">
     <link rel="stylesheet" href="css/media/1200.css">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/decima_modal.js"></script>
@@ -27,6 +28,7 @@
     <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
     <script src="js/js-lib.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
     <script>
     new WOW().init();
     </script>
@@ -83,7 +85,7 @@
                 <b>пер. Охотский, дом 3</b>
             </div>
             <nav>
-                <ul>
+                <ul class="top__menu">
                     <li onclick="scroll_to_elem('reasons')">Наша сила</li>
                     <li onclick="scroll_to_elem('settings')">Как работают эксперты</li>
                     <li onclick="scroll_to_elem('command')">Команда</li>
@@ -108,7 +110,7 @@
                     <b>пер. Охотский, дом 3</b>
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="top__menu">
                         <li onclick="scroll_to_elem('reasons')">Наша сила</li>
                         <li onclick="scroll_to_elem('settings')">Как работают эксперты</li>
                         <li onclick="scroll_to_elem('command')">Команда</li>
@@ -130,37 +132,37 @@
                     <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
                 </div>
                 <div class="box--two">
-                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <img src="img/calendar.svg" alt="" class="box--icon">
                     <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
                 </div>
                 <div class="box--three">
-                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <img src="img/calendar.svg" alt="" class="box--icon">
                     <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
                 </div>
                 <div class="box--for">
-                	<img src="img/calendar.svg" alt="" class="box--icon">
+                    <img src="img/calendar.svg" alt="" class="box--icon">
                     <h4 class="box--caption">Агентство интернет-маркетинга Агентство интернет-маркетинга</h4>
                 </div>
             </div>
             <!--
-			<div class="logo"></div>
-			<div class="btn btn_title btn--trigger">Агентство интернет-маркетинга</div>
-			<div class="links">
-				<div class="campaign" onclick="scroll_to_elem('settings')">
-					<span>Рекламная кампания</span><br>настройка и ведение
-				</div>
-				<div class="websites" onclick="scroll_to_elem('sites')">
-					<span>Продающие сайты</span><br>создание и поддержка
-				</div>
-			</div> 
-			-->
+            <div class="logo"></div>
+            <div class="btn btn_title btn--trigger">Агентство интернет-маркетинга</div>
+            <div class="links">
+                <div class="campaign" onclick="scroll_to_elem('settings')">
+                    <span>Рекламная кампания</span><br>настройка и ведение
+                </div>
+                <div class="websites" onclick="scroll_to_elem('sites')">
+                    <span>Продающие сайты</span><br>создание и поддержка
+                </div>
+            </div> 
+            -->
             <div class="mouse" onclick="scroll_to_elem('clients')"></div>
         </div>
     </div>
     <div class="clients block" id="clients">
         <div class="wrap">
             <div class="line"></div>
-            <h1>Довольны нашей работой</h1>
+            <h1 class="revealator-slideup revealator-once">Довольны нашей работой</h1>
             <p>Уже более 70-ти клиентов</p>
         </div>
         <div class="logos">
@@ -206,7 +208,7 @@
         <div class="mask"></div>
         <div class="wrap">
             <div class="line"></div>
-            <h1>5 причин, ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС</h1>
+            <h1 class="section--one-caption revealator-slidedown revealator-once">5 причин, ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС</h1>
             <p>Наша сила - в знаниях, которыми обладают только избранные рекламные агентства</p>
             <div class="slider">
                 <div class="slide" step="1">
@@ -235,13 +237,13 @@
                     <p>Мы идем навстречу начинающим предпринимателям и тем компаниям, которые хотят протестировать свою новую нишу. Поэтому готовы предоставить рассрочку по оплате за наши услуги</p>
                 </div>
             </div>
-            <div class="btn" h1="Узнайте больше о преимуществах работы с нами" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Узнать больше">Узнать больше</div>
+            <div class="btn buttun__link" h1="Узнайте больше о преимуществах работы с нами" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Узнать больше">Узнать больше</div>
         </div>
     </div>
     <div class="settings block" id="settings">
         <div class="wrap">
             <div class="line"></div>
-            <h1>Настройка и ведение рекламы в интернете</h1>
+            <h1 class="revealator-slideleft revealator-once">Настройка и ведение рекламы в интернете</h1>
             <p>Яндекс.Директ, Google AdWords, MyTarget</p>
             <div class="laurels">
                 <div class="laurel wow fadeInUp"><b>19</b>
@@ -257,21 +259,21 @@
             <h2>Что мы будем делать</h2>
             <ul class="boolets">
                 <div class="top">
-                    <li><img src="img/settings_bool1.png"><b>Предварительный<br>Аудит</b>
+                    <li class="revealator-slideleft revealator-delay2 revealator-once"><img src="img/settings_bool1.png"><b>Предварительный<br>Аудит</b>
                         <br>Погружение в бизнес, анализ ниши, рынка, конкурентов</li>
-                    <li><img src="img/settings_bool2.png"><b>Внедрение<br>маркетинговой стратегии</b>
+                    <li class="revealator-slideleft revealator-delay3 revealator-once"><img src="img/settings_bool2.png"><b>Внедрение<br>маркетинговой стратегии</b>
                         <br>Подбор и настройка наиболее эффективных каналов для рекламы</li>
-                    <li><img src="img/settings_bool3.png"><b>PRO-разработка<br>рекламы</b>
+                    <li class="revealator-slideleft revealator-delay4 revealator-once"><img src="img/settings_bool3.png"><b>PRO-разработка<br>рекламы</b>
                         <br>Доскональная проработка при создании рекламных инструментов</li>
-                    <li><img src="img/settings_bool4.png"><b>Настройка доп.<br>маркетинговых инструментов</b>
+                    <li class="revealator-slideleft revealator-delay5 revealator-once"><img src="img/settings_bool4.png"><b>Настройка доп.<br>маркетинговых инструментов</b>
                         <br>Подключение счетчиков аналитики, колтрекинга, продающих скриптов</li>
                 </div>
                 <div class="bottom">
-                    <li><img src="img/settings_bool5.png"><b>Анализ показателей<br>эффективности</b>
+                    <li class="revealator-slideleft revealator-delay6 revealator-once"><img src="img/settings_bool5.png"><b>Анализ показателей<br>эффективности</b>
                         <br>Тщательная работа с системами аналитики</li>
-                    <li><img src="img/settings_bool6.png"><b>Исчерпывающая<br>отчётность</b>
+                    <li class="revealator-slideleft revealator-delay7 revealator-once"><img src="img/settings_bool6.png"><b>Исчерпывающая<br>отчётность</b>
                         <br>Предоставление детальных данных о потраченных средствах</li>
-                    <li><img src="img/settings_bool7.png"><b>Работа с готовыми<br>Рекламными кампаниями</b>
+                    <li class="revealator-slideleft revealator-delay8 revealator-once"><img src="img/settings_bool7.png"><b>Работа с готовыми<br>Рекламными кампаниями</b>
                         <br>Применение методов снижения стоимости затрат на рекламу, проведение А / В тестов и др.</li>
                 </div>
             </ul>
@@ -300,7 +302,7 @@
                     <div class="serts">
                         <a href="img/sert_mark.jpg" rel="lightbox"><img src="img/sert_mark.jpg"></a>
                     </div>
-                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Марком</div>
+                    <div class="btn buttun__link" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Марком</div>
                 </div>
                 <div class="slide" style="background: url(img/man1.png) no-repeat left bottom;">
                     <h3><b>Александр Черненко</b><br>Начальник отдела контекстной рекламы</h3>
@@ -322,7 +324,7 @@
                         <a href="img/sert_aleksandr.jpg" rel="lightbox"><img src="img/sert_aleksandr.jpg"></a>
                         <a href="img/sert_aleksandr2.jpg" rel="lightbox"><img src="img/sert_aleksandr2.jpg"></a>
                     </div>
-                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Александром</div>
+                    <div class="btn buttun__link" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Александром</div>
                 </div>
                 <div class="slide" style="background: url(img/girl1.png) no-repeat left bottom;">
                     <h3><b>Елена Громова</b><br>Специалист по настройке контекстной рекламы</h3>
@@ -345,7 +347,7 @@
                         <a href="img/sert_elena.jpg" rel="lightbox"><img src="img/sert_elena.jpg"></a>
                         <a href="img/sert_elena2.jpg" rel="lightbox"><img src="img/sert_elena2.jpg"></a>
                     </div>
-                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Еленой</div>
+                    <div class="btn buttun__link" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Еленой</div>
                 </div>
                 <div class="slide" style="background: url(img/girl2.png) no-repeat left bottom;">
                     <h3><b>Екатерина Старчикова</b><br>Специалист по настройке контекстной рекламы</h3>
@@ -367,7 +369,7 @@
                     <div class="serts">
                         <a href="img/sert_ekaterina.jpg" rel="lightbox"><img src="img/sert_ekaterina.jpg"></a>
                     </div>
-                    <div class="btn" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Екатериной</div>
+                    <div class="btn buttun__link" h1="Мы будет рады ответить на все ваши вопросы" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Проконсультироваться с Екатериной</div>
                 </div>
             </div>
         </div>
@@ -375,17 +377,17 @@
     <div class="layer block">
         <div class="wrap">
             <div class="line"></div>
-            <h1>Давайте мы рассчитаем стоимоcть</h1>
+            <h1 class="revealator-rotateleft revealator-once">Давайте мы рассчитаем стоимоcть</h1>
             <p>Вашей рекламной кампании</p>
             <form action='' method='POST' name='form' class="orderForm" id="cfCALL">
                 <input class="clientPhone" id="phone" placeholder="Введите Ваш номер телефона">
-                <input class="btn_cell orderSubmit btn" name="submit2" type="submit" value="Рассчитать стоимость" onclic="attrib=''" id="modalbtnchecscan">
+                <input class="btn_cell orderSubmit btn buttun__link" name="submit2" type="submit" value="Рассчитать стоимость" onclic="attrib=''" id="modalbtnchecscan">
                 <br>
                 <input type="checkbox" id="checkboxmodal1" onclick='if (document.getElementById("checkboxmodal1").checked) {document.getElementById("modalbtnchecscan").disabled = false;}else {document.getElementById("modalbtnchecscan").disabled = true;}' checked>
                 <p>Я даю согласие на обработку своих персональных данных и ознакомлен с
                     <br><a href="politic.html" target="_blank">политикой конфиденциальности</a></p>
             </form>
-            <div class="text">
+            <div class="text revealator-rotateright revealator-once">
                 <b>нужна реклама для теста новой ниши?<br>У нас есть для Вас специальные условия</b>
             </div>
         </div>
@@ -393,7 +395,7 @@
     <div class="sites block" id="sites">
         <div class="wrap">
             <div class="line"></div>
-            <h1>Чтобы реклама работала эффективнее,<br>Вам нужен продающий сайт</h1>
+            <h1 class="revealator-zoomout revealator-once">Чтобы реклама работала эффективнее,<br>Вам нужен продающий сайт</h1>
             <p>Мы являемся официальными партнерами компании DECIMA.DIGITAL MARKETING
                 <br>по разработке и поддержке высококонверсионных сайтов</p>
             <ul class="icons">
@@ -417,7 +419,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_voilok.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a href="http://voilokcafe.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=voilok" class="fa fa-plus">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -444,7 +446,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_sigma.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a href="http://sigmann.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=sigma" class="fa fa-plus">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -473,7 +475,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_kuhni.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a class="fa fa-plus" href="http://kuhen-morgen.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kuhni">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -500,7 +502,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_gx.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a href="http://s5.gxgroup.org/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=gxgroup" class="fa fa-plus">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -527,7 +529,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_beprint.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a href="http://beprint.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=beprint" class="fa fa-plus">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -554,7 +556,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_kraud.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><i class="fa fa-plus"></i></button>
+                            <button class="action action--open" aria-label="View details"><a href="http://decima.pro/kraud/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kraud" class="fa fa-plus">Посмотреть сайт</a></button>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -581,7 +583,7 @@
             <!-- Related demos -->
         </div>
         <!-- /container -->
-        <div class="btn" h1="Рассчитайте стоимость разработки сайта" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Рассчитать стоимость разработки сайта</div>
+        <div class="btn buttun__link" h1="Рассчитайте стоимость разработки сайта" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Рассчитать стоимость разработки сайта</div>
     </div>
     <div class="reviews block" id="reviews">
         <div class="wrap">
@@ -589,7 +591,7 @@
             <h1>Отзывы о нашей работе</h1>
             <p>Вы можете позвонить любому клиенту и убедиться лично</p>
             <div class="containe">
-                <div class="review">
+                <div class="review revealator-zoomout revealator-delay1">
                     <div class="photo" style="background-image:url(img/client_sotsnab.jpg);"></div>
                     <div class="info">
                         <h2>ООО «СотСнаб»</h2>
@@ -601,7 +603,7 @@
                         Пришли в данную компанию по рекомендации. На первых этапах проконсультировали по ведению контекстной рекламы. Далее начала работать, за 2 года существенно увеличили оборот и прибыль компании. Отдельное спасибо Марку или Елене за помощь и быструю связь!
                     </p>
                 </div>
-                <div class="review">
+                <div class="review revealator-zoomout revealator-delay2 ">
                     <div class="photo" style="background-image:url(img/client_svetlana.jpg);"></div>
                     <div class="info">
                         <h2>ИП Цыбанова С. Н.</h2>
@@ -613,7 +615,7 @@
                         Знаю Марка как ответственного и очень замороченного (в хорошем смысле) на рекламе человека. Уже 3 ниши рекламирую через него, показатели рекламы меня вполне устраивают. Бывает, даже, сам звонит и предлагает что-то изменить в торговых преждлоениях, или на сайте. Меняем - и отдача растёт! В общем я довольна сотрудничеством с Марком и его компанием MGroup.
                     </p>
                 </div>
-                <div class="review">
+                <div class="review revealator-zoomout revealator-delay3 ">
                     <div class="photo" style="background-image:url(img/client_artem.jpg);"></div>
                     <div class="info">
                         <h2>Артем Бабанский</h2>
@@ -628,24 +630,24 @@
                 <div class="clear"></div>
             </div>
             <!--<div class="containe_hidden">
-					<div class="review">
-						<div class="photo" style="background-image:url(img/client.png);"></div>
-						<div class="info">
-							<h2>Денис Иванов</h2>
-							<h3>Генеральный директор<br>ООО «Очконавт»</h3>
-							<h3 class="adress">г. Нижний Новгород<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a></h3>
-						</div>
-						<div class="clear"></div>
-						<p class="rev">
-							Мало заказать контекстную рекламу и выполнить настройку, нужно еще грамотно вести. Цель ведения – постоянное увеличение прибыли. Причём тут есть две стороны: если кампанию в контекстной рекламе остановить, то все показатели начнут уменьшаться. Если же продолжать ведение – они могут улучшаться либо оставаться стабильным. Под показателями мы понимаем не только CTR и цену за клик, но и многое другое: ROI, PPV, CV, количество отказов, возвраты на сайт, глубина просмотра и продолжительность визита и т. д. Ведение происходит за счёт аналитики трафика, распределения бюджета, А/Б тестов, оптимизации всех процессов.
-						</p>
-					</div>	
+                    <div class="review">
+                        <div class="photo" style="background-image:url(img/client.png);"></div>
+                        <div class="info">
+                            <h2>Денис Иванов</h2>
+                            <h3>Генеральный директор<br>ООО «Очконавт»</h3>
+                            <h3 class="adress">г. Нижний Новгород<br><a href="http://vk.com/den_ivan" target="_blank">http://vk.com/den_ivan</a></h3>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="rev">
+                            Мало заказать контекстную рекламу и выполнить настройку, нужно еще грамотно вести. Цель ведения – постоянное увеличение прибыли. Причём тут есть две стороны: если кампанию в контекстной рекламе остановить, то все показатели начнут уменьшаться. Если же продолжать ведение – они могут улучшаться либо оставаться стабильным. Под показателями мы понимаем не только CTR и цену за клик, но и многое другое: ROI, PPV, CV, количество отказов, возвраты на сайт, глубина просмотра и продолжительность визита и т. д. Ведение происходит за счёт аналитики трафика, распределения бюджета, А/Б тестов, оптимизации всех процессов.
+                        </p>
+                    </div>  
 
 
 
-					<div class="clear"></div>
-				</div>
-				<div class="btn all_reviews">Посмотреть больше отзывов</div>-->
+                    <div class="clear"></div>
+                </div>
+                <div class="btn all_reviews">Посмотреть больше отзывов</div>-->
         </div>
     </div>
     <div class="faq block">
@@ -662,7 +664,7 @@
                 <h2 class="question">Вы ведь сделаете мне 20 000 ключевиков? я в БМ смотрел</h2>
                 <p class="answer">Огромное количество ключевых слов далеко не всегда говорит о качестве настройки. Достаточный показатель ключевых слов для старта рекламной кампании - 3000. В процессе тестирования мы постепенно увеличиваем этот показатель.</p>
             </div>
-            <div class="btn" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
+            <div class="btn buttun__link" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
         </div>
     </div>
     <div class="map block" id="map">
@@ -679,15 +681,15 @@
         <div class="wrap">
             <div class="logo">
                 <a href="index.html">
-						<img src="img/logo_white.png">
-					</a>
+                        <img class="logo--footer" src="img/logo-white.svg">
+                    </a>
             </div>
             <div class="rekviz">
                 ООО «МГрупп»
                 <br> ОГРН 1145257005046
                 <br> ИНН: 5257147685 КПП 525701001
             </div>
-            <div class="btn" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
+            <div class="btn buttun__link" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
             <div class="decima">
                 <a href="http://decima.pro/?utm_source=drevodacha&utm_medium=banner&utm_campaign=klients&utm_term=mark" target="_blank" title="Разработка продающих страниц">
                     <h4>Сайт создан в</h4>
@@ -785,12 +787,12 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-	$('.reviews .containe').imagesLoaded(function() {
-		$('.reviews .containe').masonry({
-			gutter: 30,
-			itemSelector: '.review'
-		});
-	});
+    $('.reviews .containe').imagesLoaded(function() {
+        $('.reviews .containe').masonry({
+            gutter: 30,
+            itemSelector: '.review'
+        });
+    });
 });
 
 
