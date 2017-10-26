@@ -301,7 +301,7 @@ header .number span {
     background: #b1d2ec;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: auto;
     border-radius: 30px;
     position: relative;
@@ -370,7 +370,7 @@ header .number span {
 .title .links div span {
     display: inline-block;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border-bottom: 4px solid;
 }
@@ -451,7 +451,7 @@ header .number span {
 .reasons .slider h2 {
     font-size: 22px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-top: 25px;
 }
 
@@ -607,7 +607,7 @@ header .number span {
     margin-top: 80px;
     text-transform: uppercase;
     font-size: 22px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #1c2b3a;
 }
 
@@ -668,7 +668,7 @@ header .number span {
 .mark h2 {
     font-size: 22px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-top: 60px;
     color: #fff;
 }
@@ -861,7 +861,7 @@ input.clientPhone {
 .sites h2 b {
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .sites .btn {
@@ -989,7 +989,7 @@ input.clientPhone {
     color: #b1d2ec;
     margin-top: 40px;
     cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .faq h2:hover {
