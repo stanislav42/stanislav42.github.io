@@ -32,10 +32,58 @@
 .sites{
 	height: 1280px;
 }
-.sites .icons, footer .btn{
+.sites .icons, footer .btn, .settings .laurels{
 	display: none;
 }
 .section--site--caption{
 	font-size: 28px;
+}
+.slide__img{
+	margin: 0;
+}
+.slideshow{
+	margin-top: 150px;
+	width: 100%;
+}
+.sites .slideshow h2{
+	margin-top: 150px;
+}
+.settings .boolets li{
+	width: 25%;
+}
+.layer .text, .layer form, .sites .btn{
+width: 90%;	
+}
+.layer .text b{
+		font-size: 18px;	
+}
+.layer, .faq, .settings{
+	height: auto;
+	padding-bottom: 50px;
+}
+.orderSubmit{
+	margin-top: 20px;	
+}
+#checkboxmodal1{
+	opacity: 0;
+}
+.faq h2.question{
+	font-size: 16px;	
+	letter-spacing: 0px;
+	text-transform: none;
+	border-bottom: none;
+}
+.faq .containe{
+	height: auto;
+	padding-bottom: 20px;
+}
+.reasons .slider p {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.reasons .slider h2 {
+    font-size: 18px;
 }
 }
