@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) and (min-width: 321px) {
+@media only screen and (max-width: 320px) {
     .segmenter,
     html {
         min-width: 100%;
@@ -64,7 +64,7 @@
         width: 90%;
     }
     .layer .text b {
-        font-size: 18px;
+        font-size: 16px;
     }
     .layer,
     .faq,
@@ -113,6 +113,9 @@
     .sites h2 b, h1 {
         letter-spacing: 0px;
     }
+    .sites h2 b{
+        font-size: 14px;
+    }
     .faq .containe {
         margin-top: 20px;
     }
@@ -124,7 +127,7 @@
     	margin-top: 20px;	
     }
     .title{
-    	height: 650px;
+    	height: 580px;
     }
     .box--for{
 		animation: none;
@@ -134,15 +137,9 @@
     	top: 65%;
     }
     .title .mouse{
-    	margin-top: 20px;	
+    	margin-top: 0px;	
     }
-    .reviews .review .info{
-    	width: 180px;
-    }
-}
-
-@media only screen and (max-width: 400px) and (min-width: 321px) {
-    .sites .slideshow h2 {
+        .sites .slideshow h2 {
         margin-top: 100px;
     }
     .slide__img {
@@ -150,25 +147,34 @@
     }
     .reasons .btn {
     margin-top: 20px;
-    width: 325px;
+    width: 90%;
 }
 .reasons .slider {
     margin-top: 50px;
     height: 440px;
 }
  .reasons{
- 	height: 850px;
+    height: 850px;
  }
 .sites{
-        height: 900px;
+        height: 1150px;
     }
     .tel-link, .tel-link--top{
-    	font-size: 16px;
+        font-size: 16px;
     }
     .tel-link::before, .tel-link--top::before{
-    	top: 18px;
+        top: 18px;
     }
     header .number{
-    	font-size: 11px;
+        font-size: 11px;
+    }
+    .settings .boolets{
+        margin-top: 0px;
+    }
+    .reviews .review .info{
+        width: 120px;
+    }
+    .reviews .review .info h2{
+        letter-spacing: 0px;
     }
 }
