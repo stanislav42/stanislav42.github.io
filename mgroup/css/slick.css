@@ -272,7 +272,7 @@
 
 .reasons .slider .slick-prev:after {
     padding-left: 30px;
-    content: '№ 5'
+    content: '№ 4'
 }
 
 .reasons .slider .slick-prev[step="1"]:after,
@@ -293,9 +293,4 @@
 .reasons .slider .slick-prev[step="4"]:after,
 .reasons .slider .slick-next[step="4"]:after {
     content: '№ 4'
-}
-
-.reasons .slider .slick-prev[step="5"]:after,
-.reasons .slider .slick-next[step="5"]:after {
-    content: '№ 5'
 }

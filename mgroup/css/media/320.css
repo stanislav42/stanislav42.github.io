@@ -14,7 +14,7 @@
         margin: auto;
         margin-bottom: 20px;
     }
-    .top__menu {
+    .top__menu, .decstop {
         display: none;
     }
     .box--logo {
@@ -36,7 +36,7 @@
     .settings h2,
     .box--one,
     .box--two,
-    .box--three {
+    .box--three, .clients {
         display: none;
     }
     .sites {
@@ -183,5 +183,8 @@
     }
     .reviews .review .info h2 {
         letter-spacing: 0px;
+    }
+    .mobil{
+        display: block;
     }
 }

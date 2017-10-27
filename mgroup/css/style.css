@@ -1530,6 +1530,11 @@ footer .btn {
 .mobil{
     display: none;
 }
+.decstop{
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .decstop--box--wrapper{
     margin: auto;
     width: 630px;
@@ -1545,7 +1550,8 @@ footer .btn {
     font-size: 18px;
     width: 315px;
     text-align: left;
-    margin-left: 220px
+    margin-left: 220px;
+    font-weight: 300;
 }
 .decstop--box--caption{
     font-size: 28px;
@@ -1560,6 +1566,7 @@ footer .btn {
     text-align: right;
     margin-right: 220px;
     margin-left: 100px;
+    font-weight: 300;
 }
 .decstop--box--caption--right{
     font-size: 28px;
@@ -1567,7 +1574,29 @@ footer .btn {
     text-align: right;
     margin-right: 220px;
 }
-
+#wrapper-info{
+    top: -1050px;
+}
+#mask-info{
+        margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1200px;
+    background: url(../img/reasons_mask.png) no-repeat center;
+    background-size: cover;
+}
+#opt-info{
+        width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.section--one-caption--try{
+    font-size: 32px;
+}
 
 
 .decstop--box:nth-child(1){
