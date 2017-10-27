@@ -1524,5 +1524,61 @@ footer .btn {
     }
 }
 .section--one-caption{
+    font-size: 48px;
    animation: colors 4s infinite ease-in-out; 
+}
+.mobil{
+    display: none;
+}
+.decstop--box--wrapper{
+    margin: auto;
+    width: 630px;
+}
+.decstop--box{
+    width: 100%;
+    height: 165px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.decstop--box--text{
+    margin-top: 10px;
+    font-size: 18px;
+    width: 315px;
+    text-align: left;
+    margin-left: 220px
+}
+.decstop--box--caption{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 220px;
+}
+.decstop--box--text--right{
+    margin-top: 10px;
+    font-size: 18px;
+    width: 315px;
+    text-align: right;
+    margin-right: 220px;
+    margin-left: 100px;
+}
+.decstop--box--caption--right{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 220px;
+}
+
+
+
+.decstop--box:nth-child(1){
+    background: url(../img/infogr/1.svg);
+}
+.decstop--box:nth-child(2){
+    background: url(../img/infogr/2.svg);
+}
+.decstop--box:nth-child(3){
+    background: url(../img/infogr/3.svg);
+}
+.decstop--box:nth-child(4){
+    background: url(../img/infogr/4.svg);
 }

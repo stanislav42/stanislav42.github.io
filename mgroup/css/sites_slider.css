@@ -192,8 +192,7 @@
 
 .action--open {
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	bottom: 20px;
 	margin: 0 40px 40px 0;
 	color: #fff;
 	border-radius: 20px;

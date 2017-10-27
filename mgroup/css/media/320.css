@@ -28,11 +28,15 @@
         height: 500px;
     }
     .mark,
-    .map, footer .rekviz, .sites .icons,
+    .map,
+    footer .rekviz,
+    .sites .icons,
     footer .btn,
     .settings .laurels,
-    .settings h2, .box--one, .box--two, .box--three
-     {
+    .settings h2,
+    .box--one,
+    .box--two,
+    .box--three {
         display: none;
     }
     .sites {
@@ -99,7 +103,7 @@
     }
     .reasons .slider h2 {
         font-size: 18px;
-            margin-top: 70px;
+        margin-top: 70px;
     }
     .settings .boolets .top,
     .settings .boolets .bottom {
@@ -110,71 +114,74 @@
         background-size: cover;
     }
     .btn,
-    .sites h2 b, h1 {
+    .sites h2 b,
+    h1 {
         letter-spacing: 0px;
     }
-    .sites h2 b{
+    .sites h2 b {
         font-size: 14px;
     }
     .faq .containe {
         margin-top: 20px;
     }
-    .sites h2{
-    	margin-top: 50px;	
+    .sites h2 {
+        margin-top: 50px;
     }
-    .block h1+p{
-    	font-size: 16px;	
-    	margin-top: 20px;	
+    .block h1+p {
+        font-size: 16px;
+        margin-top: 20px;
     }
-    .title{
-    	height: 580px;
+    .title {
+        height: 580px;
     }
-    .box--for{
-		animation: none;
-		opacity: 0;
+    .box--for {
+        animation: none;
+        opacity: 0;
     }
-    .logo--caption{
-    	top: 65%;
+    .logo--caption {
+        top: 65%;
     }
-    .title .mouse{
-    	margin-top: 0px;	
+    .title .mouse {
+        margin-top: 0px;
     }
-        .sites .slideshow h2 {
+    .sites .slideshow h2 {
         margin-top: 100px;
     }
     .slide__img {
         width: 120%;
     }
     .reasons .btn {
-    margin-top: 20px;
-    width: 90%;
-}
-.reasons .slider {
-    margin-top: 50px;
-    height: 440px;
-}
- .reasons{
-    height: 850px;
- }
-.sites{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .reasons .slider {
+        margin-top: 50px;
+        height: 440px;
+    }
+    .reasons {
+        height: 850px;
+    }
+    .sites {
         height: 1150px;
     }
-    .tel-link, .tel-link--top{
+    .tel-link,
+    .tel-link--top {
         font-size: 16px;
     }
-    .tel-link::before, .tel-link--top::before{
+    .tel-link::before,
+    .tel-link--top::before {
         top: 18px;
     }
-    header .number{
+    header .number {
         font-size: 11px;
     }
-    .settings .boolets{
+    .settings .boolets {
         margin-top: 0px;
     }
-    .reviews .review .info{
+    .reviews .review .info {
         width: 120px;
     }
-    .reviews .review .info h2{
+    .reviews .review .info h2 {
         letter-spacing: 0px;
     }
 }
