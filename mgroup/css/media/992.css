@@ -24,7 +24,7 @@
 .map{
 	height: 500px;
 }
-.mark, .map{
+.mark, .map, .email--box{
 	display: none;
 }
 .sites{

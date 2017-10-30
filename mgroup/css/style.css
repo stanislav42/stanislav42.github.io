@@ -164,6 +164,9 @@ header.clone.active {
     left: 0;
     right: 0;
 }
+.adress--text, .logo--menu{
+    float: left;
+}
 
 .block {
     text-align: center;
@@ -1610,4 +1613,32 @@ footer .btn {
 }
 .decstop--box:nth-child(4){
     background: url(../img/infogr/4.svg);
+}
+
+
+/*                      SLIDER                         */
+.slider--email{
+    margin-top: 40px;
+}
+.email--box{
+    height: 435px;
+    background: #f5f6f4;
+}
+.slide--link:nth-child(1){
+    margin-left: 0px;
+}
+.slide--link{
+    margin-left: 40px;
+}
+.slide--img{
+    transform: scale(0.85);
+    transition: all 0.5s;
+}
+.slide--img:hover{
+    transform: scale(1);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
+}
+.logo--menu{
+    width: 50px;
+    margin-right: 10px;
 }
