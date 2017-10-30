@@ -31,9 +31,12 @@
     .map, footer .rekviz, .sites .icons,
     footer .btn,
     .settings .laurels,
-    .settings h2, .box--one, .box--two, .box--three, .clients
+    .settings h2, .box--one, .box--two, .box--three, .clients, .boolets
      {
         display: none;
+    }
+    .boolets--mobil{
+        display: block;
     }
     .sites {
         height: 1080px;

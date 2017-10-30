@@ -1527,7 +1527,7 @@ footer .btn {
     font-size: 48px;
    animation: colors 4s infinite ease-in-out; 
 }
-.mobil{
+.mobil, .boolets--mobil{
     display: none;
 }
 .decstop{

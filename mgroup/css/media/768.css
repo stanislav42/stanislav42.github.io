@@ -32,7 +32,7 @@
 .sites{
 	height: 1280px;
 }
-.sites .icons, footer .btn, .settings .laurels, .clients{
+.sites .icons, footer .btn, .settings .laurels, .clients, .boolets{
 	display: none;
 }
 .section--site--caption{
@@ -85,6 +85,9 @@ width: 90%;
 }
 .reasons .slider h2 {
     font-size: 18px;
+}
+	.boolets--mobil{
+	display: block;
 }
 }
 @media only screen and (max-width: 600px) and (min-width: 481px){
