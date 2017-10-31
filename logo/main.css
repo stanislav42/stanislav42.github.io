@@ -1,0 +1,25 @@
+#two{
+	display: none;
+}
+body{
+	background: url(title.jpg);
+	background-size: cover;
+}
+img{
+	cursor: pointer;
+	width: 500px;
+	position: absolute;
+}
+.imgbox{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -250px;
+}
+.caption{
+	text-align: center;
+	font-family: helvetica;
+	position: relative;
+	margin-top: 27%;
+	color: black;
+}
