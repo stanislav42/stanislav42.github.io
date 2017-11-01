@@ -1,0 +1,241 @@
+*{
+	padding: 0px;
+	margin: 0px;	
+	font-family: helvetica;
+}
+.animation-box{
+	height: auto;
+	width: 100%;
+	padding-top: 50px;	
+	padding-bottom: 50px;	
+	box-sizing: border-box;
+	background: url(bg.jpg);
+	background-size: cover;
+	display: table;
+}
+.animation-box--wrapper{
+	width: 700px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.animation-box--item{
+	display: inline-block;
+	float: left;
+	width: 200px;
+	height: auto;
+	box-sizing: border-box;
+	margin-left: 45px;	
+}
+.animation-box--item:nth-child(2){
+		margin-left: 0px;	
+}
+.item--image{
+	height: 240px;
+	border: solid 2px #b1d2ec;
+	position: relative;
+	box-shadow: 3px 3px 0px 0px #495f70;
+}
+.item--maska{
+	width: 100%;
+	height: 100%;
+	background-color: #c5c5c5;
+	opacity: 1;
+	transition: 1s;
+	position: absolute;
+}
+.item--maska:hover{
+	opacity: 0;
+}
+.animation-box--caption{
+	text-align: center;
+	margin-bottom: 60px;
+	color: white;	
+	font-size: 42px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.item--text{
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.item--image--one{
+	background-image: url(site.svg);
+	background-color:white; 
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 160px;
+	animation: sites 6s infinite ease;
+}
+.item--maska--one{
+	background-image: url(bw/site.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 160px;
+	animation: sites 6s infinite ease;
+}
+.item--image--two{
+	background: white;
+}
+.item--two-doc{
+	position: absolute;
+}
+.item--two-doc:nth-child(1){
+	width: 70px;
+	top: 40px;
+	left: 35px;
+	animation: docsOne infinite 6s ease;
+}
+.item--two-doc:nth-child(2){
+	width: 105px;
+	top: 100px;
+	left: 30px;
+	animation: docsTwo infinite 6s ease;
+}
+.item--two-doc:nth-child(3){
+	width: 185px;
+	top: 30px;
+	left: -15px;
+	animation: docsThree infinite 6s ease;
+}
+@keyframes docsOne{
+	40%{
+		transform: translate(-10px, -15px);
+	}
+	70%{
+		transform: translate(-10px, -15px);
+	}
+}
+
+@keyframes docsTwo{
+	40%{
+		transform: translate(60px, 0px) rotate(3deg);
+	}
+	70%{
+		transform: translate(60px, 0px) rotate(3deg);
+	}
+}
+@keyframes docsThree{
+	40%{
+		transform: translate(-10px, -0px);
+	}
+	70%{
+		transform: translate(-10px, -0px);
+	}
+}
+.item--image--three{
+	background-image: url(clouds.svg),
+					  url(clouds.svg);
+	background-color: #9de1ff;
+	background-repeat: no-repeat;
+	background-size: 30px, 40px, 25px, 30px;
+	animation: clouds 4s infinite ease;
+}
+.item--three-road{
+background: #afafaf;
+width: 100%;
+height: 40px;
+top: 130px;
+position: absolute;
+}
+.item--three-futer{
+	background: #91efab;
+	width: 100%;
+	position: absolute;
+	top: 170px;
+	height: 70px;
+}
+.item--car{
+	width: 150px;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	animation: cars 2s infinite;
+}
+.item--three-mountains{
+	background: url(mountain.svg);
+	width: 100%;
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    animation: mountss 3s infinite linear;
+   	background-size: 75px; 
+}
+
+.item--three-button{
+	height: 30px;
+	width: 120px;
+	background: #ff5454;
+	border-radius: 3px;
+	position: absolute;
+	left: 40px;
+	top: 190px;
+	box-shadow: 0px 3px 0px #a72929;
+	animation: buttons 2s infinite ease;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	box-sizing: border-box;
+	padding-top: 7px;
+}
+.item--three-button--mask{
+	background: #9e9e9e;
+	box-shadow: 0px 3px 0px #707070;	
+}
+.item--three-futer--mask{
+	background: #e5e5e5;
+}
+.item--three-mountains--mask{
+	background: url(bw/mountain.svg);
+	background-repeat: no-repeat;
+	background-size: 75px; 
+}
+
+@keyframes mountss{
+	0%{
+		background-position: 300px 55px; 
+		
+	}
+	100%{
+		background-position: -100px 55px; 
+	}
+}
+
+@keyframes buttons{
+	50%{
+		transform: translateY(3px);
+		box-shadow: 0px 0px 0px;
+	}
+}
+
+@keyframes cars{
+	50%{
+		transform: translateY(10px);
+	}
+}
+
+@keyframes sites{
+	0%{
+		background-position: 18px 10px; 
+		
+	}
+	50%{
+		background-position: 18px -220px; 
+	}
+	100%{
+		background-position: 18px 10px; 
+	}
+}
+
+@keyframes clouds{
+	0%{
+		background-position: 400px 60px, 260px 20px; 
+		
+	}
+	100%{
+		background-position: -100px 60px, -100px 20px; 
+	}
+}
