@@ -1823,9 +1823,10 @@ position: absolute;
 }
 .header-caption{
     color: white;
+    
     font-size: 62px;
     font-weight: 900;
-    text-shadow: 0px 2px 5px rgba(0, 1, 6, 0.15);
+    text-shadow: 0px 2px 5px rgba(0, 1, 6, 0.35);
 }
 .header--box{
     margin-top: 20px;
@@ -1853,6 +1854,7 @@ position: absolute;
     text-align: left;
     position: relative;
     display: block;
+    text-shadow: 0px 2px 2px rgba(0, 1, 6, 0.25);
 }
 .header--box-item{
     color: white;
