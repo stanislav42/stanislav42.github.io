@@ -188,7 +188,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 15px;
-        color: #253e4a;
+    color: #253e4a;
 }
 
 
@@ -404,7 +404,8 @@ header .number span {
 }
 
 .clients {
-    height: 370px;
+    height: auto;
+    padding-bottom: 60px;
     background: #eceeeb;
     color: #1c2b3a;
 }
@@ -519,7 +520,10 @@ header .number span {
 #home1 #bgvid {
     opacity: 0;
 }
-
+.clients-button{
+    margin-top: 20px;   
+    width: 150px;
+}
 @media (min-aspect-ratio: 16/9) {
     #video-box>video {
         height: 300%;
@@ -561,13 +565,14 @@ header .number span {
 
 
 .settings {
-    height: 1000px;
+    height: auto;
+    padding-bottom: 50px;
     background: url(../img/settings.jpg) no-repeat center;
     color: #1c2b3a;
 }
 
 .settings .laurels {
-    margin: 65px auto 0;
+    margin: 30px auto 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -610,11 +615,11 @@ header .number span {
 }
 
 .settings h2 {
-    margin-top: 80px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-size: 22px;
     letter-spacing: 2px;
-    color: #1c2b3a;
+    color: #253e4a;
 }
 
 .settings .boolets {
@@ -654,6 +659,7 @@ header .number span {
 .settings .boolets li b {
     text-transform: uppercase;
     font-size: 16px;
+    color: #253e4a;
 }
 
 
@@ -821,7 +827,12 @@ input.clientPhone {
     margin: 15px auto;
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.15);
     border-radius: 100px;
-    background: #fff;
+    background-image: url(../img/percentage.svg),
+                      url(../img/percentage.svg);
+    background-repeat: no-repeat;
+    background-size: 65px, 65px;
+    background-position: 5%, 95%;
+    background-color: #fff;
     font-size: 20px;
     font-weight: 300;
     color: #1c2b3a;
@@ -1109,7 +1120,9 @@ footer .btn {
     width: 260px;
     margin: 0;
 }
-
+.adress--text--footer{
+    color: white;
+}
 
 
 
@@ -1405,7 +1418,6 @@ footer .btn {
 .section--one-caption {
     font-size: 32px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
     color: white;
 }
 .section--site--caption, .faq h1{
@@ -1829,8 +1841,8 @@ footer .btn {
 .ytp-box {
     height: auto;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
     box-sizing: border-box;
     background-size: cover;
     display: table;
@@ -1838,7 +1850,7 @@ footer .btn {
 }
 
 .ytp-box--wrapper {
-    width: 850px;
+    width: 900px;
     box-sizing: border-box;
     margin: auto;
 }
@@ -1846,10 +1858,10 @@ footer .btn {
 .ytp-box--item {
     display: inline-block;
     float: left;
-    width: 250px;
+    width: 28%;
     height: auto;
     box-sizing: border-box;
-    margin-left: 45px;
+    margin-left: 8%;
 }
 
 .ytp-box--item:nth-child(2) {
@@ -1857,14 +1869,15 @@ footer .btn {
 }
 
 .ytp-box--item--image {
-    height: 240px;
-    border: solid 2px #b1d2ec;
+    width: 30%;
+    height: auto;
     position: relative;
+    margin: auto;
 }
 
 .ytp-box--caption {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     color: black;
     font-size: 32px;
     text-transform: uppercase;
@@ -1927,7 +1940,7 @@ footer .btn {
     font-size: 26px;
     font-weight: 600;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
     position: relative;
     display: block;
@@ -1937,7 +1950,7 @@ footer .btn {
 .header--box-item {
     color: white;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: left;
 }
 
@@ -1984,7 +1997,7 @@ footer .btn {
 }
 
 .brending-box--text {
-    font-size: 22;
+    font-size: 18px;
     width: 320px;
     color: #253e4a;
     text-align: left;
@@ -2001,8 +2014,7 @@ footer .btn {
     text-align: left;
 }
 .brending-box--item{
-    font-size: 22;
-
+    font-size: 18px;
     width: 320px;
     color: #253e4a;   
     line-height: 1.4;
@@ -2026,4 +2038,60 @@ footer .btn {
     background-repeat: no-repeat;
     background-position: 20% 0%, 90% 20%;
     background-size: 30%, 40%;
+}
+
+/*                      yandex                         */
+
+.yandex-sert-box{
+    margin: auto;
+    display: inline-block;
+    margin-top: 30px;   
+
+}
+.yandex-sert-box-text{
+    display: inline-block;
+    border-top: 1px solid #b1b1b1;
+    border-right: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+    font-size: 13px;
+    text-align: left;  
+    height: 55px;  
+    float: left;
+    padding-top: 11px;
+    padding-right: 20px;    
+    padding-left: 20px; 
+    font-weight: 600;  
+    color: black; 
+}
+.yandex-sert-box-red{
+    height: 55px;
+    width: 50px;
+    display: inline-block;
+    background-image: url(../img/iandeks.png);
+    background-size: 35%;
+    background-position: center;
+    background-color: red;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+/*                      ytp-box-two                         */
+
+.ytp-box-two{
+    margin: auto;
+    width: 75%;
+    height: 40px;
+    margin-top: 40px;   
+}
+.ytp-box-two--item{
+    width: 220px;
+    background: url(../img/bg-blok.svg);
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 13px;    
+    float: left;
+    color: white;
 }

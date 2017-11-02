@@ -19,6 +19,8 @@
 .box--logo{
 	left: 50%;
     margin-left: -150px;
+}.layer .text {
+	background-image: none;
 }
 #ymaps1508914223937195672{
 	display: none;
@@ -32,7 +34,7 @@
 .sites{
 	height: 1280px;
 }
-.sites .icons, footer .btn, .settings .laurels, .clients, .boolets , .email--box{
+.sites .icons, footer .btn, .settings .laurels, .clients, .boolets , .email--box, footer .rekviz{
 	display: none;
 }
 .section--site--caption{

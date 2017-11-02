@@ -1,13 +1,16 @@
 @media only screen and (max-width: 1600px) and (min-width: 1200px) {
 .brenging-box--image{
-    background-position: 10% 0%, 105% 25%;
-    background-size: 40%, 52%;
+    background-position: 10% 0%, 115% 25%;
+    background-size: 43%, 52%;
 }
 }
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 .segmenter, html{
 	min-width: 100%;
 	width: 100%;
+}
+.header-caption{
+	font-size: 50px;
 }
 .wrap{
 	width: 100%;
@@ -17,7 +20,7 @@
 .reviews .review{
 	width: 30%;
 }
-.top__menu{
+.top__menu, .header--box-caption--one::before, .header--box-caption--two::before{
 	display: none;
 }
 .box--logo{
@@ -30,8 +33,23 @@
 .map{
 	height: 500px;
 }
-.brenging-box--image{
-    background-position: -35% 0%, 115% 25%;
-    background-size: 60%, 52%;
+.header--box{
+	width: 33%!important;
 }
+.header--box-caption, .header--box-item{
+	text-align: center;
+}
+.brenging-box--image{
+    background-position: -35% 0%, 170% 30%;
+    background-size: 60%, 70%;
+}
+}
+@media only screen and (max-width: 1100px) and (min-width: 993px){
+	.header--box-caption{
+		font-size: 22px;
+	}
+	.header-caption{
+		font-size: 42px;
+	}
+
 }

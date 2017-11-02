@@ -34,7 +34,7 @@
 .section--site--caption{
 	font-size: 22px;
 }
-.sites .icons, footer .btn{
+.sites .icons, footer .btn, footer .rekviz{
 	display: none;
 }
 .sites h2 b{
