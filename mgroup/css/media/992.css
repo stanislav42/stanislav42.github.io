@@ -28,7 +28,8 @@
 	display: none;
 }
 .sites{
-	height: 1200px;
+	height: auto;
+    padding-bottom: 30px;
 }
 .section--site--caption{
 	font-size: 22px;

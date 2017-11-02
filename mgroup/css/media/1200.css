@@ -1,4 +1,10 @@
-      @media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+.brenging-box--image{
+    background-position: 10% 0%, 105% 25%;
+    background-size: 40%, 52%;
+}
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
 .segmenter, html{
 	min-width: 100%;
 	width: 100%;
@@ -23,5 +29,9 @@
 }
 .map{
 	height: 500px;
+}
+.brenging-box--image{
+    background-position: -35% 0%, 115% 25%;
+    background-size: 60%, 52%;
 }
 }
