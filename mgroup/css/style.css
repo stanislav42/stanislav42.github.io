@@ -522,7 +522,7 @@ header .number span {
 }
 .clients-button{
     margin-top: 20px;   
-    width: 150px;
+    width: 250px;
 }
 @media (min-aspect-ratio: 16/9) {
     #video-box>video {
@@ -568,6 +568,7 @@ header .number span {
     height: auto;
     padding-bottom: 50px;
     background: url(../img/settings.jpg) no-repeat center;
+    background-size: cover;
     color: #1c2b3a;
 }
 
@@ -1580,7 +1581,7 @@ footer .btn {
 }
 
 .animation-box--wrapper {
-    width: 700px;
+    width: 900px;
     box-sizing: border-box;
     margin: auto;
 }
@@ -1591,7 +1592,7 @@ footer .btn {
     width: 200px;
     height: auto;
     box-sizing: border-box;
-    margin-left: 45px;
+    margin-left: 16%;
 }
 
 .animation-box--item:nth-child(3) {
@@ -2080,18 +2081,38 @@ footer .btn {
 .ytp-box-two{
     margin: auto;
     width: 75%;
-    height: 40px;
+    height: 80px;
     margin-top: 40px;   
 }
 .ytp-box-two--item{
     width: 220px;
-    background: url(../img/bg-blok.svg);
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    padding-top: 11px;
     font-size: 13px;    
     float: left;
     color: white;
+}
+.ytp-box-two--list{
+    margin-left: -20px; 
+    margin-top: 60px;   
+}
+.ytp-box-two--list-item{
+    text-align: center;
+    font-size: 14px;
+    color: #253e4a;
+
+}
+.ytp-box-two--item:nth-child(1){
+    background-image: url(../img/ytp/2.png);
+}
+.ytp-box-two--item:nth-child(2){
+    background-image: url(../img/ytp/1.png);
+}
+.ytp-box-two--item:nth-child(3){
+    background-image: url(../img/ytp/3.png);
+}
+.ytp-box-two--item:nth-child(4){
+    background-image: url(../img/ytp/4.png);
 }
