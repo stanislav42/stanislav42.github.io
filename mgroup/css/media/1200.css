@@ -4,6 +4,18 @@
     background-size: 43%, 52%;
 }
 }
+@media only screen and (max-width: 1380px) and (min-width: 1200px){
+.title{
+	height: 780px;
+}
+.header--logo {
+    margin-top: 8%;
+    width: 25%;
+}
+.title .mouse{
+	    margin: 100px auto 0;
+}
+}
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 .segmenter, html{
 	min-width: 100%;
