@@ -2111,12 +2111,12 @@ footer .btn {
 
 .ytp-box-two{
     margin: auto;
-    width: 75%;
+    width: 85%;
     height: 80px;
     margin-top: 40px;   
 }
 .ytp-box-two--item{
-    width: 220px;
+    width: 25%;
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2132,7 +2132,6 @@ footer .btn {
     text-align: center;
     font-size: 14px;
     color: #253e4a;
-
 }
 .ytp-box-two--item:nth-child(1){
     background-image: url(../img/ytp/2-2.png);

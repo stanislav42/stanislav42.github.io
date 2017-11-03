@@ -3,7 +3,7 @@
 	min-width: 100%;
 	width: 100%;
 }
-.wrap{
+.wrap, .ytp-box-two{
 	width: 100%;
     padding-left: 2%;
     padding-right: 2%;
@@ -34,7 +34,7 @@
 .sites{
 	height: 1280px;
 }
-.sites .icons, footer .btn, .settings .laurels, .clients, .boolets , .email--box, footer .rekviz{
+.sites .icons, footer .btn, .settings .laurels, .clients, .boolets , .email--box, footer .rekviz, .header--box{
 	display: none;
 }
 .section--site--caption{
@@ -90,6 +90,11 @@ width: 90%;
 }
 	.boolets--mobil{
 	display: block;
+}
+.brenging-box--image{
+	opacity: 0.3;
+    background-position: -375% 0%, 270% 40%;
+    background-size: 100%, 100%;
 }
 }
 @media only screen and (max-width: 600px) and (min-width: 481px){
