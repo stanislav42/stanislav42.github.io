@@ -2,6 +2,6 @@
 $('.reasons .slider').slick();
 $('.mark .slider').slick();
 $('.clients .slider').slick({
-	arrows: false,
+	arrows: true,
 	autoplay: true
 });

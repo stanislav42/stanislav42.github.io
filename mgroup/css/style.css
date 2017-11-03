@@ -570,6 +570,7 @@ header .number span {
     background: url(../img/settings.jpg) no-repeat center;
     background-size: cover;
     color: #1c2b3a;
+    box-shadow: inset 0 7px 7px  -7px #333;
 }
 
 .settings .laurels {
@@ -777,6 +778,7 @@ header .number span {
     padding-bottom: 45px;
     background: #f5f6f4;
     color: #1c2b3a;
+    box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
 .layer form {
@@ -1033,6 +1035,7 @@ input.clientPhone {
 
 .map {
     height: 720px;
+    box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
 .map h1 {
@@ -1536,6 +1539,10 @@ footer .btn {
 .email--box {
     height: 435px;
     background: #f5f6f4;
+    box-shadow: inset 0 -7px 7px  -7px #333;
+}
+.email--box h1{
+    font-size: 22px;
 }
 
 .slide--link:nth-child(1) {
@@ -1848,6 +1855,7 @@ footer .btn {
     background-size: cover;
     display: table;
     background: #f5f6f4;
+    box-shadow: inset 0 7px 7px  -7px #333;
 }
 
 .ytp-box--wrapper {
@@ -1870,7 +1878,7 @@ footer .btn {
 }
 
 .ytp-box--item--image {
-    width: 30%;
+    width: 40%;
     height: auto;
     position: relative;
     margin: auto;
@@ -1988,6 +1996,7 @@ footer .btn {
     box-sizing: border-box;
     background-image: url(../img/brending.jpg);
     position: relative;
+    box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
 .brending-box--wrapper {
@@ -2046,9 +2055,30 @@ footer .btn {
 .yandex-sert-box{
     margin: auto;
     display: inline-block;
-    margin-top: 30px;   
+    margin-top: 30px;  
+    position: relative; 
 
 }
+.yandex-sert-box::after{
+    content: 'Ссылка на сертификат'; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 25%;
+    top: -55%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,255,0.8); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    transition: all 0.3s;
+    opacity: 0;
+    box-shadow: 2px 2px 0px 0px #495f70;
+}
+.yandex-sert-box:hover::after {
+    left: 25%;
+    top: -40%; /* Положение подсказки */
+    opacity: 1;
+   }
 .yandex-sert-box-text{
     display: inline-block;
     border-top: 1px solid #b1b1b1;
@@ -2095,7 +2125,6 @@ footer .btn {
     color: white;
 }
 .ytp-box-two--list{
-    margin-left: -20px; 
     margin-top: 60px;   
 }
 .ytp-box-two--list-item{
@@ -2105,14 +2134,14 @@ footer .btn {
 
 }
 .ytp-box-two--item:nth-child(1){
-    background-image: url(../img/ytp/2.png);
+    background-image: url(../img/ytp/2-2.png);
 }
 .ytp-box-two--item:nth-child(2){
-    background-image: url(../img/ytp/1.png);
+    background-image: url(../img/ytp/1-2.png);
 }
 .ytp-box-two--item:nth-child(3){
-    background-image: url(../img/ytp/3.png);
+    background-image: url(../img/ytp/3-2.png);
 }
 .ytp-box-two--item:nth-child(4){
-    background-image: url(../img/ytp/4.png);
+    background-image: url(../img/ytp/4-2.png);
 }
