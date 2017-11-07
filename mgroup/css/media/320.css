@@ -14,7 +14,8 @@
         margin: auto;
         margin-bottom: 20px;
     }
-    .top__menu, .decstop {
+    .top__menu,
+    .decstop {
         display: none;
     }
     .box--logo {
@@ -36,10 +37,16 @@
     .settings h2,
     .box--one,
     .box--two,
-    .box--three, .clients, .boolets, .email--box, .adress--text {
+    .box--three,
+    .clients,
+    .boolets,
+    .email--box,
+    .adress--text,
+    .tire,
+    .header--box {
         display: none;
     }
-    .boolets--mobil{
+    .boolets--mobil {
         display: block;
     }
     .sites {
@@ -187,7 +194,82 @@
     .reviews .review .info h2 {
         letter-spacing: 0px;
     }
-    .mobil{
+    .mobil {
         display: block;
+    }
+    .animation-box--item,
+    .animation-box--item:nth-child(3) {
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .item--image {
+        width: 200px;
+        margin: auto;
+    }
+    .ytp-box--item--image {
+        width: 30%;
+    }
+    .ytp-box--item {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .ytp-box--item--text {
+        font-size: 16px;
+    }
+    .brending-box--caption,
+    .brending-box--text,
+    .brending-box--item:nth-child(1),
+    .brending-box--item,
+    .brending-box--button {
+        width: 100%;
+        text-align: center;
+    }
+    .brending-box--wrapper {
+        left: auto;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+    .ytp-box--wrapper,
+    .animation-box--wrapper {
+        width: 90%;
+    }
+    .sites {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .ytp-box-two--item {
+        width: 50%;
+        padding-top: 30px;
+        height: 100px;
+    }
+    .ytp-box-two--item {
+        width: 100%;
+        padding-top: 50px;
+        height: auto;
+    }
+    h1,
+    .section--one-caption--try,
+    .animation-box--caption,
+    .brending-box--caption,
+    .section--site--caption,
+    .ytp-box--caption,
+    .header-caption {
+        font-size: 22px;
+    }
+    .layer .text, .brenging-box--image{
+        background-image: none;
+    }
+    .header--logo {
+        margin-top: 30%;
+        width: 60%;
+    }
+    .title .mouse {
+        margin: 100px auto 0;
+    }
+    .btn {
+        font-size: 14px;
     }
 }

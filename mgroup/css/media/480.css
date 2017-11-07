@@ -14,7 +14,8 @@
         margin: auto;
         margin-bottom: 20px;
     }
-    .top__menu, .decstop {
+    .top__menu,
+    .decstop {
         display: none;
     }
     .box--logo {
@@ -28,14 +29,24 @@
         height: 500px;
     }
     .mark,
-    .map, footer .rekviz, .sites .icons,
+    .map,
+    footer .rekviz,
+    .sites .icons,
     footer .btn,
     .settings .laurels,
-    .settings h2, .box--one, .box--two, .box--three, .clients, .boolets, .email--box, .adress--text
-     {
+    .settings h2,
+    .box--one,
+    .box--two,
+    .box--three,
+    .clients,
+    .boolets,
+    .email--box,
+    .adress--text,
+    .header--box,
+    .tire {
         display: none;
     }
-    .boolets--mobil{
+    .boolets--mobil {
         display: block;
     }
     .sites {
@@ -102,7 +113,7 @@
     }
     .reasons .slider h2 {
         font-size: 18px;
-            margin-top: 70px;
+        margin-top: 70px;
     }
     .settings .boolets .top,
     .settings .boolets .bottom {
@@ -113,37 +124,109 @@
         background-size: cover;
     }
     .btn,
-    .sites h2 b, h1 {
+    .sites h2 b,
+    h1 {
         letter-spacing: 0px;
     }
     .faq .containe {
         margin-top: 20px;
     }
-    .sites h2{
-    	margin-top: 50px;	
+    .sites h2 {
+        margin-top: 50px;
     }
-    .block h1+p{
-    	font-size: 16px;	
-    	margin-top: 20px;	
+    .block h1+p {
+        font-size: 16px;
+        margin-top: 20px;
     }
-    .title{
-    	height: 650px;
+    .title {
+        height: 650px;
     }
-    .box--for{
-		animation: none;
-		opacity: 0;
+    .box--for {
+        animation: none;
+        opacity: 0;
     }
-    .logo--caption{
-    	top: 65%;
+    .logo--caption {
+        top: 65%;
     }
-    .title .mouse{
-    	margin-top: 20px;	
+    .title .mouse {
+        margin-top: 20px;
     }
-    .reviews .review .info{
-    	width: 180px;
+    .reviews .review .info {
+        width: 180px;
     }
-    .mobil{
-    	display: block;
+    .mobil {
+        display: block;
+    }
+    .animation-box--item,
+    .animation-box--item:nth-child(3) {
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .item--image {
+        width: 200px;
+        margin: auto;
+    }
+    .ytp-box--item--image {
+        width: 30%;
+    }
+    .ytp-box--item {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .ytp-box--item--text {
+        font-size: 18px;
+    }
+    .brending-box--caption,
+    .brending-box--text,
+    .brending-box--item:nth-child(1),
+    .brending-box--item,
+    .brending-box--button {
+        width: 100%;
+        text-align: center;
+    }
+    .brending-box--wrapper {
+        left: auto;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+    .ytp-box--wrapper,
+    .animation-box--wrapper {
+        width: 90%;
+    }
+    .sites {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .ytp-box-two--item {
+        width: 50%;
+        padding-top: 30px;
+        height: 100px;
+    }
+    .layer .text {
+        background-image: none;
+    }
+    h1,
+    .section--one-caption--try,
+    .animation-box--caption,
+    .brending-box--caption,
+    .section--site--caption,
+    .ytp-box--caption,
+    .header-caption {
+        font-size: 22px;
+    }
+    .brenging-box--image {
+        background-position: -1300% 0%, 550% 70%;
+        background-size: 94%, 90%;
+    }
+    .header--logo {
+        margin-top: 30%;
+        width: 60%;
+    }
+    .title .mouse {
+        margin: 100px auto 0;
     }
 }
 
@@ -155,26 +238,33 @@
         width: 120%;
     }
     .reasons .btn {
-    margin-top: 20px;
-    width: 325px;
+        margin-top: 20px;
+        width: 325px;
+    }
+    .reasons .slider {
+        margin-top: 50px;
+        height: 440px;
+    }
+    .reasons {
+        height: 850px;
+    }
+    .tel-link,
+    .tel-link--top {
+        font-size: 16px;
+    }
+    .tel-link::before,
+    .tel-link--top::before {
+        top: 18px;
+    }
+    header .number {
+        font-size: 11px;
+    }
 }
-.reasons .slider {
-    margin-top: 50px;
-    height: 440px;
-}
- .reasons{
- 	height: 850px;
- }
-.sites{
-        height: 1050px;
-    }
-    .tel-link, .tel-link--top{
-    	font-size: 16px;
-    }
-    .tel-link::before, .tel-link--top::before{
-    	top: 18px;
-    }
-    header .number{
-    	font-size: 11px;
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+    .ytp-box-two--item {
+        width: 100%;
+        padding-top: 50px;
+        height: auto;
     }
 }
