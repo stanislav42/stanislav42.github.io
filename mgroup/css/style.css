@@ -1906,7 +1906,9 @@ footer .btn {
 
 
 /*                     header                         */
-
+.header-caption-ab{
+    display: none;
+}
 .header--logo {
     margin-top: 13%;
     width: 30%;
@@ -1955,6 +1957,11 @@ footer .btn {
     position: relative;
     display: block;
     text-shadow: 0px 2px 2px rgba(0, 1, 6, 0.25);
+    cursor: pointer;
+    transition: all 1s;
+}
+.header--box-caption:hover{
+    text-shadow: 0px 2px 2px rgba(0, 2, 7, 0.45);
 }
 
 .header--box-item {
@@ -1972,7 +1979,8 @@ footer .btn {
     content: "";
     left: 102%;
     top: 10px;
-    border-radius: 7px
+    border-radius: 7px;
+    cursor: auto;
 }
 
 .header--box-caption--one::before {
@@ -1984,6 +1992,7 @@ footer .btn {
     content: "";
     left: 107%;
     top: 10px;
+    cursor: auto;
 }
 
 

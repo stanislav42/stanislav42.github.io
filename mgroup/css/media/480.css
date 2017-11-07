@@ -43,7 +43,7 @@
     .email--box,
     .adress--text,
     .header--box,
-    .tire {
+    .tire, .layer .text {
         display: none;
     }
     .boolets--mobil {
@@ -213,10 +213,16 @@
     .animation-box--caption,
     .brending-box--caption,
     .section--site--caption,
-    .ytp-box--caption,
-    .header-caption {
+    .ytp-box--caption {
         font-size: 22px;
     }
+
+    .header-caption{
+        font-size: 28px;
+    }
+    .header-caption-ab{
+    display: block;
+}
     .brenging-box--image {
         background-position: -1300% 0%, 550% 70%;
         background-size: 94%, 90%;
@@ -228,6 +234,9 @@
     .title .mouse {
         margin: 100px auto 0;
     }
+    .ytp-box-two{
+    margin-top: 0px;   
+}
 }
 
 @media only screen and (max-width: 400px) and (min-width: 321px) {
@@ -266,5 +275,8 @@
         width: 100%;
         padding-top: 50px;
         height: auto;
+    }
+    .header-caption{
+        font-size: 24px;
     }
 }

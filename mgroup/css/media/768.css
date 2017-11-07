@@ -136,11 +136,18 @@
         text-align: center;
     }
     .header-caption{
-    	font-size: 30px;
+    	font-size: 38px;
     }
     .header--logo{
     	width: 50%;
     }
+    .title {
+    height: 750px;
+}
+.header-caption-ab{
+	display: block;
+}
+
 }
 
 @media only screen and (max-width: 700px) and (min-width: 481px) {
@@ -180,5 +187,8 @@
     }
     .header--logo{
     	margin-top: 20%;
+    }
+    .header-caption{
+    	font-size: 34px;
     }
 }
