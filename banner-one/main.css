@@ -376,32 +376,46 @@ a {
     }
 
 }
+.arrow-list{
+	position: absolute;
+	left: 53%;
+	margin-left: -25%;
+	width: 100px;
+	animation: fide-five 10s infinite;	
+	top: -1000%;
+}
 @keyframes fide-five {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(-20px);
+        top:-5%;
     }
 
-    75% {
+    70% {
         opacity: 0;
         transform: translateY(-20px);
+        top:-5%;
     }
 
     76%{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(-10px);
+        top:-5%;
     }
 
     90%{
         opacity: 1;
         transform: translateY(0px);
+        top:-5%;
     }
 
     95% {
         opacity: 0;
+        top:-5%;
     }
     100% {
         opacity: 0;
+        top:-5%;
     }
 
 }
@@ -422,6 +436,7 @@ a {
   display: inline-block;
   opacity: 0.5;
 }
+
 .arrow,
 .arrow:before {
   position: absolute;;
