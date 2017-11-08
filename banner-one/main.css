@@ -13,8 +13,9 @@ a {
 	position: absolute;
 	height: 400px;
 	width: 240px;
-	opacity: 0.8;
+	opacity: 0.4;
 	animation: fide-six 10s infinite;
+	z-index: 1;
 }
 @keyframes fide-six {
     0% {
@@ -57,6 +58,7 @@ a {
     width: 240px;
     height: 85px;
     animation: fide-one 10s infinite;
+    z-index: 100;
 }
 
 .top__logo {
@@ -81,6 +83,11 @@ a {
     margin-left: 35px;
     list-style-type: none;
     display: table;
+
+}
+.list-box{
+	position: relative;
+	z-index: 100;
 }
 
 .list-item {
@@ -137,7 +144,7 @@ a {
     border-radius: 100%;
     -webkit-animation: pulse 2s infinite ease-in-out;
     animation: pulse 2s infinite ease-in-out;
-    left: -9px;
+    left: -90px;
 }
 
 .span:before {
@@ -157,6 +164,7 @@ a {
 @-webkit-keyframes pulse {
     0% {
         transform: scale(0);
+        left: -9px;
     }
     50% {
         transform: scale(1);
@@ -164,12 +172,15 @@ a {
     100% {
         transform: scale(1);
         opacity: 0;
+        left: -9px;
+
     }
 }
 
 @keyframes pulse {
     0% {
         transform: scale(0);
+        left: -9px;
     }
     50% {
         transform: scale(1);
@@ -177,6 +188,7 @@ a {
     100% {
         transform: scale(1);
         opacity: 0;
+        left: -9px;
     }
 }
 
@@ -210,6 +222,7 @@ a {
     font-size: 14px;
     transition: all 0.5s;
     animation: fide-one 10s infinite;
+       	z-index: 100;
 }
 .main__bottom:hover{
 	box-shadow: none;
