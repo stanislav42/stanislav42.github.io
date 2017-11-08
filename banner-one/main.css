@@ -79,7 +79,7 @@ a {
     margin-left: 14px;
     width: 212px;
     float: left;
-    margin-top: 14px;
+    margin-top: 15px;
     z-index: 100;
 }
 
@@ -376,46 +376,35 @@ a {
     }
 
 }
-.arrow-list{
+.arrow-hide{
 	position: absolute;
-	left: 53%;
-	margin-left: -25%;
-	width: 100px;
 	animation: fide-five 10s infinite;	
-	top: -1000%;
+	background-repeat: no-repeat;
+	left: -100%;
+	top: 40%;
+	transform-origin: 0% 100%;
 }
 @keyframes fide-five {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
-        top:-5%;
     }
 
     70% {
         opacity: 0;
-        transform: translateY(-20px);
-        top:-5%;
-    }
-
-    76%{
-        opacity: 1;
-        transform: translateY(-10px);
-        top:-5%;
+        transform: rotate(-60deg);
     }
 
     90%{
         opacity: 1;
-        transform: translateY(0px);
-        top:-5%;
+        transform: rotate(0deg);
     }
 
     95% {
         opacity: 0;
-        top:-5%;
     }
     100% {
         opacity: 0;
-        top:-5%;
+        left: 2%;
     }
 
 }
@@ -430,8 +419,8 @@ a {
   -webkit-transform: rotate(135deg);
   border-left: none;
   border-top: none;
-  border-right: 1px #000 solid;
-  border-bottom: 1px #000 solid;
+  border-right: 1px #253e4a solid;
+  border-bottom: 1px #253e4a solid;
   z-index: 110;
   display: inline-block;
   opacity: 0.5;
@@ -452,8 +441,8 @@ a {
   margin: -10px 0 0 -3px;
   border-left: none;
   border-top: none;
-  border-right: 1px #000 solid;
-  border-bottom: 1px #000 solid;
+  border-right: 1px #253e4a solid;
+  border-bottom: 1px #253e4a solid;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: arrow;
@@ -477,12 +466,12 @@ a {
 
 @keyframes arrowss {
     50% {
-        transform: translateX(-1px) rotate(135deg);
+        transform: translateX(-2px) rotate(135deg);
     }
 }
 
 @keyframes arrowss-two {
     50% {
-        transform: translateX(1px) rotate(-45deg);
+        transform: translateX(2px) rotate(-45deg);
     }
 }
