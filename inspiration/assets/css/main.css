@@ -39,6 +39,7 @@
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
+    font-family: Roboto-Regular;
 }
 
 .navigation__list-item {
@@ -52,7 +53,7 @@
 }
 
 .navigation__list-item {
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 .navigation__list-item:nth-child(1) {
@@ -83,6 +84,8 @@
     font-size: 72px;
     color: white;
     margin-bottom: 30px;
+    font-family: Roboto-Bold;
+    letter-spacing: 0.5px;
 }
 
 .header__subtitle {
@@ -90,17 +93,22 @@
     font-weight: 100;
     color: white;
     margin-bottom: 10px;
+    font-family: Roboto-Light;
 }
 
 .header__button {
-    width: 200px;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid white;
     display: inline-block;
     color: white;
     text-decoration: none;
     transition: all 1s;
+    font-size: 18px;
+    font-family: Roboto-light;
 }
 
 .header__button:hover {
