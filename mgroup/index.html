@@ -91,7 +91,7 @@
             <nav>
                 <ul class="top__menu">
                     <li onclick="scroll_to_elem('settings')">Реклама</li>
-                    <li onclick="scroll_to_elem('command')">Оцифровка</li>
+                    <li onclick="scroll_to_elem('ytp-box')">Оцифровка</li>
                     <li onclick="scroll_to_elem('animation-box')">Упаковка</li>
                     <li onclick="scroll_to_elem('reviews')">Отзывы</li>
                     <li onclick="scroll_to_elem('map')">Контакты</li>
@@ -103,7 +103,8 @@
             </div>
         </div>
     </header>
-    <div class="title block">
+    <div class="button--up clone" onclick="scroll_to_elem('title')"></div>
+    <div class="title block" id="title">
         <div class="segmenter" style="background-image: url(img/title-2.jpg)"></div>
         <div class="wrap">
             <header class="header">
@@ -157,6 +158,7 @@
                     <li class="header--box-item">Дизайн полиграфии</li>
                 </ul>
             </div>
+            <div class="btn buttun__link buttun__link--header" h1="Рассчитайте стоимость разработки сайта" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Рассчитать стоимость разработки&#160;сайта</div>
             <!--
             <div class="logo"></div>
             <div class="btn btn_title btn--trigger">Агентство интернет-маркетинга</div>
@@ -176,7 +178,7 @@
         <div class="wrap">
             <div class="line"></div>
             <h1 class="revealator-slideup revealator-once">Довольны нашей работой</h1>
-            <p>Уже более 140-ти клиентов</p>
+            <p>Уже более 140-ка клиентов</p>
             <div class="clients-button btn buttun__link" onclick="scroll_to_elem('reviews')">перейти к отзывам</div>
         </div>
         <div class="logos">
@@ -318,38 +320,33 @@
                         <li class="ytp-box-two--list-item">Торговые площадки</li>
                     </ul>
                 </div>
-                <div class="ytp-box-two--item revealator-slideleft revealator-delay3 revealator-once">
-                    <ul class="ytp-box-two--list">
-                        <li class="ytp-box-two--list-item">Торговые площадки</li>
-                    </ul>
-                </div>
-                <div class="ytp-box-two--item revealator-slideleft revealator-delay4 revealator-once">
-                    <ul class="ytp-box-two--list">
-                        <li class="ytp-box-two--list-item">Ретаргетинг в соц сетях</li>
-                        <li class="ytp-box-two--list-item"></li>
-                        <li class="ytp-box-two--list-item"></li>
-                    </ul>
-                </div>
             </div>
             <h2>Берём на себя</h2>
             <ul class="boolets boolets--mobil">
                 <div class="top">
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool1.png"><b>Предварительный<br>Аудит</b>
-                        <br></li>
+                        <br>
+                    </li>
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool2.png"><b>Внедрение<br>маркетинговой стратегии</b>
-                        <br></li>
+                        <br>
+                    </li>
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool3.png"><b>PRO-разработка<br>рекламы</b>
-                        <br></li>
+                        <br>
+                    </li>
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool4.png"><b>Настройка доп.<br>маркетинговых инструментов</b>
-                        <br></li>
+                        <br>
+                    </li>
                 </div>
                 <div class="bottom">
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool5.png"><b>Анализ показателей<br>эффективности</b>
-                        <br></li>
+                        <br>
+                    </li>
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool6.png"><b>Исчерпывающая<br>отчётность</b>
-                        <br></li>
+                        <br>
+                    </li>
                     <li class="revealator-slideleft revealator-once"><img src="img/settings_bool7.png"><b>Работа с готовыми<br>Рекламными кампаниями</b>
-                        <br></li>
+                        <br>
+                    </li>
                 </div>
             </ul>
             <ul class="boolets">
@@ -489,8 +486,8 @@
                 <p>Я даю согласие на обработку своих персональных&#160;данных&#160;и&#160;ознакомлен
                     <br><a href="politic.html" target="_blank">с&#160;политикой конфиденциальности</a></p>
             </form>
-            <div class="text">
-                <b>Нужна не только интернет-реклама?<br>У нас есть для Вас специальные условия</b>
+            <div class="btn text btn--text" h1="Получить специальное предложение" h2="Оставьте свой номер телефона и мы перезвоним" btn="Перезвоните мне">
+                <b >Нужна не только интернет-реклама?<br>У нас есть для Вас специальные условия</b>
             </div>
         </div>
     </div>
@@ -552,7 +549,7 @@
                 <li class="brending-box--item"><span class="tire">— </span>рекламные баннеры</li>
                 <li class="brending-box--item"><span class="tire">— </span>продающие сайты</li>
             </ul>
-            <div class="btn buttun__link brending-box--button" h1="Рассчитайте стоимость разработки сайта" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Рассчитать стоимость сайта</div>
+            <div class="btn buttun__link brending-box--button" h1="Рассчитайте стоимость услуг по упаковке" h2="Оставьте свой номер телефона и мы перезвоним" btn="Перезвоните мне">Рассчитать стоимость</div>
         </div>
     </div>
     <div class="sites block" id="sites">
@@ -583,25 +580,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_voilok.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a href="http://voilokcafe.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=voilok" class="fa fa-plus">Посмотреть сайт</a></button>
-                        </div>
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__content-scroller">
-                            <img class="slide__img slide__img--large" src="img/sites_voilok.jpg" alt="Some image" />
-                            <div class="slide__details">
-                                <h2 class="slide__title slide__title--main"><b>Landing Page КАФЕ «ВОЙЛОК»</b><br>г. Нижний Новгород</h2>
-                                <p class="slide__description"></p>
-                                <div>
-                                    <span class="slide__price slide__price--large"></span>
-                                    <div class="button button--buy">
-                                        <a href="http://voilokcafe.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=voilok" target="_blank">
-                                            <div class="btn see">Посмотреть сайт</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /slide__details -->
+                            <a href="http://voilokcafe.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=voilok" class="fa fa-plus action" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
                 </div>
@@ -610,54 +589,16 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_sigma.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a href="http://sigmann.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=sigma" class="fa fa-plus">Посмотреть сайт</a></button>
+                            <a href="http://sigmann.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=sigma" class="fa fa-plus action" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
-                    <div class="slide__content">
-                        <div class="slide__content-scroller">
-                            <img class="slide__img slide__img--large" src="img/sites_sigma.jpg" alt="Some image" />
-                            <div class="slide__details">
-                                <h2 class="slide__title slide__title--main"><b>Landing Page ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ «ПОД КЛЮЧ»</b><br>г. Нижний Новгород</h2>
-                                <p class="slide__description"></p>
-                                <div>
-                                    <span class="slide__price slide__price--large"></span>
-                                    <div class="button button--buy">
-                                        <a href="http://sigmann.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=sigma" target="_blank">
-                                            <div class="btn see">Посмотреть сайт</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /slide__details -->
-                        </div>
-                        <!-- slide__content-scroller -->
-                    </div>
-                    <!-- slide__content -->
                 </div>
                 <div class="slide kuhni">
                     <h2 class="slide__title slide__title--preview"><b>Landing Page КУХНИ НА ЗАКАЗ</b><br>г. Санкт-Петербург</h2>
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_kuhni.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a class="fa fa-plus" href="http://kuhen-morgen.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kuhni">Посмотреть сайт</a></button>
-                        </div>
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__content-scroller">
-                            <img class="slide__img slide__img--large" src="img/sites_kuhni.jpg" alt="Some image" />
-                            <div class="slide__details">
-                                <h2 class="slide__title slide__title--main"><b>Landing Page КУХНИ НА ЗАКАЗ</b><br>г. Санкт-Петербург</h2>
-                                <p class="slide__description"></p>
-                                <div>
-                                    <span class="slide__price slide__price--large"></span>
-                                    <div class="button button--buy">
-                                        <a href="http://kuhen-morgen.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kuhni" target="_blank">
-                                            <div class="btn see">Посмотреть сайт</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /slide__details -->
+                            <a class="fa fa-plus action" href="http://kuhen-morgen.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kuhni" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
                 </div>
@@ -666,25 +607,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_gx.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a href="http://s5.gxgroup.org/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=gxgroup" class="fa fa-plus">Посмотреть сайт</a></button>
-                        </div>
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__content-scroller">
-                            <img class="slide__img slide__img--large" src="img/sites_gx.jpg" alt="Some image" />
-                            <div class="slide__details">
-                                <h2 class="slide__title slide__title--main"><b>Landing Page ПРОИЗВОДСТВО ВЫСТАВОЧНЫХ СТЕНДОВ</b><br>г. Москва</h2>
-                                <p class="slide__description"></p>
-                                <div>
-                                    <span class="slide__price slide__price--large"></span>
-                                    <div class="button button--buy">
-                                        <a href="http://s5.gxgroup.org/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=gxgroup" target="_blank">
-                                            <div class="btn see">Посмотреть сайт</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /slide__details -->
+                            <a href="http://s5.gxgroup.org/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=gxgroup" class="fa fa-plus action" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
                 </div>
@@ -693,7 +616,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_beprint.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a href="http://beprint.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=beprint" class="fa fa-plus">Посмотреть сайт</a></button>
+                            <a href="http://beprint.ru/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=beprint" class="fa fa-plus action" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -720,7 +643,7 @@
                     <div class="slide__item">
                         <div class="slide__inner">
                             <img class="slide__img slide__img--small" src="img/sites_kraud.jpg" alt="Some image" />
-                            <button class="action action--open" aria-label="View details"><a href="http://decima.pro/kraud/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kraud" class="fa fa-plus">Посмотреть сайт</a></button>
+                            <a href="http://decima.pro/kraud/?utm_source=mark&utm_medium=siteportfolio&utm_campaign=klients&utm_id=site&utm_term=kraud" class="fa fa-plus action" target="blank">Посмотреть сайт</a>
                         </div>
                     </div>
                     <div class="slide__content">
@@ -753,6 +676,7 @@
         <div class="line"></div>
         <div class="ytp-box--wrapper">
             <h3 class="ytp-box--caption">Оцифровка и&#160;увеличение показателей</h3>
+            <h4 class="ytp-box--subtitle">Выведем Ваш бизнес на новый уровень</h4>
             <div class="ytp-box--item">
                 <div class="ytp-box--item--image">
                     <img src="img/ytp-icon-1.svg" alt="" class="ytp-box--image">
@@ -773,10 +697,12 @@
                 <p class="ytp-box--item--text">Инструменты
                     <br>увеличения&#160;конверсии</p>
             </div>
+            <h4 class="ytp-box--subtitle ytp-box--subtitle--bottom">Внедрив инструменты оцифровки, Вы&#160;увидете точки роста Вашей&#160;компании и&#160;варианты влияния на&#160;KPI&#160;Вашего&#160;бизнеса</h4>
         </div>
     </div>
     <div class="reviews block" id="reviews">
         <div class="wrap">
+        	<div class="line"></div>
             <h1 class="revealator-slideleft revealator-once">Отзывы о нашей работе</h1>
             <p>Вы можете позвонить любому клиенту и&#160;убедиться лично</p>
             <div class="containe">
@@ -839,48 +765,55 @@
                 <div class="btn all_reviews">Посмотреть больше отзывов</div>-->
         </div>
     </div>
+    <!-- ПИСЬМА
     <div class="email--box clients block" id="clients">
         <h1 class="revealator-slideleft revealator-once">Благодарственные письма</h1>
         <div class="carousel--wrapper">
-            
-        
-        <div class="b-carousel js-carousel">
-            <div class="b-carousel__prev js-carousel__prev"></div>
-            <div class="b-carousel__next js-carousel__next"></div>
-            <div class="b-carousel__wrap js-carousel__wrap">
-                <div class="b-carousel__item">
-                    <div class="slide slide--email">
-                        <a href="img/doc/1.jpg" class="slide--link" rel="lightbox"><img src="img/doc/1.jpg" class="slide--img"></a>
-                        <a href="img/doc/2.jpg" class="slide--link" rel="lightbox"><img src="img/doc/2.jpg" class="slide--img"></a>
-                        <a href="img/doc/3.jpg" class="slide--link" rel="lightbox"><img src="img/doc/3.jpg" class="slide--img"></a>
-                        <a href="img/doc/4.jpg" class="slide--link" rel="lightbox"><img src="img/doc/4.jpg" class="slide--img"></a>
+            <div class="b-carousel js-carousel">
+                <div class="b-carousel__prev js-carousel__prev"></div>
+                <div class="b-carousel__next js-carousel__next"></div>
+                <div class="b-carousel__wrap js-carousel__wrap">
+                    <div class="b-carousel__item">
+                        <div class="slide slide--email">
+                            <a href="img/doc/1.jpg" class="slide--link" rel="lightbox"><img src="img/doc/1.jpg" class="slide--img"></a>
+                            <a href="img/doc/2.jpg" class="slide--link" rel="lightbox"><img src="img/doc/2.jpg" class="slide--img"></a>
+                            <a href="img/doc/3.jpg" class="slide--link" rel="lightbox"><img src="img/doc/3.jpg" class="slide--img"></a>
+                            <a href="img/doc/4.jpg" class="slide--link" rel="lightbox"><img src="img/doc/4.jpg" class="slide--img"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="b-carousel__item">
-                    <div class="slide slide--email">
-                        <a href="img/doc/5.jpg" class="slide--link" rel="lightbox"><img src="img/doc/5.jpg" class="slide--img"></a>
-                        <a href="img/doc/6.jpg" class="slide--link" rel="lightbox"><img src="img/doc/6.jpg" class="slide--img"></a>
-                        <a href="img/doc/7.jpg" class="slide--link" rel="lightbox"><img src="img/doc/7.jpg" class="slide--img"></a>
-                        <a href="img/doc/8.jpg" class="slide--link" rel="lightbox"><img src="img/doc/8.jpg" class="slide--img"></a>
+                    <div class="b-carousel__item">
+                        <div class="slide slide--email">
+                            <a href="img/doc/5.jpg" class="slide--link" rel="lightbox"><img src="img/doc/5.jpg" class="slide--img"></a>
+                            <a href="img/doc/6.jpg" class="slide--link" rel="lightbox"><img src="img/doc/6.jpg" class="slide--img"></a>
+                            <a href="img/doc/7.jpg" class="slide--link" rel="lightbox"><img src="img/doc/7.jpg" class="slide--img"></a>
+                            <a href="img/doc/8.jpg" class="slide--link" rel="lightbox"><img src="img/doc/8.jpg" class="slide--img"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </div>
+    </div> -->
     <div class="faq block">
         <div class="wrap">
             <div class="line"></div>
             <h1>Ответы на&#160;частые вопросы наших клиентов</h1>
             <div class="containe">
-                <h2 class="question revealator-slideup revealator-once">А сколько я буду тратить на рекламу?</h2>
+                <h2 class="question revealator-slideup revealator-once">Cколько я буду тратить на рекламу?</h2>
                 <p class="answer">Настройка контекстной рекламы - от 25 000 рублей. Рекламный бюджет зависит от&#160;разных параметров, о&#160;которых мы Вам расскажем.</p>
-                <h2 class="question revealator-slideup revealator-once">Вы ведь не будете делать рекламу моим конкурентам?</h2>
-                <p class="answer">Конечно мы не будем делать рекламу вашим конкурентам, при условии, что&#160;будем иметь долю в&#160;вашем&#160;бизнесе&#160;в&#160;размере&#160;30%.</p>
-                <h2 class="question revealator-slideup revealator-once">Я оставил старый сайт из 90-х годов, и&#160;заявок нет!!!</h2>
-                <p class="answer">Количество и качество заявок напрямую зависит от грамотно разработанного сайта. Посетители откроют и сразу закроют ваш сайт, даже если он будет на ведущих поисковых позициях, так как на нем нет нужной им информации или шрифт нечитабельный, или цвета раздражают глаза и так далее.</p>
-                <h2 class="question revealator-slideup revealator-once">Вы ведь сделаете мне 20&#160;000 ключевиков? Я&#160;в&#160;БМ&#160;смотрел</h2>
-                <p class="answer">Огромное количество ключевых слов далеко не всегда говорит о качестве настройки. Достаточный показатель ключевых слов для старта рекламной кампании - 3000. В процессе тестирования мы постепенно увеличиваем этот показатель.</p>
+                <h2 class="question revealator-slideup revealator-once">Какой порядок работы при разработке интернет-рекламы?</h2>
+                <p class="answer">Вы рассказываете о Вашем продукте, мы анализируем конкурентую среду, ваши сайты.<br> В результате у нас появляется стратегия продвижения, которую мы описываем в виде коммерческого предложения.<br>Согласовываем стратегию продвижения, заключаем сделку, приступаем к работе.</p>
+                <h2 class="question revealator-slideup revealator-once">Что делать, если Ваша ниша очень конкурентная и реклама в интернете обходится дорого?</h2>
+                <p class="answer">Мы разрабатываем рекламу более, чем на 17ти различных интернет-площадках, способных привлекать целевой трафик на Ваш сайт. Не все конкуренты их используют. Таким образом мы точно найдём способ рекламировать Ваш бизнес по приемлемой стоимости</p>
+                <h2 class="question revealator-slideup revealator-once">Я не разбираюсь в интернет-рекламе и нет времени погружаться. Как контролировать траты? Вы&#160;меня&#160;не&#160;обманете?</h2>
+                <p class="answer">Разбираться Вам и не нужно. Мы можем предоставлять исчерпывающие отчёты о тратах и эффективности рекламных кампаний. Или кратко расскажем основы: как смотреть всю статистику самостоятельно непосредственно в аккаунте. Это не сложно.</p>
+                <h2 class="question revealator-slideup revealator-once">Мне нужна не только реклама и сайт…</h2>
+                <p class="answer">Мы занимаемся не только разработкой интернет-рекламы и сайтов. Мы готовы разработать фирменный стиль Вашего бизнеса, внедрить CRM-систему, интегрировать сквозную аналитику и др. И чем больше задач лежит на нас, тем эффективнее они будут выполняться, т.к. коммуникация внутри компании легче и быстрее, чем когда задачи разбиты по разным компаниям. Кроме того, чем больше пакет услуг, тем дешевле. Существенно.</p>
+                <h2 class="question revealator-slideup revealator-once">Почему сайт, сделанный “на коленке” скорее всего не эффективен?</h2>
+                <p class="answer">Мода и настроение “толпы” постоянно меняется и надо быть в тренде и знать, что “зайдёт” сейчас, именно в этот сезон, именно на эту целевую аудиторию. Надо учитывать конкурентные предложения. Надо иметь представления о дизайне с психологической точки зрения. Какие элементы располагают к себе, а какие наоборот отталкивают. Надо знать как не переборщить с т.н. “триггерами”, как составить “УТП”. Суметь рассказать о всех своих достоинствах, не “выпячивая” при этом. Вряд ли всё это учитывается при разработке сайтов “на коленке” теми, кто не имеет особого опыта в этой сфере. При разработке сайтов мы всё это учитываем, а также руководствуемся накопленным опытом и знаниями.</p>
+                <h2 class="question revealator-slideup revealator-once">Я не из Нижнего Новгорода. Возможно ли наше сотрудничество?</h2>
+                <p class="answer">В нашей сфере расстояние не имеет значения. Практически все вопросы решаются удалённо. И это не накладывает никаких ограничений. Вся работа производится так же эффективно, как если бы мы работали в соседних офисах.</p>
+
+
             </div>
             <div class="btn buttun__link" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
         </div>
@@ -909,7 +842,7 @@
             </div>
             <div class="btn buttun__link" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
             <div class="decima">
-                <a href="http://decima.pro/?utm_source=drevodacha&utm_medium=banner&utm_campaign=klients&utm_term=mark" target="_blank" title="Разработка продающих страниц">
+                <a href="http://decima.pro/?utm_source=mgroup-new&utm_campaign=klients&utm_term=mark" target="_blank" title="Разработка продающих страниц">
                     <h4>Сайт создан в</h4>
                     <img src="img/decima.png">
                 </a>

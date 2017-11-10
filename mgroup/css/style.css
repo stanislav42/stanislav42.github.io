@@ -523,7 +523,10 @@ header .number span {
 }
 .clients-button{
     margin-top: 20px;   
-    width: 250px;
+    width: 200px;
+    animation: none!important;
+    font-size: 12px;
+    letter-spacing: 0px;
 }
 @media (min-aspect-ratio: 16/9) {
     #video-box>video {
@@ -848,6 +851,13 @@ input.clientPhone {
     font-size: 22px;
     text-transform: uppercase;
 }
+.btn--text{
+    cursor: auto;
+}
+.btn--text:hover{
+    cursor: auto;
+    top:0px;
+}
 
 .sites {
     height: auto;
@@ -901,6 +911,7 @@ input.clientPhone {
 }
 
 .reviews {
+    box-shadow: inset 0 7px 7px  -7px #333;
     background: #f5f6f4;
     color: #1c2b3a;
 }
@@ -994,7 +1005,8 @@ input.clientPhone {
 
 
 .faq {
-    height: 650px;
+    height: auto;
+    padding-bottom: 60px;
     background: url(../img/faq.jpg) no-repeat center;
     color: #fff;
     position: relative;
@@ -1005,19 +1017,20 @@ input.clientPhone {
 }
 
 .faq .containe {
-    margin-top: 60px;
-    height: 355px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    padding-bottom: 60px;
 }
 
 .faq h2.question {
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 18px;
     display: inline-block;
-    border-bottom: 1px dotted;
     color: #b1d2ec;
     margin-top: 40px;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .faq h2:hover {
@@ -1384,7 +1397,14 @@ footer .btn {
     position: relative;
     transition: 0.5s all;
 }
-
+.buttun__link--header{
+    position: relative;
+    width: 55%;
+    top: 100px;
+}
+.buttun__link--header:hover{
+    top:104px;
+}
 @keyframes glare {
     45% {
         background-position: 250%;
@@ -1395,18 +1415,20 @@ footer .btn {
 }
 
 .action {
-    width: 240px;
-    height: 40px;
-    line-height: 30px;
+    width: 260px;
+    height: 60px;
+    line-height: 40px;
     background-color: #b1d2ec;
     box-shadow: 0px 4px 0px #95b3ca;
     border-radius: 30px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     color: #000;
     font-weight: bold;
     letter-spacing: 2px;
     animation: ripple 2s infinite;
+    position: relative;
+    top: -60px;
 }
 
 @keyframes ripple {
@@ -1855,7 +1877,8 @@ footer .btn {
     box-sizing: border-box;
     background-size: cover;
     display: table;
-    background: #f5f6f4;
+    background-image: url(../img/cifra.png);
+    background-color: #f5f6f4;
     box-shadow: inset 0 7px 7px  -7px #333;
 }
 
@@ -1874,7 +1897,7 @@ footer .btn {
     margin-left: 8%;
 }
 
-.ytp-box--item:nth-child(2) {
+.ytp-box--item:nth-child(3) {
     margin-left: 0px;
 }
 
@@ -1887,12 +1910,25 @@ footer .btn {
 
 .ytp-box--caption {
     text-align: center;
-    margin-bottom: 70px;
-    color: black;
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #253e4a;
+
+}
+.ytp-box--subtitle{
+   text-align: center;
+    margin-bottom: 60px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #253e4a;  
+    font-weight: 300;
+}
+.ytp-box--subtitle--bottom{
+    font-weight: 400;
+    position: relative;
+    top: 60px;
+    margin-bottom: 100px;
 }
 
 .ytp-box--item--text {
@@ -2119,6 +2155,7 @@ footer .btn {
 /*                      ytp-box-two                         */
 
 .ytp-box-two{
+    display: none;
     margin: auto;
     width: 85%;
     height: 80px;
@@ -2153,4 +2190,17 @@ footer .btn {
 }
 .ytp-box-two--item:nth-child(4){
     background-image: url(../img/ytp/4-2.png);
+}
+
+.button--up{
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid black;
+    z-index: 1000;
+    cursor: pointer;
 }
