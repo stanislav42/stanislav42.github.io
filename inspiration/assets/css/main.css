@@ -1,0 +1,175 @@
+* {
+    font-family: helvetica;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-wrapper,
+.section-wrapper,
+.footer-wrapper,
+.navigation {
+    width: 1140px;
+    margin: auto;
+}
+
+.navigation-wrapper {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+/*________________ Navigation menu ________________*/
+
+.navigation__list {
+    position: relative;
+    top: 35px;
+    margin: auto;
+    list-style-type: none;
+    width: 53%;
+}
+
+.navigation__list-link {
+    text-decoration: none;
+    color: #252525;
+    opacity: 0.6;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.navigation__list-item {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+.navigation__list-link:hover {
+    opacity: 1;
+}
+
+.navigation__list-item {
+    margin-left: 5%;
+}
+
+.navigation__list-item:nth-child(1) {
+    margin-left: 0%;
+}
+
+
+/*________________ HEADER STYLE ________________*/
+
+.header {
+    position: relative;
+    top: 90px;
+    box-sizing: border-box;
+    height: 500px;
+    background-image: url(../img/header-slide-one.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+}
+
+.header__logo {
+    position: absolute;
+    top: 20px;
+}
+
+.header__caption {
+    font-size: 72px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header__subtitle {
+    font-size: 36px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header__button {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.header__button:hover {
+    color: rgba(0, 0, 0, 0);
+    background-color: white;
+}
+
+
+/*________________ SECTION STYLE ________________*/
+
+.section--one {
+    height: 500px;
+    background: #c5e8ff;
+}
+
+.section--two {
+    height: 500px;
+    background: #265979;
+}
+
+.section--three {
+    height: 500px;
+    background: #c5e8ff;
+}
+
+.section--for {
+    height: 500px;
+    background: #265979;
+}
+
+
+/*________________ FOOTER STYLE ________________*/
+
+.footer {
+    height: 80px;
+    background: #001c2d;
+}
+
+.footer__list {
+    position: relative;
+    top: 20px;
+    float: right;
+}
+
+.footer__icon {
+    width: 40px;
+}
+
+.footer__list-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer__list-item:nth-last {
+    margin-left: 0px;
+}
+
+.footer__list-link {
+    opacity: 0.5;
+}
+
+.footer__list-link:hover {
+    opacity: 1;
+}
+
+.footer__text {
+    font-style: 12px;
+    float: left;
+    position: relative;
+    top: 30px;
+    color: #4b5d82;
+}
