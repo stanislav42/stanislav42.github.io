@@ -43,7 +43,7 @@
     .email--box,
     .adress--text,
     .header--box,
-    .tire, .layer .text {
+    .tire, .layer .text, .navbutton__line{
         display: none;
     }
     .boolets--mobil {
@@ -236,6 +236,14 @@
     }
     .ytp-box-two{
     margin-top: 0px;   
+}
+.buttun__link--header {
+    position: relative;
+    width: 80%;
+    top: 60px;
+}
+.buttun__link--header:hover{
+    top:64px;
 }
 }
 

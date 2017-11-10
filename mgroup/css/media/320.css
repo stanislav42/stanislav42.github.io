@@ -43,7 +43,7 @@
     .email--box,
     .adress--text,
     .tire,
-    .header--box, .layer .text {
+    .header--box, .layer .text, .navbutton__line {
         display: none;
     }
     .boolets--mobil {
@@ -274,5 +274,13 @@
     }
         .header-caption-ab{
     display: block;
+}
+.buttun__link--header {
+    position: relative;
+    width: 80%;
+    top: 60px;
+}
+.buttun__link--header:hover{
+    top:64px;
 }
 }

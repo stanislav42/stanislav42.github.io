@@ -46,7 +46,7 @@
     .boolets,
     .email--box,
     footer .rekviz,
-    .header--box, .tire{
+    .header--box, .tire, .navbutton__line{
         display: none;
     }
     .section--site--caption {
