@@ -169,6 +169,12 @@ header.clone.active {
 .logo--menu {
     float: left;
 }
+.adress--text{
+   line-height: 1.5;
+   position: relative;
+   top: -6px;
+
+}
 
 .block {
     text-align: center;
@@ -249,7 +255,7 @@ header .adress {
 }
 
 header .adress b {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -522,7 +528,7 @@ header .number span {
     opacity: 0;
 }
 .clients-button{
-    margin-top: 20px;   
+    margin-top: 50px;   
     width: 200px;
     animation: none!important;
     font-size: 12px;
@@ -1639,7 +1645,7 @@ footer .btn {
 .item--maska {
     width: 100%;
     height: 100%;
-    background-color: #c5c5c5;
+    background-color: white;
     opacity: 1;
     transition: 1s;
     position: absolute;
