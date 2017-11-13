@@ -1,0 +1,16 @@
+@media only screen and (max-width: 480px) and (min-width: 321px){
+	body, .footer, .main, .header, .section{
+		width: 100%
+	}
+	.header-wrapper, .section-wrapper, .footer-wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.section,.header{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+
+}
