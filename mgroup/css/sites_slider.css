@@ -308,12 +308,11 @@ position: fixed;
 .navbutton {
 	position: absolute;
 	z-index: 1;
-	top: 50%;
+	top: 33%;
 	left: 50%;
 	width: 100px;
 	height: 30px;
 	margin: 0;
-	margin: -50px 0 0 0;
 	padding: 0;
 	border: none;
 	background: none;
