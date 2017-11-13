@@ -18,7 +18,11 @@
     position: fixed;
     z-index: 100;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: white;
+}
+.main, .footer{
+	position: relative;
+	top: 90px;
 }
 
 
@@ -118,15 +122,38 @@
 
 
 /*________________ SECTION STYLE ________________*/
-
+.section{
+	margin: auto;
+}
 .section--one {
-    height: 500px;
-    background: #c5e8ff;
+    height: auto;
+    box-sizing: border-box;
+    display: table;
+    position: relative;
+}
+.section--one__article{
+	float: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-left: 4.2%;
+}
+.section--one__article:nth-child(1){
+	margin-left: 0px;
+}
+.section--one__article--img{
+	height: 45px;
+	float: left;
+}
+.section--one__article--caption{
+	margin-top: 12px;
+	margin-left: 10px;
+	float: left;
+	font-family: Roboto-Thin;
+	font-size: 18px;
 }
 
 .section--two {
-    height: 500px;
-    background: #265979;
+    height: auto;
 }
 
 .section--three {
