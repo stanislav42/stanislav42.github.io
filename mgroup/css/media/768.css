@@ -46,7 +46,9 @@
     .boolets,
     .email--box,
     footer .rekviz,
-    .header--box, .tire, .navbutton__line{
+    .header--box,
+    .tire,
+    .navbutton__line {
         display: none;
     }
     .section--site--caption {
@@ -109,7 +111,7 @@
     }
     .brenging-box--image {
         background-position: -1200% 0%, 550% 70%;
-    	background-size: 94%, 90%;
+        background-size: 94%, 90%;
     }
     .animation-box--item {
         margin-left: 5%;
@@ -135,19 +137,32 @@
         width: 100%;
         text-align: center;
     }
-    .header-caption{
-    	font-size: 38px;
+    .header-caption {
+        font-size: 38px;
     }
-    .header--logo{
-    	width: 50%;
+    .header--logo {
+        width: 50%;
     }
     .title {
-    height: 750px;
-}
-.header-caption-ab{
-	display: block;
-}
-
+        height: 750px;
+    }
+    .header-caption-ab {
+        display: block;
+    }
+    .ytp-box-list, .button--active {
+        display: none;
+    }
+    .ytp-box-two {
+        border: none;
+    }
+    .ytp-box-two-box-item {
+        text-align: center!important;
+        float: none!important;
+        display: block;
+    }
+    .ytp-box-two-box-list-item {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 481px) {
@@ -172,7 +187,7 @@
     .ytp-box--item--text {
         font-size: 18px;
     }
-        .layer .text{
+    .layer .text {
         background-image: none;
     }
 }
@@ -182,13 +197,13 @@
         position: relative;
         left: -70px;
     }
-    header .adress p{
-    	display: none;
+    header .adress p {
+        display: none;
     }
-    .header--logo{
-    	margin-top: 20%;
+    .header--logo {
+        margin-top: 20%;
     }
-    .header-caption{
-    	font-size: 34px;
+    .header-caption {
+        font-size: 34px;
     }
 }

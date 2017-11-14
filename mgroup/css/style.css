@@ -918,7 +918,10 @@ input.clientPhone {
 
 .reviews {
     box-shadow: inset 0 7px 7px  -7px #333;
-    background: #f5f6f4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f5f6f4;
     color: #1c2b3a;
 }
 
@@ -1883,7 +1886,7 @@ footer .btn {
     box-sizing: border-box;
     background-size: cover;
     display: table;
-    background-image: url(../img/cifra.png);
+    background-image: url(../img/cifra.jpg);
     background-color: #f5f6f4;
     box-shadow: inset 0 7px 7px  -7px #333;
 }
@@ -1920,6 +1923,7 @@ footer .btn {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #253e4a;
+    color: white;
 
 }
 .ytp-box--subtitle{
@@ -1929,6 +1933,7 @@ footer .btn {
     letter-spacing: 1px;
     color: #253e4a;  
     font-weight: 300;
+    color: white;
 }
 .ytp-box--subtitle--bottom{
     font-weight: 400;
@@ -1944,6 +1949,10 @@ footer .btn {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: white;
+}
+.ytp-box .line{
+    background: url(../img/line_white.png);
 }
 
 
@@ -2046,13 +2055,13 @@ footer .btn {
     padding-top: 50px;
     padding-bottom: 50px;
     box-sizing: border-box;
-    background-image: url(../img/brending.jpg);
+    
     position: relative;
     box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
 .brending-box--wrapper {
-    width: 480px;
+    width: 485px;
     box-sizing: border-box;
     position: relative;
     left: 50%;

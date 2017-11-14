@@ -43,7 +43,9 @@
     .email--box,
     .adress--text,
     .header--box,
-    .tire, .layer .text, .navbutton__line{
+    .tire,
+    .layer .text,
+    .navbutton__line {
         display: none;
     }
     .boolets--mobil {
@@ -217,12 +219,12 @@
         font-size: 22px;
     }
 
-    .header-caption{
+    .header-caption {
         font-size: 28px;
     }
-    .header-caption-ab{
-    display: block;
-}
+    .header-caption-ab {
+        display: block;
+    }
     .brenging-box--image {
         background-position: -1300% 0%, 550% 70%;
         background-size: 94%, 90%;
@@ -234,17 +236,31 @@
     .title .mouse {
         margin: 100px auto 0;
     }
-    .ytp-box-two{
-    margin-top: 0px;   
-}
-.buttun__link--header {
-    position: relative;
-    width: 80%;
-    top: 60px;
-}
-.buttun__link--header:hover{
-    top:64px;
-}
+    .ytp-box-two {
+        margin-top: 0px;
+    }
+    .buttun__link--header {
+        position: relative;
+        width: 80%;
+        top: 60px;
+    }
+    .buttun__link--header:hover {
+        top: 64px;
+    }
+    .ytp-box-list, .brace, .button--active{
+        display: none;
+    }
+    .ytp-box-two {
+        border: none;
+    }
+    .ytp-box-two-box-item {
+        text-align: center!important;
+        float: none!important;
+        display: block;
+    }
+    .ytp-box-two-box-list-item {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 400px) and (min-width: 321px) {
@@ -284,7 +300,7 @@
         padding-top: 50px;
         height: auto;
     }
-    .header-caption{
+    .header-caption {
         font-size: 24px;
     }
 }
