@@ -149,11 +149,8 @@
     .header-caption-ab {
         display: block;
     }
-    .ytp-box-list, .button--active {
+    .button--active {
         display: none;
-    }
-    .ytp-box-two {
-        border: none;
     }
     .ytp-box-two-box-item {
         text-align: center!important;
@@ -163,6 +160,16 @@
     .ytp-box-two-box-list-item {
         text-align: center;
     }
+    .ytp-box-item::after{
+        display: none;
+    }
+    .ytp-box-list {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+        .ytp-box-item {
+    line-height: 2;
+}
 }
 
 @media only screen and (max-width: 700px) and (min-width: 481px) {

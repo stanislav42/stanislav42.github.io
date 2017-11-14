@@ -64,6 +64,9 @@
 .ytp-box-item{
 	margin-left: 1%;
 }
+.ytp-box-item::after{
+		display: none;
+	}
 }
 @media only screen and (max-width: 1100px) and (min-width: 993px){
 	.header--box-caption{
@@ -72,11 +75,8 @@
 	.header-caption{
 		font-size: 42px;
 	}
-	.ytp-box-list{
-		display: none;
-	}
 	.ytp-box-two{
-		border: none;
 	}
+	
 
 }

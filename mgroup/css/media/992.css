@@ -86,11 +86,8 @@
         box-sizing: border-box;
         margin-left: 10%;
     }
-    .ytp-box-list {
+    .ytp-box-item::after{
         display: none;
-    }
-    .ytp-box-two {
-        border: none;
     }
 }
 

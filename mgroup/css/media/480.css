@@ -247,12 +247,19 @@
     .buttun__link--header:hover {
         top: 64px;
     }
-    .ytp-box-list, .brace, .button--active{
+    .button--active {
         display: none;
     }
-    .ytp-box-two {
-        border: none;
+    .ytp-box-item::after {
+        display: none;
     }
+    .ytp-box-list {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+        .ytp-box-item {
+    line-height: 2;
+}
     .ytp-box-two-box-item {
         text-align: center!important;
         float: none!important;

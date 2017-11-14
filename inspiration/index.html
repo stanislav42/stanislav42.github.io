@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -28,12 +29,28 @@
             </ul>
         </nav>
     </div>
-    <header class="header">
-        <div class="header-wrapper">
-            <h2 class="header__subtitle">Осенняя распродажа</h2>
-            <h1 class="header__caption">Скидки до 50%</h1>
-            <a class="header__button" href="#">Узнать подробнее</a>
+    <header class="header slider">
+        <div class="header-wrapper slide_viewer">
+             <div class="slide_group">
+                    <div class="slide">
+                        <h2 class="header__subtitle">Осенняя распродажа</h2>
+                        <h1 class="header__caption">Скидки до 50%</h1>
+                        <a class="header__button" href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <h2 class="header__subtitle">Осенняя распродажа</h2>
+                        <h1 class="header__caption">Скидки до 50%</h1>
+                        <a class="header__button" href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <h2 class="header__subtitle">Осенняя распродажа</h2>
+                        <h1 class="header__caption">Скидки до 50%</h1>
+                        <a class="header__button" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
         </div>
+        </div>
+        <div class="slide_buttons" onselectstart="return false" onmousedown="return false" ></div>
     </header>
     <main class="main">
         <section class="section section--one">
@@ -143,7 +160,6 @@
                         <p class="book-item__price">590 &#8381;<span class="book-item__price-sale"></span></p>
                         <a href="#" class="item-book__button">В корзину</a>
                     </div>
-
                     <div class="section--book-item">
                         <img src="assets/img/book.png" alt="" class="section-three-item-book">
                         <div class="item-book__box-caption">
@@ -153,7 +169,6 @@
                         <p class="book-item__price">590 &#8381;<span class="book-item__price-sale"></span></p>
                         <a href="#" class="item-book__button">В корзину</a>
                     </div>
-
                     <div class="section--book-item">
                         <img src="assets/img/book.png" alt="" class="section-three-item-book">
                         <div class="item-book__box-caption">
@@ -163,7 +178,6 @@
                         <p class="book-item__price">590 &#8381;<span class="book-item__price-sale"></span></p>
                         <a href="#" class="item-book__button">В корзину</a>
                     </div>
-
                     <div class="section--book-item">
                         <img src="assets/img/book.png" alt="" class="section-three-item-book">
                         <div class="item-book__box-caption">
@@ -173,7 +187,6 @@
                         <p class="book-item__price">590 &#8381;<span class="book-item__price-sale"></span></p>
                         <a href="#" class="item-book__button">В корзину</a>
                     </div>
-
                     <div class="section--book-item">
                         <img src="assets/img/book.png" alt="" class="section-three-item-book">
                         <div class="item-book__box-caption">
@@ -188,18 +201,21 @@
         </section>
         <section class="section section--promo">
             <div class="section-wrapper section-wrapper--promo">
-            <p class="section--promo__caption">Мобильное приложение «Вдохновение»</p>
-            <p class="section--promo__subtitle">Чтобы купить книгу, теперь не обязательно находиться за компьютером.<br> Установите официальное мобильное приложение магазина "Вдохновение".<br> Совершайте покупки  оставайтесь в курсе новостей о новинках<br> и уникальных предложениях, где бы Вы ни находились.</p>
-            <div class="section--promo__box">
-                <div class="section--promo__box-item">
-                    <img src="assets/img/iphone.png" alt="" class="section--promo__box-img">
-                    <a href="#" class="section--promo__box-item-link">Для iPhone</a>
+                <p class="section--promo__caption">Мобильное приложение «Вдохновение»</p>
+                <p class="section--promo__subtitle">Чтобы купить книгу, теперь не обязательно находиться за компьютером.
+                    <br> Установите официальное мобильное приложение магазина "Вдохновение".
+                    <br> Совершайте покупки оставайтесь в курсе новостей о новинках
+                    <br> и уникальных предложениях, где бы Вы ни находились.</p>
+                <div class="section--promo__box">
+                    <div class="section--promo__box-item">
+                        <img src="assets/img/iphone.png" alt="" class="section--promo__box-img">
+                        <a href="#" class="section--promo__box-item-link">Для iPhone</a>
+                    </div>
+                    <div class="section--promo__box-item">
+                        <img src="assets/img/android.png" alt="" class="section--promo__box-img">
+                        <a href="#" class="section--promo__box-item-link">Для Android</a>
+                    </div>
                 </div>
-                <div class="section--promo__box-item">
-                    <img src="assets/img/android.png" alt="" class="section--promo__box-img">
-                    <a href="#" class="section--promo__box-item-link">Для Android</a>
-                </div>
-            </div>
             </div>
         </section>
     </main>
@@ -215,6 +231,7 @@
         </div>
     </footer>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>
