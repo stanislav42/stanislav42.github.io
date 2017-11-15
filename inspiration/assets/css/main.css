@@ -9,6 +9,7 @@
 .navigation {
     width: 1125px;
     margin: auto;
+    position: relative;
 }
 
 .navigation-wrapper {
@@ -30,7 +31,7 @@
 .navigation__list {
     position: relative;
     top: 35px;
-    margin: auto;
+    left: 27%;
     list-style-type: none;
     width: 53%;
 }
@@ -62,20 +63,28 @@
 .navigation__list-item:nth-child(1) {
     margin-left: 0%;
 }
-
+.navigation__icon-list{
+    top:35px;
+    position: absolute;
+    right: 0;
+}
+.navigation__icon-list-item{
+    display: inline-block;
+    margin-left: 15px;
+}
+.navigation__icon-list-item:nth-child(1){
+    margin-left: 0px;
+}
+.navigation__icon-list-img{
+    width: 22px;
+}
 
 /*________________ HEADER STYLE ________________*/
 
 .header {
     position: relative;
     top: 90px;
-    box-sizing: border-box;
-    height: 500px;
-    background-image: url(../img/header-slide-one.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 150px;
+    height: auto;
 }
 
 .header__logo {
@@ -164,9 +173,6 @@
     padding-top: 60px;    
     padding-bottom: 60px;   
 }
-.section--book__last{
-    height: 40px;
-}
 .item-book__caption{
     font-size: 18px;
     font-family: Roboto-Bold;
@@ -186,8 +192,9 @@
     display: inline-block;
     width: 14.5%;
     margin-left: 6.3%;  
+    margin-top: 40px;
 }
-.section--book-item:nth-child(1),.section--book-item:nth-child(7){
+.section--book-item:nth-child(1),.section--book-item:nth-child(6){
     margin-left: 0px; 
 }
 .book-item__autor-link{
@@ -225,7 +232,6 @@
     width: 100%;
 }
 .section-caption-book{
-    margin-bottom: 40px;
     font-size: 24px;
     font-family: Roboto-Bold;
     text-align: left;
@@ -233,6 +239,10 @@
 }
 .section--promo {
     background-color: #ff6fa8;
+    background-image: url(../img/promo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     padding-top: 40px;  
     padding-bottom: 40px;    
