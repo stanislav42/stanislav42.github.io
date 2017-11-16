@@ -1,7 +1,7 @@
 var window_height = $(window).height();
 
 function scroll_to_elem(elem) {
-    var speed = 3000
+    var speed = 2000
     if (document.getElementById(elem)) {
         var destination = jQuery('#' + elem).offset().top;
         jQuery("html,body").animate({ scrollTop: destination - 80 }, speed);

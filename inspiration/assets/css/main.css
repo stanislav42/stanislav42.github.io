@@ -15,14 +15,23 @@
 .navigation-wrapper {
     width: 100%;
     height: 90px;
-    position: fixed;
-    z-index: 100;
     box-sizing: border-box;
     background-color: white;
 }
-.main, .footer{
-	position: relative;
-	top: 90px;
+
+.main,
+.footer {
+    position: relative;
+}
+
+.clon {
+    position: fixed;
+    z-index: 100;
+    top: -100px;
+    transition: all 0.75s;
+}
+.active{
+	top: 0px;
 }
 
 
@@ -63,27 +72,32 @@
 .navigation__list-item:nth-child(1) {
     margin-left: 0%;
 }
-.navigation__icon-list{
-    top:35px;
+
+.navigation__icon-list {
+    top: 35px;
     position: absolute;
     right: 0;
 }
-.navigation__icon-list-item{
+
+.navigation__icon-list-item {
     display: inline-block;
     margin-left: 15px;
 }
-.navigation__icon-list-item:nth-child(1){
+
+.navigation__icon-list-item:nth-child(1) {
     margin-left: 0px;
 }
-.navigation__icon-list-img{
+
+.navigation__icon-list-img {
     width: 22px;
 }
+
+
 
 /*________________ HEADER STYLE ________________*/
 
 .header {
     position: relative;
-    top: 90px;
     height: auto;
 }
 
@@ -99,6 +113,7 @@
     font-family: Roboto-Bold;
     letter-spacing: 0.5px;
 }
+
 
 .header__subtitle {
     font-size: 36px;
@@ -128,95 +143,158 @@
     background-color: white;
 }
 
+.header__button-two {
+    width: 200px;
+    background-color: #ff7900;
+    border: 1px solid #ff7900;
+    margin-top: 20px;
+}
+
+.header__button-two:hover {
+    background: none;
+    color: #ff7900;
+}
+
+.header__subtitle-two {
+    font-size: 24px;
+}
+
+.header__caption-two {
+    margin-bottom: 10px;
+}
+
+.header__button-three {
+    width: 200px;
+    background-color: #fe0032;
+    border: 1px solid #fe0032;
+    margin-top: 20px;
+    position: relative;
+    float: right;
+}
+
+.header__button-three:hover {
+    background: none;
+    color: #fe0032;
+}
+
+.header__subtitle-three {
+    font-size: 24px;
+    text-align: right;
+}
+
+.header__caption-three {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+
+
 
 /*________________ SECTION STYLE ________________*/
-.section{
-	margin: auto;
+
+.section {
+    margin: auto;
     width: 100%;
 }
-.section-wrapper{
+
+.section-wrapper {
     width: 1125px;
     margin: auto;
 }
+
 .section--one {
     height: auto;
     box-sizing: border-box;
     display: table;
     position: relative;
 }
-.section--one__article{
-	float: left;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	margin-left: 4.2%;
+
+.section--one__article {
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 4.2%;
 }
-.section--one__article:nth-child(1){
-	margin-left: 0px;
+
+.section--one__article:nth-child(1) {
+    margin-left: 0px;
 }
-.section--one__article--img{
-	height: 45px;
-	float: left;
+
+.section--one__article--img {
+    height: 45px;
+    float: left;
 }
-.section--one__article--caption{
-	margin-top: 12px;
-	margin-left: 10px;
-	float: left;
-	font-family: Roboto-Thin;
-	font-size: 18px;
+
+.section--one__article--caption {
+    margin-top: 12px;
+    margin-left: 10px;
+    float: left;
+    font-family: Roboto-Thin;
+    font-size: 18px;
 }
 
 .section--two {
     height: auto;
 }
+
 .section--book {
     height: auto;
-    padding-top: 60px;    
-    padding-bottom: 60px;   
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.item-book__caption{
+
+.item-book__caption {
     font-size: 18px;
     font-family: Roboto-Bold;
     letter-spacing: 0.5px;
     color: #252525;
-    text-decoration: none; 
+    text-decoration: none;
 }
-.item-book__box-caption{
-    padding-top: 15px;  
-    padding-bottom: 15px;  
+
+.item-book__box-caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-.section--book-box{
+
+.section--book-box {
     width: 90%;
     margin: auto;
 }
-.section--book-item{
+
+.section--book-item {
     display: inline-block;
     width: 14.5%;
-    margin-left: 6.3%;  
+    margin-left: 6.3%;
     margin-top: 40px;
 }
-.section--book-item:nth-child(1),.section--book-item:nth-child(6){
-    margin-left: 0px; 
+
+.section--book-item:nth-child(1),
+.section--book-item:nth-child(6) {
+    margin-left: 0px;
 }
-.book-item__autor-link{
-   color: #979695;
-   font-size: 18px; 
-   letter-spacing: 0.5px;
-   text-decoration: none; 
-   font-family: Roboto-Thin;
+
+.book-item__autor-link {
+    color: #979695;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-family: Roboto-Thin;
 }
-.book-item__price{
+
+.book-item__price {
     color: #252525;
-    font-size: 18px;    
-    margin-top: 15px;   
+    font-size: 18px;
+    margin-top: 15px;
     font-family: Roboto-Regular;
 }
-.item-book__button{
-    margin-top: 15px;   
+
+.item-book__button {
+    margin-top: 15px;
     display: inline-block;
     background: white;
     padding: 10px;
-    padding-left: 15px; 
-    padding-right: 15px;    
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
     font-family: Roboto-Thin;
     text-decoration: none;
@@ -224,19 +302,23 @@
     transition: all 1s;
     color: #47bbf8;
 }
-.item-book__button:hover{
+
+.item-book__button:hover {
     color: white;
     background: #47bbf8;
 }
-.section-book-item-book{
+
+.section-book-item-book {
     width: 100%;
 }
-.section-caption-book{
+
+.section-caption-book {
     font-size: 24px;
     font-family: Roboto-Bold;
     text-align: left;
     letter-spacing: 0.5px;
 }
+
 .section--promo {
     background-color: #ff6fa8;
     background-image: url(../img/promo-bg.jpg);
@@ -244,43 +326,50 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    padding-top: 40px;  
-    padding-bottom: 40px;    
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.section--promo__caption{
-    font-size: 36px;    
+
+.section--promo__caption {
+    font-size: 36px;
     color: white;
     font-family: Roboto-Light;
     text-align: center;
 }
-.section--promo__subtitle{
-    margin-top: 30px;   
-    font-size: 16px;    
+
+.section--promo__subtitle {
+    margin-top: 30px;
+    font-size: 16px;
     color: white;
     font-family: Roboto-Light;
     text-align: center;
     letter-spacing: 0.25px;
     line-height: 1.4;
 }
-.section--promo__box{
+
+.section--promo__box {
     width: 300px;
     box-sizing: border-box;
     margin: auto;
-    margin-top: 30px;  
+    margin-top: 30px;
 }
-.section--promo__box-item{
+
+.section--promo__box-item {
     width: 130px;
     display: inline-block;
     box-sizing: border-box;
 }
-.section--promo__box-item:nth-child(2){
-    margin-left: 35px;  
+
+.section--promo__box-item:nth-child(2) {
+    margin-left: 35px;
 }
-.section--promo__box-img{
+
+.section--promo__box-img {
     width: 100%;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
-.section--promo__box-item-link{
+
+.section--promo__box-item-link {
     width: 100%;
     display: inline-block;
     text-decoration: none;
@@ -290,48 +379,68 @@
     border: 1px solid white;
     text-align: center;
     box-sizing: border-box;
-    font-size: 14px;    
+    font-size: 14px;
 }
+
+
 
 
 /*________________ FOOTER STYLE ________________*/
 
 .footer {
-    height: 80px;
-    background: #001c2d;
+    padding-top: 10px;
+    box-sizing: border-box;
+    height: 60px;
+    border-top: solid 1px #f2f1f1;
 }
 
-.footer__list {
-    position: relative;
-    top: 20px;
-    float: right;
-}
-
-.footer__icon {
-    width: 40px;
-}
-
-.footer__list-item {
-    display: inline-block;
+.footer-box__image {
+    height: 30px;
+    float: left;
     margin-right: 10px;
 }
 
-.footer__list-item:nth-last {
-    margin-left: 0px;
+.footer-box {
+    display: inline-block;
+    width: 33%;
 }
 
-.footer__list-link {
-    opacity: 0.5;
+.footer-box__text {
+    font-size: 14px;
+    font-family: Roboto-Regular;
 }
 
-.footer__list-link:hover {
-    opacity: 1;
+.footer-box__text-span {
+    font-size: 12px;
+    font-family: Roboto-Light;
 }
 
-.footer__text {
-    font-style: 12px;
-    float: left;
+.footer-box__icon {
+    width: 25px;
+    transition: all 1s;
+}
+
+.footer-box__icon:hover {
+    opacity: 0;
+}
+
+.footer-box__icon-hide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.footer-box__list {
+    float: right;
+    margin-top: 7px;
+}
+
+.footer-box__list-item {
     position: relative;
-    top: 30px;
-    color: #4b5d82;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-box__list-item:nth-child(1) {
+    margin-left: 0px;
 }

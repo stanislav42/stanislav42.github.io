@@ -4,7 +4,7 @@
 }
 
 .slide_viewer {
-    height: 525px;
+    height: 510px;
     overflow: hidden;
     position: relative;
 }
@@ -25,6 +25,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 150px;
+}
+.slide:nth-child(2){
+   background-image: url(../img/header-slide-two.jpg); 
+}
+.slide:nth-child(3){
+   background-image: url(../img/header-slide-three.jpg); 
 }
 
 .slide__wrapper {

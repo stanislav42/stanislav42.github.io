@@ -21,9 +21,28 @@
             <img src="assets/img/logo.png" alt="" class="header__logo">
             <ul class="navigation__list">
                 <li class="navigation__list-item"><a href="#" class="navigation__list-link">Все книги</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Новинки</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Бестсселеры</a></li>
-                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Школа</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('novelties')">Новинки</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('bestsellers')">Бестсселеры</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('school')">Школа</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Доставка и оплата</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Контакты</a></li>
+            </ul>
+            <ul class="navigation__icon-list">
+                <li class="navigation__icon-list-item"><a href="#" class="navigation__icon-list-link"><img src="assets/img/icon/search.svg" alt="" class="navigation__icon-list-img"></a></li>
+                <li class="navigation__icon-list-item"><a href="#" class="navigation__icon-list-link"><img src="assets/img/icon/like.svg" alt="" class="navigation__icon-list-img"></a></li>
+                <li class="navigation__icon-list-item"><a href="#" class="navigation__icon-list-link"><img src="assets/img/icon/shopping-cart.svg" alt="" class="navigation__icon-list-img"></a></li>
+                <li class="navigation__icon-list-item"><a href="#" class="navigation__icon-list-link"><img src="assets/img/icon/man-user.svg" alt="" class="navigation__icon-list-img"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation-wrapper clon">
+        <nav class="navigation">
+            <img src="assets/img/logo.png" alt="" class="header__logo">
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link">Все книги</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('novelties')">Новинки</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('bestsellers')">Бестсселеры</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__list-link" onclick="scroll_to_elem('school')">Школа</a></li>
                 <li class="navigation__list-item"><a href="#" class="navigation__list-link">Доставка и оплата</a></li>
                 <li class="navigation__list-item"><a href="#" class="navigation__list-link">Контакты</a></li>
             </ul>
@@ -37,32 +56,34 @@
     </div>
     <header class="header slider">
         <div class="slide_viewer">
-             <div class="slide_group">
-                    <div class="slide">
-                        <div class="slide__wrapper slide__wrapper--one">
-                           <h2 class="header__subtitle">Осенняя распродажа</h2>
-                            <h1 class="header__caption">Скидки до 50%</h1>
-                            <a class="header__button" href="#">Узнать подробнее</a> 
-                        </div> 
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrapper slide__wrapper--one">
-                           <h2 class="header__subtitle">Осенняя распродажа</h2>
-                            <h1 class="header__caption">Скидки до 50%</h1>
-                            <a class="header__button" href="#">Узнать подробнее</a> 
-                        </div> 
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrapper slide__wrapper--one">
-                           <h2 class="header__subtitle">Осенняя распродажа</h2>
-                            <h1 class="header__caption">Скидки до 50%</h1>
-                            <a class="header__button" href="#">Узнать подробнее</a> 
-                        </div> 
+            <div class="slide_group">
+                <div class="slide">
+                    <div class="slide__wrapper slide__wrapper--one">
+                        <h2 class="header__subtitle">Осенняя распродажа</h2>
+                        <h1 class="header__caption">Скидки до 50%</h1>
+                        <a class="header__button" href="#">Узнать подробнее</a>
                     </div>
                 </div>
+                <div class="slide">
+                    <div class="slide__wrapper slide__wrapper--one">
+                        <h2 class="header__subtitle header__subtitle-two">31 ноября - 31 декабря</h2>
+                        <h1 class="header__caption header__caption-two">Новогоднее чудо!</h1>
+                        <h2 class="header__subtitle header__subtitle-two">Каждая вторая книга в подарок</h2>
+                        <a class="header__button header__button-two" href="#">Не верю!</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__wrapper slide__wrapper--one">
+                        <h2 class="header__subtitle header__subtitle-three">25 декабря - 10 января</h2>
+                        <h1 class="header__caption header__caption-three">Сами в шоке!</h1>
+                        <h2 class="header__subtitle header__subtitle-three">Скидка 30% на бесцеллеры 2017 года</h2>
+                        <a class="header__button header__button-three" href="#">Успеть на акцию</a>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
-        <div class="slide_buttons" onselectstart="return false" onmousedown="return false" ></div>
+        <div class="slide_buttons" onselectstart="return false" onmousedown="return false"></div>
     </header>
     <main class="main">
         <section class="section section--one">
@@ -113,8 +134,8 @@
                 </div>
             </div>
         </section>
-        <section class="section section--book">
-            <div class="section-wrapper section-wrapper--book">
+        <section class="section section--book" id="bestsellers">
+            <div class="section-wrapper section-wrapper--book" >
                 <h4 class="section-caption section-caption-book">Бестсселеры</h4>
                 <div class="section--book-box">
                     <div class="section--book-item">
@@ -229,7 +250,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--book">
+        <section class="section section--book" id="school">
             <div class="section-wrapper section-wrapper--book">
                 <h4 class="section-caption section-caption-book">Для школы</h4>
                 <div class="section--book-box">
@@ -329,17 +350,37 @@
     </main>
     <footer class="footer">
         <div class="footer-wrapper">
-            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores provident molestias dignissimos dolor voluptatibus quo.</p>
-            <ul class="footer__list">
-                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="assets/img/icon/facebook-o.svg" alt="" class="footer__icon"></a></li>
-                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="assets/img/icon/google-o.svg" alt="" class="footer__icon"></a></li>
-                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="assets/img/icon/instagram-o.svg" alt="" class="footer__icon"></a></li>
-                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="assets/img/icon/twitter-o.svg" alt="" class="footer__icon"></a></li>
-            </ul>
+            <div class="footer-box">
+                <img src="assets/img/icon/footer/facebook-placeholder-for-locate-places-on-maps.svg" alt="" class="footer-box__image">
+                <p class="footer-box__text">Нижний Новгород, проспект Ленина,
+                    <br>33 (Торговый центр «Муравей»)</p>
+            </div>
+            <div class="footer-box">
+                <img src="assets/img/icon/footer/icon.svg" alt="" class="footer-box__image">
+                <p class="footer-box__text">8 831 245 55 55 / 245 65 65
+                    <br><span class="footer-box__text-span">Перезвоните мне</span></p>
+            </div>
+            <div class="footer-box">
+                <ul class="footer-box__list">
+                    <li class="footer-box__list-item"><a href="#" class="footer-box__link"><img src="assets/img/icon/social/f.svg" alt="" class="footer-box__icon"><img src="assets/img/icon/social/f-0.svg" alt="" class="footer-box__icon footer-box__icon-hide"></a></li>
+                    <li class="footer-box__list-item"><a href="#" class="footer-box__link"><img src="assets/img/icon/social/g.svg" alt="" class="footer-box__icon"><img src="assets/img/icon/social/g-0.svg" alt="" class="footer-box__icon footer-box__icon-hide"></a></li>
+                    <li class="footer-box__list-item"><a href="#" class="footer-box__link"><img src="assets/img/icon/social/i.svg" alt="" class="footer-box__icon"><img src="assets/img/icon/social/i-0.svg" alt="" class="footer-box__icon footer-box__icon-hide"></a></li>
+                    <li class="footer-box__list-item"><a href="#" class="footer-box__link"><img src="assets/img/icon/social/t.svg" alt="" class="footer-box__icon"><img src="assets/img/icon/social/t-0.svg" alt="" class="footer-box__icon footer-box__icon-hide"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $(window).on("scroll", function() {
+            var fromTop = $(document).scrollTop();
+            $(".clon").toggleClass("active", (fromTop > 520));
+        });
+    })(jQuery);
+    </script>
 </body>
 
 </html>
