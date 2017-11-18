@@ -498,3 +498,22 @@
 .footer-box__list-item:nth-child(1) {
     margin-left: 0px;
 }
+
+/*________________ CARD PRODUCT STYLE ________________*/
+.crumbs{
+    font-family: Roboto-Thin;
+    font-size: 14px;
+    color: #979695;
+}
+.crubs__here{
+    color: #252525;
+    font-family: Roboto-Regular;
+}
+.crumbs__link{
+    color: #979695;
+    text-decoration: none;
+    font-family: Roboto-Thin;
+}
+.section__card_product-box{
+    margin-top: 30px;
+}
