@@ -794,3 +794,57 @@ a[href*="intent"] {
 .rating2 a {
     float: none
 }
+/*________________ BASKET STYLE ________________*/
+.wrapper__basket-item{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+.wrapper__basket-item:nth-child(2){
+    margin-left: 5%;
+    width: 30%;
+}
+.flexbox-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.section-caption-basket{
+    margin-bottom: 30px;
+}
+.basket__article{
+  vertical-align: middle;  
+}
+.basket__article--book{
+    width: 70px; 
+    margin-right: 20px;
+}
+.basket__article--box{
+    display: inline-block;
+}
+.basket__article--box{
+    width: 170px;
+}
+.basket__article--name-book{
+    font-family: Roboto-Regular;
+    font-size: 18px;
+}
+.basket__article--autor-book{
+    font-family: Roboto-Light;
+    text-decoration: none;
+    color: #979695;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.basket__input{
+    border: 1px solid #c9c8c8;
+    padding: 8px;
+    width: 100%;
+}
+.basket__article--autor-book{
+
+}
