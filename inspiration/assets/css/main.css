@@ -30,9 +30,17 @@
     top: -100px;
     transition: all 0.75s;
 }
-.active{
-	top: 0px;
+
+.active {
+    top: 0px;
 }
+
+.sale-icon {
+    position: absolute;
+    top: 40%;
+    left: 62%;
+}
+
 
 
 /*________________ Navigation menu ________________*/
@@ -91,6 +99,7 @@
 .navigation__icon-list-img {
     width: 22px;
 }
+
 
 
 
@@ -190,6 +199,7 @@
 
 
 
+
 /*________________ SECTION STYLE ________________*/
 
 .section {
@@ -212,7 +222,6 @@
 .section--one__article {
     float: left;
     padding-top: 40px;
-    padding-bottom: 40px;
     margin-left: 4.2%;
 }
 
@@ -236,11 +245,16 @@
 .section--two {
     height: auto;
 }
-
+.section--two{
+	padding-top: 40px;
+}
 .section--book {
     height: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.section-caption-book-autoplau{
+	margin-bottom: 40px;
 }
 
 .item-book__caption {
@@ -260,12 +274,26 @@
     width: 90%;
     margin: auto;
 }
+.section-three-item-book__link{
+	outline: none;
+}
+.section-wrapper-autoplau{
+	width: 90%;
+	margin: auto;
+}
 
 .section--book-item {
     display: inline-block;
     width: 14.5%;
     margin-left: 6.3%;
     margin-top: 40px;
+    position: relative;
+}
+.section--book-item-carousel{
+	padding-left: 25px;
+	box-sizing: border-box;
+	padding-right: 27px;
+	outline: none;
 }
 
 .section--book-item:nth-child(1),
@@ -286,6 +314,31 @@
     font-size: 18px;
     margin-top: 15px;
     font-family: Roboto-Regular;
+}
+
+.book-item__price-sale-0 {
+  position: relative;
+  display: inline-block; 
+  margin-right: 10px;
+  color: #979695;
+}
+.book-item__price-sale-0:before{
+	position: absolute;
+	width: 100%;
+	content: ' ';
+	height: 1px;
+	background:  #979695;
+	top: 10px;
+}
+.book-item__price-sale-50{
+	 color: #ff0000;
+}
+.book-item__price-sale-25{
+	 color: #48b4ed;
+}
+.book-item__price-sale {
+ font-family: Roboto-Black;
+ font-size: 24px;
 }
 
 .item-book__button {
@@ -381,6 +434,7 @@
     box-sizing: border-box;
     font-size: 14px;
 }
+
 
 
 
