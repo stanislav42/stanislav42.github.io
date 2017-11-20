@@ -1164,6 +1164,10 @@ label~label {
 }
 .contacts__input{
     padding: 11px;
+    margin-left: 15px;
+}
+.contacts__input:nth-child(2){
+    margin-left: 0px;
 }
 .contacts__input-button{
     top: -3px;
