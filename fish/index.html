@@ -1,0 +1,1230 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NHMJLGC');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <title>Золотой резерв Поставки свежемороженой рыбы по всей России, СНГ и Европе от рыбодобывающих компаний</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://yandex.st/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.popup .close_window, .overlay').click(function() {
+            $('.popup, .overlay').css({ 'opacity': '0', 'visibility': 'hidden' });
+        });
+        $('a.open_window').click(function(e) {
+            $('.popup, .overlay').css({ 'opacity': '1', 'visibility': 'visible' });
+            e.preventDefault();
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.popup-2 .close_window-2, .overlay-2').click(function() {
+            $('.popup-2, .overlay-2').css({ 'opacity': '0', 'visibility': 'hidden' });
+        });
+        $('a.open_window-2').click(function(e) {
+            $('.popup-2, .overlay-2').css({ 'opacity': '1', 'visibility': 'visible' });
+            e.preventDefault();
+        });
+    });
+    </script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- GeoTargeting by Viacheslav Lukoyanov MODXpro.ru -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        // jQuery('#head_text').html(ymaps.geolocation.region);
+        jQuery('#area').val(ymaps.geolocation.region);
+        jQuery('#region').html(ymaps.geolocation.city);
+        jQuery('#area').attr('placeholder', ymaps.geolocation.region);
+        jQuery("#teleph1").mask("+7 (999) 999-9999");
+    }
+
+    ymaps.ready(init);
+
+    function init() {
+
+        var country = ymaps.geolocation.country,
+            url = "http://fishgoldrezerv.ru/eng/",
+            cis = [
+                "Азербайджан",
+                "Армения",
+                "Белоруссия",
+                "Казахстан",
+                "Киргизия",
+                "Молдавия",
+                "Россия",
+                "Таджикистан",
+                "Туркмения",
+                "Узбекистан",
+                "Украина"
+            ];
+
+
+        if (!($.inArray(country, cis) + 1)) {
+            $(location).attr('href', url);
+        } else {
+            return false;
+        };
+
+    }
+    </script>
+    <!-- END -->
+    <script type="text/javascript">
+    /*!
+     * Copyright 2015 Viacheslav Lukoyanov modxpro.ru
+     * Released under the MIT license
+     */
+
+    (function(factory) {
+        if (typeof define === 'function' && define.amd) {
+            // AMD
+            define(['jquery'], factory);
+        } else if (typeof exports === 'object') {
+            // CommonJS
+            factory(require('jquery'));
+        } else {
+            // Browser globals
+            factory(jQuery);
+        }
+    }(function($) {
+
+        var pluses = /\+/g;
+
+        function encode(s) {
+            return config.raw ? s : encodeURIComponent(s);
+        }
+
+        function decode(s) {
+            return config.raw ? s : decodeURIComponent(s);
+        }
+
+        function stringifyCookieValue(value) {
+            return encode(config.json ? JSON.stringify(value) : String(value));
+        }
+
+        function parseCookieValue(s) {
+            if (s.indexOf('"') === 0) {
+                // This is a quoted cookie as according to RFC2068, unescape...
+                s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+            }
+
+            try {
+                // Replace server-side written pluses with spaces.
+                // If we can't decode the cookie, ignore it, it's unusable.
+                // If we can't parse the cookie, ignore it, it's unusable.
+                s = decodeURIComponent(s.replace(pluses, ' '));
+                return config.json ? JSON.parse(s) : s;
+            } catch (e) {}
+        }
+
+        function read(s, converter) {
+            var value = config.raw ? s : parseCookieValue(s);
+            return $.isFunction(converter) ? converter(value) : value;
+        }
+
+        var config = $.cookie = function(key, value, options) {
+
+            // Write
+
+            if (value !== undefined && !$.isFunction(value)) {
+                options = $.extend({}, config.defaults, options);
+
+                if (typeof options.expires === 'number') {
+                    var days = options.expires,
+                        t = options.expires = new Date();
+                    t.setTime(+t + days * 864e+5);
+                }
+
+                return (document.cookie = [
+                    encode(key), '=', stringifyCookieValue(value),
+                    options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+                    options.path ? '; path=' + options.path : '',
+                    options.domain ? '; domain=' + options.domain : '',
+                    options.secure ? '; secure' : ''
+                ].join(''));
+            }
+
+            // Read
+
+            var result = key ? undefined : {};
+
+            // To prevent the for loop in the first place assign an empty array
+            // in case there are no cookies at all. Also prevents odd result when
+            // calling $.cookie().
+            var cookies = document.cookie ? document.cookie.split('; ') : [];
+
+            for (var i = 0, l = cookies.length; i < l; i++) {
+                var parts = cookies[i].split('=');
+                var name = decode(parts.shift());
+                var cookie = parts.join('=');
+
+                if (key && key === name) {
+                    // If second argument (value) is a function it's a converter...
+                    result = read(cookie, value);
+                    break;
+                }
+
+                // Prevent storing a cookie that we couldn't decode.
+                if (!key && (cookie = read(cookie)) !== undefined) {
+                    result[name] = cookie;
+                }
+            }
+
+            return result;
+        };
+
+        config.defaults = {};
+
+        $.removeCookie = function(key, options) {
+            if ($.cookie(key) === undefined) {
+                return false;
+            }
+
+            // Must not alter options, thus extending a fresh object...
+            $.cookie(key, '', $.extend({}, options, { expires: -1 }));
+            return !$.cookie(key);
+        };
+
+    }));
+
+
+    function setCookie(name, value, options) {
+        options = options || {};
+
+        var expires = options.expires;
+
+        if (typeof expires == "number" && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires * 1000);
+            expires = options.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            options.expires = expires.toUTCString();
+        }
+
+        value = encodeURIComponent(value);
+
+        var updatedCookie = name + "=" + value;
+
+        for (var propName in options) {
+            updatedCookie += "; " + propName;
+            var propValue = options[propName];
+            if (propValue !== true) {
+                updatedCookie += "=" + propValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
+
+    // возвращает cookie с именем name, если есть, если нет, то undefined
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    </script>
+    <script type="text/javascript">
+    yaParams = {}
+    jQuery(function($) {
+
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+        }
+
+        // UTM
+        utm = [];
+        $.each(["utm_source", "utm_medium", "utm_campaign", "utm_term", 'source_type', 'source', 'position_type', 'position', 'added', 'creative', 'matchtype'], function(i, v) {
+            utm[v] = getURLParameter(v) || $.cookie(v);
+            $.cookie(v, utm[v], { expires: 365, path: '/' });
+            $('<input type="hidden" />').attr({
+                name: "content[" + v + "]",
+                value: utm[v]
+            }).appendTo("form");
+        });
+
+        // записываем переменную в куки
+        setCookie("utm_source", utm['utm_source']);
+
+    });
+    </script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5747ZK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5747ZK');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-60566734-1', 'auto');
+    ga('require', 'displayfeatures');
+
+    if (!document.referrer ||
+        document.referrer.split('/')[2].indexOf(location.hostname) != 0)
+        setTimeout(function() {
+            ga('send', 'event', 'Новый посетитель', location.pathname);
+        }, 15000);
+
+    ga('send', 'pageview');
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+            contentAsHTML: true,
+            maxWidth: 600
+        });
+    });
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '911937665613399'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=911937665613399&ev=PageView&noscript=1" /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHMJLGC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+    /*$(function() {
+
+    jQuery.fn.center = function () {
+    	this.css("position","absolute");
+    	this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+    												$(window).scrollTop()) + "px");
+    	this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+    												$(window).scrollLeft()) + "px");
+    	return this;
+    }
+
+     $(function () {
+    	 $.widget("ui.tooltip", $.ui.tooltip, {
+    		 options: {
+    			 content: function () {
+    				 return $(this).prop('title');
+    			 }
+    		 }
+    	 });
+
+    	 $('[rel=tooltip]').tooltip({
+    		tooltipClass: "custom-tooltip",
+    		 position: {
+    			 my: "center bottom-20",
+    			 at: "center top",
+    			 using: function (position, feedback) {
+    				 $(this).css(position);
+    				 $("<div>")
+    					 .addClass("arrow")
+    					 .addClass(feedback.vertical)
+    					 .addClass(feedback.horizontal)
+    					 .appendTo(this);
+    			 }
+    		 }
+    	 });
+     });
+     $("#mail").hide();
+     $(".mail_success").hide();
+     $(".call").click(function(){
+    	$("#mail .title").text("оставьте заявку!");
+    	$("#mail").center();
+    	$("#mail").show();
+    	$("#call_input").val(1);
+     });
+     $(".big_button").click(function(){
+    	$("#mail .title").html("оставьте заявку<br> на получение прайса!");	
+    	$("#mail").center();
+    	$("#mail").show();
+     });
+     $(".small_button").click(function(){
+    	$("#mail .title").html("оставьте заявку<br> на получение прайса!");	
+    	$("#mail").center();
+    	$("#mail").show();
+     });
+     $(".close_button").click(function(){
+    	$("#mail").hide();
+    	$("#call_input").val(0);
+     })
+     $("#close_button2").click(function(){
+    	$(".mail_success").hide();
+    	$("#call_input").val(0);
+     })
+    $("#send_mail").click(function(){
+    	if ($("#teleph1").val()=="" ||  $("#full-name").val()==""){
+    		alert("Заполните все поля!");
+    		return;
+    	}
+    	$.ajax({
+    		type: "POST",
+    		url: "ajax.php",
+    		data: { name: $("#full-name").val(), tel: $("#teleph1").val(), call: $("#call_input").val()},
+    	})
+    	.done(function( msg ) {
+    			$("#mail").hide();
+    			$(".mail_success").center();
+    			$(".mail_success").show();
+    			$("#call_input").val(0);
+    	});
+    }) ;
+    });*/
+    </script>
+    <div class="overlay" title="окно"></div>
+    <div class="popup">
+        <div class="close_window">x</div>
+        <div id="mail" class="mail__modal">
+            <div class="title">ТОРГУЕМ ОТ 5 ТОНН!
+                <br>оставьте заявку
+                <br> на получение прайса!</div>
+            <form>
+                <p> Введите Ваше имя
+                    <br>
+                    <input type="text" name="full-name" required id="full-name" size="45" placeholder="Иван Иванов">
+                </p>
+                <p> Введите Ваш телефон
+                    <br>
+                    <input type="text" name="teleph1" required id="teleph1" value="" size="45" placeholder="">
+                </p>
+                <p> Введите Ваш Email
+                    <br>
+                    <input type="text" name="myemail" required id="myemail" value="" size="45" placeholder="">
+                </p>
+                <p> Введите Вашу область
+                    <br>
+                    <input type="text" name="area" id="area" value="" size="45" placeholder="">
+                </p>
+                <div class="small_button" id="send_mail"></div>
+                <input type="hidden" id="call_input" value="">
+                <a href="privacy.html" target="_blank">Нажимая кнопку "Получить прайс" Вы соглашаетесь с политикой конфиденциальности</a>
+            </form>
+        </div>
+    </div>
+    <div class="overlay-2" title="окно"></div>
+    <div class="popup-2">
+        <div class="close_window-2">x</div>
+        <div id="mail_2" class="mail__modal">
+            <div class="title">ТОРГУЕМ ОТ 5 ТОНН!
+                <br>оставьте заявку
+                <br> на получение прайса!</div>
+            <form>
+                <p> Введите Ваше имя
+                    <br>
+                    <input type="text" name="full-name" required id="full-name" size="45" placeholder="Иван Иванов">
+                </p>
+                <p> Введите Ваш телефон
+                    <br>
+                    <input type="text" name="teleph1" required id="teleph1" value="" size="45" placeholder="">
+                </p>
+                <p> Введите Ваш Email
+                    <br>
+                    <input type="text" name="myemail" required id="myemail" value="" size="45" placeholder="">
+                </p>
+                <p> Введите Вашу область
+                    <br>
+                    <input type="text" name="area" id="area" value="" size="45" placeholder="">
+                </p>
+                <div class="small_button" id="send_mail"></div>
+                <input type="hidden" id="call_input" value="">
+                <a href="privacy.html" target="_blank">Нажимая кнопку "Получить прайс" Вы соглашаетесь с политикой конфиденциальности</a>
+            </form>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div id="left_content">
+                    <p id="head_text">
+                        <span class="logo">Золотой резерв</span>
+                        <span class="logo-description"><br>Поставки свежемороженой рыбы по всей<br> России, СНГ и Европе от рыбодобывающих компаний</span>
+                    </p>
+                </div>
+                <div id="right_content">
+                    <p>
+                        <span class='call_number'>8-800-700-56-85<br />
+					<span>(звонок бесплатный)</span>
+                        <div class="language">
+                            <a class="ru active-leng" href="http://fishgoldrezerv.ru/"><img src="images/russian.png" />RU</a><a class="en" href="http://fishgoldrezerv.ru/eng/"><img src="images/usa.png" />ENG</a>
+                        </div>
+                        </span><a class="call-form" href="send.html"><span class="call">Заказать звонок</span></a>
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </header>
+    <div id="first">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-offset-2 col-sm-8">
+                    <div id="first_title">
+                        <span class='top_text'>Получи цену флота при заказе</br> ОТ 5 ТОНН.</span>
+                        <br>
+                        <span class='bottom_text'>Работаем с клиентами всех регионов России.<br />Ваш регион - <a href="send.html" style="text-decoration: underline;"><span id="region"></span></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div class="container">
+            <div class="block_title">Наш ассортимент</div>
+            <a class="open_window" href="#">хочу чтоб по клику открылось окно</a>
+            <a class="open_window-2" href="#">хочу чтоб по клику открылось окно</a>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a rel="tooltip" href="#" id="fish1" title='<p class="tooltip_title">Сельдь Атлантическая</p>
+						<img style="width:200px; float:left; margin:10px" src="./images/seld.jpg"/>
+						<p>Атлантическая сельдь относится к семейству сельдевых. Характерный признак этого семейства — тело цилиндрической формы, немного сжатое с боков. Отличительными чертами семейства можно считать отсутствие жирового плавника, широкие жаберные щели, вдоль брюха у многих сельдевых проходит киль из заостренных чешуек.Примерный размер обычной рыбы — 20–25 см, но встречаются экземпляры длиной до 40 см.Сельдь населяет соленые воды Балтийского, Белого, Баренцева морей. Предпочитает держаться в толще воды до 200 м.</p>' class='fish tooltip'>
+						<img class="fish-thumb" src="./images/seld.jpg"/>Сельдь Атлантическая
+					</a>
+                </div>
+                <div class="col-sm-3">
+                    <a rel="tooltip" href="#" id="fish2" title="<p class='tooltip_title'>Скумбрия</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/skumbriya.jpg'/>
+						<p>Скумбрия, макрель - рыба семейства скумбриевых отряда окунеобразных. Длина до 60 см, весит до 1,6 кг.Распространена в Атлантическом океане: по восточному побережью от Баренцева и Белого морей до Канарских островов; а также в Балтийском (до Финского залива), Северном, Средиземном, Мраморном, Чёрном морях, по западному побережью от Лабрадора до Каролины. Стадная рыба, совершающая миграции, весной, с глубин 150—250 м, где зимует, к берегам для размножения.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/skumbriya.jpg"/>Скумбрия неразделанная и без головы
+					</a>
+                </div>
+                <div class="col-sm-3">
+                    <a rel="tooltip" href="#" id="fish3" title="<p class='tooltip_title'>Мойва</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/mojva.jpg'/>
+						<p>Мойва - морская, холодноводная (арктическая) рыба. По образу жизни — пелагическая, населяет верхние слои и толщу вод. Мойва живет в открытой части моря, на глубине до 200 м.  Длина рыбы 14-20 см. Мойва питается мелкими рачками и другими планктонными организмами. Пища ее по составу очень сходна с пищей сельди. В уловах встречается в мае, июне и июле.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/mojva.jpg"/>Мойва
+					</a>
+                </div>
+                <div class="col-sm-3">
+                    <a rel="tooltip" href="#" id="fish4" title="<p class='tooltip_title'>Путассу</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/putasu.jpg'/>
+						<p>Путассу́  — род рыб семейства тресковых, может достигать длины 47 см, но обычная длина ее 30—35 см. Она распространена преимущественно в северо-восточных водах Атлантического океана от западной части Средиземного моря до Исландии, Шпицбергена и западных частей Баренцева моря. Питается планктонными ракообразными, а также личинками и молодью рыб — светящихся анчоусов, сельди, трески и других видов.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/putasu.jpg"/>Путассу
+					</a>
+                </div>
+            </div>
+            <div class="row fish_row">
+                <div class="col-sm-4">
+                    <a rel="tooltip" href="#" id="fish5" title="<p class='tooltip_title'>Горбуша</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/gorbusha.jpg'/>
+						<p>ГОРБУША - рыба рода тихоокеанских лососей. Длина тела около 0,5 м, весит около 1,5 кг (самый мелкий представитель рода тихоокеанских лососей). Чешуя очень мелкая. Распространена Горбуша в северной части Тихого океана на Юге до Владивостока и Сан-Франциско, а также в Северном Ледовитом океане на 3ападе до реки Лены, на Востоке до реки Макензи.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/gorbusha.jpg"/>Горбуша
+					</a>
+                </div>
+                <div class="col-sm-4">
+                    <a rel="tooltip" href="#" id="fish6" title="<p class='tooltip_title'>Минтай</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/mintay.jpg'/>
+						<p>Минтай — пелагическая холодолюбивая рыба семейства тресковых. Наиболее распространённая рыба в северной части Тихого океана. Максимальная длина тела 91 см, а масса — 3,85 кг; максимальная продолжительность жизни — 15 лет. Эта рыба живёт в холодных водах (от 2 до 9 °C), предпочитая глубины от 200 до 300 метров, хотя может совершать миграции, опускаясь на глубины 500—700 метров и глубже.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/mintay.jpg"/>Минтай
+					</a>
+                </div>
+                <div class="col-sm-4">
+                    <a rel="tooltip" href="#" id="fish7" title="<p class='tooltip_title'>Килька</p>
+						<img style='width:300px; float:left; margin:10px' src='./images/kilka.jpg'/>
+						<p>Одной из любимых закусок практически каждого советского человека являлась рыба килька, которая в России считается одной из самых дешевых рыб, а на Западе - деликатесом. Кстати, не всем известно, что под словом “килька” скрывается не какой-то определенный вид рыб, а несколько, относящихся к семейству сельдевых. Шпроты и тюльки – эти же самые кильки. В настоящее время самое большое распространение получила балтийская и каспийская килька, а также азовско-черноморская тюлька. Максимальная длина рыбы кильки едва ли превышает 12 сантиметров. Несомненно, внешне она напоминает сельдь, но значительно меньшего размера. В кулинарных целях свежезамороженную рыбу кильку нередко маринуют, солят, а также изготавливают из нее шпроты, так же коптят.</p>" class='fish tooltip'>
+						<img class="fish-thumb" src="./images/kilka.jpg"/>Килька
+					</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="seventh">
+        <div class="container">
+            <div class="block_title">История развития</div>
+            <div class="center_row">
+            </div>
+            <div class="history">
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2008</span>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – жесткий <span class='bold'>КОНТРОЛЬ КАЧЕСТВА</span> поставляемой на рынок <span class="bold">ПРОДУКЦИИ</span>.
+                        </p>
+                        <p>
+                            Основание компании и открытие первого офиса в России, аренда 1000 м2 низкотемпературных складских помещений.
+                        </p>
+                    </div>
+                    <div class="left_history" id="hist1">2008 <span>г.</span></div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2009</span>
+                    <div class="right_history" id="hist2">2009 <span>г.</span></div>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – <span class="bold">ПОЗНАКОМИТЬ</span> рынок с новым игроком, привлечение <span class="bold">НАДЕЖНЫХ ПАРТНЕРОВ</span> с долгосрочной перспективой.
+                        </p>
+                        <p>
+                            Привлечение в команду <span class="bold">лучших специалистов</span> из других Российских городов – Москвы, Самары, Ярославля, Нижнего Новгорода, с <span class="bold">опытом</span> работы в рыбном бизнесе <span class="bold">не менее 7 лет</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2010</span>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> –оценив качество добывающих компаний и поняв потребности партнеров, минимизировать себестоимость продукта для большей <span class="bold">ПРИВЛЕКАТЕЛЬНОСТИ ТД КАЙРОС</span> в рыбном бизнесе.
+                        </p>
+                        <p>
+                            <span class="bold">Заключение прямых договоров со всеми крупными Российскими Атлантическими флотами: </span> ФОР, Вестрыбфлот, Карелрыбфлот, МТФ, Карат, Айсберг-Норд, АТФ, МурманСиФуд, Норд-Пилигрим. Общий оборот за год – <span class="bold">более 8 000 тонн рыбы</span>.
+                        </p>
+                    </div>
+                    <div class="left_history" id="hist3">2010 <span>г.</span></div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2011</span>
+                    <div class="right_history" id="hist4">2011 <span>г.</span></div>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – <span class="bold"> УВЕЛИЧЕНИЕ ДОЛИ ТД КАЙРОС</span> на Российском рынке свежемороженых продуктов.
+                        </p>
+                        <p>
+                            Открытие филиалов в Москве и Санкт-Петербурге. Поставка свежемороженой рыбы в <span class="bold">более чем 50 регионов России</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2012</span>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – убрать все лишнее, что может мешать развитию компании и избежать стагнации.
+                        </p>
+                        <p>
+                            Реструктуризация компании, сокращение издержек. <span class="bold">Повышение профессионализма</span> сотрудников и <span class="bold">качества</span> обслуживания клиентов.
+                        </p>
+                    </div>
+                    <div class="left_history" id="hist5">2012 <span>г.</span></div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2013</span>
+                    <div class="right_history" id="hist6">2013 <span>г.</span></div>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – создать <span class="bold">БИЗНЕС СОВМЕСТНО<span> с партнерами на «прозрачных» условиях и <span class="bold">ВЗАИМНОМ ДОВЕРИИ</span>.
+                        </p>
+                        <p>
+                            Внедрение нового <span class="bold">ПО</span> для повышения качества взаимодействия с партнерами: мы оценили свои возможности
+                            <span class="bold">более чем по 30 показателям</span> и увидели серьезные перспективы по разработке и ведению совместных проектов.
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2014</span>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – создать <span class="bold">ПРЕДСТАВИТЕЛЬСТВА</span> в стратегически важных городах РОССИИ и вывести на рынок <span class="bold">НОВУЮ ТОРГОВУЮ МАРКУ «ЗОЛОТОЙ РЕЗЕРВ»</span>.
+                        </p>
+                        <p>
+                            Открытие региональных представительств в городах: <span class="bold">Москва, Санкт-Петербург, Нижний Новгород, Краснодар, Екатеринбург, Иркутск, Новосибирск</span>.
+                        </p>
+                    </div>
+                    <div class="left_history" id="hist7">2014 <span>г.</span></div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2015</span>
+                    <div class="right_history" id="hist8">2015 <span>г.</span></div>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> – Развитие новых оптовых направлений, привлечение инвесторов, оборот свыше 15 000 тонн в год
+                        </p>
+                        <p>
+                            Запуск в эксплуатацию современного <span class="bold">НИЗКОТЕМПЕРАТУРНОГО АВТОМАТИЗИРОВАННОГО ЛОГИСТИЧЕСКОГО ЦЕНТРА</span> на <span class="bold">6000 тонн</span> в<span class="bold"> г. КАЗАНЬ</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2016</span>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> - начало сотрудничества с Дальневосточными флотами, увеличение объёма продаж.
+                            <br> <span class="bold">Поставка тихоокеанской мойвы, сельди, скумбрии, горбуши, кеты напрямую с Сахалина, Магадана, П-Камчатский </span>
+                        </p>
+                    </div>
+                    <div class="left_history" id="hist5">2016 <span>г.</span></div>
+                </div>
+                <div class="text">
+                    <img class="mini_history" src="images/mini_history.png" alt="">
+                    <span class="mini_history_year">2017</span>
+                    <div class="right_history" id="hist8">2017 <span>г.</span></div>
+                    <div class="history_text">
+                        <p>
+                            <span class='red'>ЦЕЛЬ</span> - внедрение системы Административного Менеджмента, расширение компании.
+                            <br> <span class="bold">Увеличение доли дальневосточного ассортимента в компании до 50% от общего объёма продаж. </span> </p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="third">
+        <div class="container">
+            <div class="block_title">Почему выбирают нас</div>
+            <div class="row why-row">
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_1" class="text_logo"></div>
+                        <p class='title'>Мы гарантируем самую выгодную цену на товар</p>
+                        <p class='descr'>Часто <span class='bold'>мы торгуем по цене флотов</span>, потому что покупаем 300-600 тонн продукции с каждого подхода.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_1" class="text_logo"></div>
+                        <p class='title'>отлаженная система транспортной логистики</p>
+                        <p class='descr'>Вам <span class='bold'>не надо искать</span> и проверять компании перевозчиков, каждая партия страхуется нами. Вы просто <span class='bold'>принимаете товар</span> по качеству и количеству на своем складе.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_2" class="text_logo"></div>
+                        <p class='title'>наши менеджеры берут на себя ответственность и решают вопросы здесь и сейчас</p>
+                        <p class='descr'><span class='bold'>Открытость</span>, как внутри компании, как и во внешней среде позволяет им экономить время и не согласовыать условия сделки с десятью начальниками. В работе с Вами мы принимаем <span class='bold'>максимально гибкие и оперативные решения</span>.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_2" class="text_logo"></div>
+                        <p class='title'>мы поставляем вам не только товар, но и всю информацию о нём</p>
+                        <p id="right2_descr" class='descr'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_3" class="text_logo"></div>
+                        <p class='title'>мы лояльны и готовы показывать свой заработок</p>
+                        <p id="left3_descr" class='descr'>После получения Вашего согласия, мы <span class='bold'>подписываем спецификацию</span>, где указываем условия сделки, сроки поставки и оплаты за товар.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_3" class="text_logo"></div>
+                        <p class='title'>мы на связи 24 часа!</p>
+                        <p class='descr'>После заключения договора поставки, мы постоянно сообщаем о местоположении Вашего груза - для <span class='bold'>эффективности мы внедрили CRM систему</span>. Мы принимаем все рекламации и отвечаем на них в течение суток, согласно разработанным внутренним правилам.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_4" class="text_logo"></div>
+                        <p class='title'>мы начинаем продажу только при наличии контракта от добывающей компании на определенный объем</p>
+                        <p class='descr'>Мы всегда ведем <span class='bold'>мониторинг рынка</span>, отслеживая квоты на товар Российских флотов и объем добычи наших зарубежных партнеров. Мы всегда <span class='bold'>интересуемся потребностями и возможностями</span> именно Вашего локального рынка, прежде чем согласовать поставку объема.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class='left_why_block'>
+                        <div id="left_4" class="text_logo"></div>
+                        <p class='title'>Мы оберегаем вашу конфиденциальность и не разглашаем данных без вашего согласия</p>
+                        <p id="right4_descr" class='descr'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class='left_why_block why_bottom'>
+                        <div id="left_5" class="text_logo"></div>
+                        <p class='title'>Мы проводим мониторинг более 20 компаний - поставщиков ежедневно, информируем о всех изменениях на рынке. Наша подписная клиентская база - более 1 000 электронных адресов по всей стране.</p>
+                        <p class='descr'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fourth_new">
+        <div class="container">
+            <div class="block_title">Международная выставка World Food</div>
+            <div class="title_new"> Сентябрь 2015 г</div>
+            <div class="col-sm-6">
+                <div class="f_new">
+                    <img src="images/vistavka (1).jpeg" alt=""> </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="f_new">
+                    <img src="images/vistavka (2).jpeg" alt=""> </div>
+            </div>
+            <div class="row">
+                <div class="title_new"> Сентябрь 2016 г</div>
+                <div class="col-sm-6">
+                    <div class="f_new">
+                        <img src="images/vistavka (3).jpg" alt=""> </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="f_new">
+                        <img src="images/vistavka (4).jpg" alt=""> </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="f_new">
+                        <img src="images/vistavka (5).jpg" alt=""> </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="f_new">
+                        <img src="images/vistavka (6).jpg" alt=""> </div>
+                </div>
+            </div>
+            <div class="link-wrap">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="send.html">
+                            <div class="big_button"></div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="pokypka">
+                            <div class="big_button2"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fourth">
+        <div class="container">
+            <div class="block_title">Логистика</div>
+            <div id="left_title" class="title_4">Транспортная</div>
+            <div id="right_title" class="title_4">Складская</div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="first_line">
+                    <div class="second_item item2"></div>
+                    <div class="first_item item1">
+                        <span class="bold">Мы обеспечиваем хранение</span> Вашего товара по минимальным ценам, размещая рыбу только в новых холодильниках в Санкт-Петербурге и Мурманске, Архангельске и Москве.
+                    </div>
+                    <div class="third_item item3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="second_line">
+                    <div class="first_item item1"></div>
+                    <div class="second_item item2"></div>
+                    <div class="third_item item3">
+                        <span class="bold">Осуществляем доставку товара</span> до Вашего склада по самым выгодным ставкам и в минимальные сроки. Мы обязательно страхуем Ваш груз, весь товар перемещается только проверенным автомобильным и ж/д транспортом.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="third_line">
+                    <div class="second_item item2"></div>
+                    <div class="first_item item1"><span class="bold">Мы работаем только с надежными</span> транспортными компаниями с гарантиями по возмещению ущерба, за 6 лет работы мы перевезли и доставили более 30 000 тонн Вашего груза, всегда доставляя товар в целости и сохранности.
+                    </div>
+                    <div class="third_item item3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fourth-2">
+        <div class="container">
+            <div class="block_title">Наш склад</div>
+            <div class="sk1">
+                <img src="images/sklad1.png" alt="">
+                <div class="text">
+                    Современный низкотемпературный автоматизированный логистический центр.Гарантированное хранение -25. Общая емкость хладокомбината – 6 212 палето - мест. Логистический комплекс построен немецкой компанией <b>SSI SCHAEFER NOELL</b> и состоит из 2 корпусов, предназначен для хранения продукции с темп. режимом до -25С. Полностью автоматизирован и обслуживается техникой японской компании <b>MAYEKAWA MFG.</b> Ввод складского комлекса в эксплуатацию в 2013г.
+                </div>
+            </div>
+            <div class="line">
+                <div class="left">
+                    <img src="images/punktu2.png" height="105" width="211" alt="">
+                </div>
+                <div class="right">
+                    <img src="images/punktu3.png" height="105" width="211" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="sk2">
+                        <img src="images/sk2.png" alt="">
+                        <div class="text">
+                            <b>Корпус 1 (низкий) – разделен на три камеры.</b>
+                            <br>
+                            <br> Две неавтоматизированные камеры хранения объемом 250 палето - мест каждая с температурным режимом от плюс 25°С до минус 18°С. Данные камеры могут быть использованы как камеры оттайки, доморозки или перетарки продукции. Третья зона экспедиции и комплектации грузов с температурным режимом от плюс 25°С до минус 18°С площадью 1200 кв.м.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="sk3">
+                        <img src="images/sk3.png" alt="">
+                        <div class="text">
+                            <b>Корпус 2 (высокий)</b> – однообъемная камера автоматизированного хранения продукции с температурным режимом от минус 25°С до плюс 25°С, обслуживается двумя кранами - автоматами производства фирмы SSI SCHAFER, разделена на зоны:
+                            <br>
+                            <br> - зона №1 на 2856 паллето - мест;
+                            <br> - зона №2 на 2856 паллето - мест.
+                            <br>
+                            <br> Общая емкость камеры – 5712 палето - мест.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sk-btn">
+                <a href="send2.html">
+                    <div class="small_button"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="fiveth">
+        <div class="container">
+            <div class="block_title">Наши партнеры</div>
+            <div id="partner">
+                <img src="images/1.png" alt="">
+                <img src="images/2.png" alt="">
+                <img src="images/3.png" alt="">
+                <img src="images/4.png" alt="">
+                <img src="images/5.png" alt="">
+                <img src="images/6.png" alt="">
+                <img src="images/7.png" alt="">
+                <img src="images/8.png" alt="">
+                <img src="images/9.jpg" alt="">
+                <img src="images/10.jpg" alt="">
+                <img src="images/11.png" alt="">
+                <img src="images/12.png" alt="">
+                <img src="images/13.png" alt="">
+                <img src="images/14.png" alt="">
+                <img src="images/15.png" alt="">
+                <img src="images/16.png" alt="">
+                <img src="images/17.png" alt="">
+                <img src="images/18.png" alt="">
+                <img src="images/19.png" alt="">
+                <img src="images/20.png" alt="">
+                <img src="images/21.png" alt="">
+                <img src="images/22.png" alt="">
+                <img src="images/23.png" alt="">
+                <img src="images/24.png" alt="">
+                <img src="images/25.png" alt="">
+                <img src="images/26.png" alt="">
+                <img src="images/27.png" alt="">
+                <img src="images/28.png" alt="">
+                <img src="images/29.png" alt="">
+                <img src="images/30.png" alt="">
+                <img src="images/31.png" alt="">
+                <img src="images/32.png" alt="">
+                <img src="images/33.png" alt="">
+                <img src="images/34.png" alt="">
+                <img src="images/35.png" alt="">
+                <img src="images/36.png" alt="">
+                <img src="images/37.png" alt="">
+                <img src="images/38.png" alt="">
+                <img src="images/39.png" alt="">
+                <img src="images/40.png" alt="">
+                <img src="images/41.png" alt="">
+                <img src="images/42.png" alt="">
+                <img src="images/43.png" alt="">
+                <img src="images/44.png" alt="">
+                <img src="images/45.png" alt="">
+                <img src="images/46.png" alt="">
+                <img src="images/47.png" alt="">
+                <img src="images/48.png" alt="">
+                <img src="images/49.png" alt="">
+                <img src="images/50.png" alt="">
+                <img src="images/51.png" alt="">
+            </div>
+            <!-- <a href="send.html"><div class="small_button"></div></a> -->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sixth">
+        <div class="container">
+            <div class="block_title">Наши отзывы</div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="sert_1">
+                        <img src="images/rew1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="sert_2">
+                        <img src="images/rew2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!-- <a href="send.html"><div class="small_button"></div></a> -->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="link-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="send.html">
+                                    <div class="big_button"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="pokypka">
+                                    <div class="big_button2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="block_title">Наши контакты</div>
+            <p id="footer_title">ООО"Золотой резерв"</p>
+            <p class="footer_t">Телефоны:</p>
+            <p>8-800-700-56-85 (звонок бесплатный)</p>
+            <p>8-812-332-71-02 (Санкт - Петербург)
+                <br> 8-831-216-39-25 (Нижний Новгород)
+                <br>
+                <!-- 8-910-880-11-77  (Директор по продажам)<br> -->
+            </p>
+            <!--<p  class="footer_t" >Скайп:</p>
+			<p>mamontovkv</p>-->
+            <p class="footer_t">Почта:</p>
+            <p>fishgoldrezerv@yandex.ru</p>
+            <p></p>
+        </div>
+    </footer>
+    <div class="politika">
+        <a href="privacy.html" target="_blank">Политика конфиденциальности</a>
+    </div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter26441814 = new Ya.Metrika({
+                    id: 26441814,
+                    webvisor: true,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/26441814" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Pixel -->
+    <script type="text/javascript">
+    (function(d, w) {
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//sas-pro.ru/pixel/index.php?img=XFZDGE5SWkxDU0ZMVEcfQEY=&nid=434431&uid=2319&ref=" + d.referrer + "&cookie=" + encodeURIComponent(document.cookie);
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window);
+    </script>
+    <!-- /Pixel -->
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <tb-notification-widget widget-id="b8888a11-1229-4388-b484-834b85521002">
+    </tb-notification-widget>
+</body>
+
+</html>
