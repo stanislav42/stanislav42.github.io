@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/media/480.css">
     <link rel="stylesheet" href="css/media/320.css">
     <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="css/mobile__menu.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/decima_modal.js"></script>
@@ -72,6 +73,16 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--МОДАЛЬНОЕ-->
+    <div class="overlay">
+        <div class="link-wrapper">
+            <a href="#" class="link-item-mob" onclick="scroll_to_elem('settings')"><span>Реклама</span></a>
+            <a href="#" class="link-item-mob" onclick="scroll_to_elem('ytp-box')" ><span>Оцифровка</span></a>
+            <a href="#" class="link-item-mob" onclick="scroll_to_elem('ytp-box')"><span>Упаковка</span></a>
+            <a href="#" class="link-item-mob" onclick="scroll_to_elem('reviews')"><span>Отзывы</span></a>
+        </div>
+        <!-- //link-wrapper -->
+    </div>
+    <!-- //overlay -->
     <div class="modal_background"></div>
     <div class="modal_background_frame">
         <div class="modal_exit"></div>
@@ -110,9 +121,9 @@
         </div>
     </header>
     <div class="button--up" onclick="scroll_to_elem('title')">
-    	<div class="arrows arrow-first"></div>
-		<div class="arrows arrow-second"></div>
-	</div>
+        <div class="arrows arrow-first"></div>
+        <div class="arrows arrow-second"></div>
+    </div>
     <div class="title block" id="title">
         <div class="segmenter" style="background-image: url(img/title-2.jpg)"></div>
         <div class="wrap">
@@ -134,6 +145,11 @@
                 <div class="number">
                     <span><a href="tel:89056619428" class="tel-link">8 905 661 94 28</a></span>
                     <br>работаем по всей России
+                </div>
+                <div class="burger_deluxe">
+                    <span class="burger_global top_bun"></span>
+                    <span class="burger_global patty"></span>
+                    <span class="burger_global bottom_bun"></span>
                 </div>
             </header>
             <img src="img/logo-shadow.png" alt="" class="header--logo">
@@ -188,7 +204,6 @@
             <div class="line"></div>
             <h1 class="revealator-slideup revealator-once">Довольны нашей работой</h1>
             <p>Уже более 140 клиентов</p>
-            
         </div>
         <div class="logos">
             <div class="slider">
@@ -331,7 +346,7 @@
                 <div class="ytp-box-two-box">
                     <div class="ytp-box-two-box-item">
                         <div class="ytp-box-two-box-logo">
-                           <img src="img/logo-ytp/2.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__one"> 
+                            <img src="img/logo-ytp/2.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__one">
                         </div>
                         <ul class="ytp-box-two-box-list">
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">Яндекс.</span>Директ Поиск</li>
@@ -340,12 +355,11 @@
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">Яндекс.</span>Дисплей</li>
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">Яндекс.</span>Смарт-баннеры</li>
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">Яндекс.</span>Маркет</li>
-
                         </ul>
                     </div>
                     <div class="ytp-box-two-box-item">
                         <div class="ytp-box-two-box-logo">
-                           <img src="img/logo-ytp/1.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__two"> 
+                            <img src="img/logo-ytp/1.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__two">
                         </div>
                         <ul class="ytp-box-two-box-list">
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">Google.</span>AdWords Поиск</li>
@@ -358,7 +372,7 @@
                     </div>
                     <div class="ytp-box-two-box-item">
                         <div class="ytp-box-two-box-logo">
-                           <img src="img/logo-ytp/3.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__three"> 
+                            <img src="img/logo-ytp/3.png" alt="" class="ytp-box-two-box-logo-item ytp-box-two-box-logo-item__three">
                         </div>
                         <ul class="ytp-box-two-box-list">
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">MyTarget </span>в Одноклассниках</li>
@@ -367,11 +381,9 @@
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">MyTarget </span>в почте mail.ru</li>
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">MyTarget </span>в других проектах Mail.Ru</li>
                             <li class="ytp-box-two-box-list-item"><span class="box-list-item-span">MyTarget </span>на сайтах-парнёрах</li>
-
                         </ul>
                     </div>
                 </div>
-                
             </div>
             <img src="img/brace.svg" alt="" class="brace">
             <h2>Берём на себя</h2>
@@ -540,7 +552,7 @@
                     <br><a href="politic.html" target="_blank">с&#160;политикой конфиденциальности</a></p>
             </form>
             <div class="btn text btn--text" h1="Получить специальное предложение" h2="Оставьте свой номер телефона и мы перезвоним" btn="Перезвоните мне">
-                <b >Нужна не только интернет-реклама?<br>У нас есть для Вас специальные условия</b>
+                <b>Нужна не только интернет-реклама?<br>У нас есть для Вас специальные условия</b>
             </div>
         </div>
     </div>
@@ -741,7 +753,8 @@
                 <div class="ytp-box--item--image">
                     <img src="img/ytp-icon-2.svg" alt="" class="ytp-box--image">
                 </div>
-                <p class="ytp-box--item--text">Интеграции<br>CRM-систем</p>
+                <p class="ytp-box--item--text">Интеграции
+                    <br>CRM-систем</p>
             </div>
             <div class="ytp-box--item">
                 <div class="ytp-box--item--image">
@@ -755,7 +768,7 @@
     </div>
     <div class="reviews block" id="reviews">
         <div class="wrap">
-        	<div class="line"></div>
+            <div class="line"></div>
             <h1 class="revealator-slideleft revealator-once reviews__caption">Отзывы о нашей работе</h1>
             <p class="rewiews__subtitle">Вы можете позвонить любому клиенту и&#160;убедиться лично</p>
             <div class="containe">
@@ -816,7 +829,7 @@
                     <div class="clear"></div>
                 </div>
                 <div class="btn all_reviews">Посмотреть больше отзывов</div>-->
-        <div class="clients-button btn buttun__link" onclick="scroll_to_elem('reasons')">Наш подход</div>
+            <div class="clients-button btn buttun__link" onclick="scroll_to_elem('reasons')">Наш подход</div>
         </div>
     </div>
     <!-- ПИСЬМА
@@ -855,7 +868,9 @@
                 <h2 class="question revealator-slideup revealator-once">Cколько я буду тратить на рекламу?</h2>
                 <p class="answer">Настройка контекстной рекламы - от 25 000 рублей. Рекламный бюджет зависит от&#160;разных параметров, о&#160;которых мы Вам расскажем.</p>
                 <h2 class="question revealator-slideup revealator-once">Какой порядок работы при разработке интернет-рекламы?</h2>
-                <p class="answer">Вы рассказываете о Вашем продукте, мы анализируем конкурентую среду, ваши сайты.<br> В результате у нас появляется стратегия продвижения, которую мы описываем в виде коммерческого предложения.<br>Согласовываем стратегию продвижения, заключаем сделку, приступаем к работе.</p>
+                <p class="answer">Вы рассказываете о Вашем продукте, мы анализируем конкурентую среду, ваши сайты.
+                    <br> В результате у нас появляется стратегия продвижения, которую мы описываем в виде коммерческого предложения.
+                    <br>Согласовываем стратегию продвижения, заключаем сделку, приступаем к работе.</p>
                 <h2 class="question revealator-slideup revealator-once">Что делать, если Ваша ниша очень конкурентная и реклама в интернете обходится дорого?</h2>
                 <p class="answer">Мы разрабатываем рекламу более, чем на 17ти различных интернет-площадках, способных привлекать целевой трафик на Ваш сайт. Не все конкуренты их используют. Таким образом мы точно найдём способ рекламировать Ваш бизнес по приемлемой стоимости</p>
                 <h2 class="question revealator-slideup revealator-once">Я не разбираюсь в интернет-рекламе и нет времени погружаться. Как контролировать траты? Вы&#160;меня&#160;не&#160;обманете?</h2>
@@ -866,8 +881,6 @@
                 <p class="answer">Мода и настроение “толпы” постоянно меняется и надо быть в тренде и знать, что “зайдёт” сейчас, именно в этот сезон, именно на эту целевую аудиторию. Надо учитывать конкурентные предложения. Надо иметь представления о дизайне с психологической точки зрения. Какие элементы располагают к себе, а какие наоборот отталкивают. Надо знать как не переборщить с т.н. “триггерами”, как составить “УТП”. Суметь рассказать о всех своих достоинствах, не “выпячивая” при этом. Вряд ли всё это учитывается при разработке сайтов “на коленке” теми, кто не имеет особого опыта в этой сфере. При разработке сайтов мы всё это учитываем, а также руководствуемся накопленным опытом и знаниями.</p>
                 <h2 class="question revealator-slideup revealator-once">Я не из Нижнего Новгорода. Возможно ли наше сотрудничество?</h2>
                 <p class="answer">В нашей сфере расстояние не имеет значения. Практически все вопросы решаются удалённо. И это не накладывает никаких ограничений. Вся работа производится так же эффективно, как если бы мы работали в соседних офисах.</p>
-
-
             </div>
             <div class="btn buttun__link" h1="У Вас остались вопросы? Задайте их нам!" h2="Оставьте свой номер телефона, и мы свяжемся с Вами в течение 15 минут" btn="Перезвоните мне">Остались вопросы</div>
         </div>
@@ -963,7 +976,7 @@
         });
     })(jQuery);
     </script>
-        <script type="text/javascript">
+    <script type="text/javascript">
     (function($) {
         $(window).on("scroll", function() {
             var fromTop = $(document).scrollTop();
@@ -971,6 +984,16 @@
         });
     })(jQuery);
     </script>
+
+    <script type="text/javascript">
+    (function($) {
+        $(window).on("scroll", function() {
+            var fromTop = $(document).scrollTop();
+            $(".burger_global").toggleClass("burger_global_buttom", (fromTop > 250));
+        });
+    })(jQuery);
+    </script>
+
     <script language="javascript">
     var utm_array = [];
 
@@ -1078,6 +1101,7 @@ $(document).ready(function() {
     </script>
     <script src="js/fade.js"></script>
     <script src="js/index-1.js"></script>
+    <script src="js/Mobile__menu.js"></script>
 </body>
 
 </html>

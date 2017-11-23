@@ -30,29 +30,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="http://yandex.st/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.popup .close_window, .overlay').click(function() {
-            $('.popup, .overlay').css({ 'opacity': '0', 'visibility': 'hidden' });
-        });
-        $('a.open_window').click(function(e) {
-            $('.popup, .overlay').css({ 'opacity': '1', 'visibility': 'visible' });
-            e.preventDefault();
-        });
-    });
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.popup-2 .close_window-2, .overlay-2').click(function() {
-            $('.popup-2, .overlay-2').css({ 'opacity': '0', 'visibility': 'hidden' });
-        });
-        $('a.open_window-2').click(function(e) {
-            $('.popup-2, .overlay-2').css({ 'opacity': '1', 'visibility': 'visible' });
-            e.preventDefault();
-        });
-    });
-    </script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <!-- GeoTargeting by Viacheslav Lukoyanov MODXpro.ru -->
     <script src="js/jquery.maskedinput.min.js"></script>
@@ -447,66 +425,6 @@
     }) ;
     });*/
     </script>
-    <div class="overlay" title="окно"></div>
-    <div class="popup">
-        <div class="close_window">x</div>
-        <div id="mail" class="mail__modal">
-            <div class="title">ТОРГУЕМ ОТ 5 ТОНН!
-                <br>оставьте заявку
-                <br> на получение прайса!</div>
-            <form>
-                <p> Введите Ваше имя
-                    <br>
-                    <input type="text" name="full-name" required id="full-name" size="45" placeholder="Иван Иванов">
-                </p>
-                <p> Введите Ваш телефон
-                    <br>
-                    <input type="text" name="teleph1" required id="teleph1" value="" size="45" placeholder="">
-                </p>
-                <p> Введите Ваш Email
-                    <br>
-                    <input type="text" name="myemail" required id="myemail" value="" size="45" placeholder="">
-                </p>
-                <p> Введите Вашу область
-                    <br>
-                    <input type="text" name="area" id="area" value="" size="45" placeholder="">
-                </p>
-                <div class="small_button" id="send_mail"></div>
-                <input type="hidden" id="call_input" value="">
-                <a href="privacy.html" target="_blank">Нажимая кнопку "Получить прайс" Вы соглашаетесь с политикой конфиденциальности</a>
-            </form>
-        </div>
-    </div>
-    <div class="overlay-2" title="окно"></div>
-    <div class="popup-2">
-        <div class="close_window-2">x</div>
-        <div id="mail_2" class="mail__modal">
-            <div class="title">ТОРГУЕМ ОТ 5 ТОНН!
-                <br>оставьте заявку
-                <br> на получение прайса!</div>
-            <form>
-                <p> Введите Ваше имя
-                    <br>
-                    <input type="text" name="full-name" required id="full-name" size="45" placeholder="Иван Иванов">
-                </p>
-                <p> Введите Ваш телефон
-                    <br>
-                    <input type="text" name="teleph1" required id="teleph1" value="" size="45" placeholder="">
-                </p>
-                <p> Введите Ваш Email
-                    <br>
-                    <input type="text" name="myemail" required id="myemail" value="" size="45" placeholder="">
-                </p>
-                <p> Введите Вашу область
-                    <br>
-                    <input type="text" name="area" id="area" value="" size="45" placeholder="">
-                </p>
-                <div class="small_button" id="send_mail"></div>
-                <input type="hidden" id="call_input" value="">
-                <a href="privacy.html" target="_blank">Нажимая кнопку "Получить прайс" Вы соглашаетесь с политикой конфиденциальности</a>
-            </form>
-        </div>
-    </div>
     <header id="header">
         <div class="container">
             <div class="row">
@@ -565,32 +483,30 @@
     <div id="second">
         <div class="container">
             <div class="block_title">Наш ассортимент</div>
-            <a class="open_window" href="#">хочу чтоб по клику открылось окно</a>
-            <a class="open_window-2" href="#">хочу чтоб по клику открылось окно</a>
             <div class="row">
                 <div class="col-sm-3">
-                    <a rel="tooltip" href="#" id="fish1" title='<p class="tooltip_title">Сельдь Атлантическая</p>
+                    <a href="send_1.html" rel="tooltip" href="#" id="fish1" title='<p class="tooltip_title">Сельдь Атлантическая</p>
 						<img style="width:200px; float:left; margin:10px" src="./images/seld.jpg"/>
 						<p>Атлантическая сельдь относится к семейству сельдевых. Характерный признак этого семейства — тело цилиндрической формы, немного сжатое с боков. Отличительными чертами семейства можно считать отсутствие жирового плавника, широкие жаберные щели, вдоль брюха у многих сельдевых проходит киль из заостренных чешуек.Примерный размер обычной рыбы — 20–25 см, но встречаются экземпляры длиной до 40 см.Сельдь населяет соленые воды Балтийского, Белого, Баренцева морей. Предпочитает держаться в толще воды до 200 м.</p>' class='fish tooltip'>
 						<img class="fish-thumb" src="./images/seld.jpg"/>Сельдь Атлантическая
 					</a>
                 </div>
                 <div class="col-sm-3">
-                    <a rel="tooltip" href="#" id="fish2" title="<p class='tooltip_title'>Скумбрия</p>
+                    <a href="send_2.html" rel="tooltip" href="#" id="fish2" title="<p class='tooltip_title'>Скумбрия</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/skumbriya.jpg'/>
 						<p>Скумбрия, макрель - рыба семейства скумбриевых отряда окунеобразных. Длина до 60 см, весит до 1,6 кг.Распространена в Атлантическом океане: по восточному побережью от Баренцева и Белого морей до Канарских островов; а также в Балтийском (до Финского залива), Северном, Средиземном, Мраморном, Чёрном морях, по западному побережью от Лабрадора до Каролины. Стадная рыба, совершающая миграции, весной, с глубин 150—250 м, где зимует, к берегам для размножения.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/skumbriya.jpg"/>Скумбрия неразделанная и без головы
 					</a>
                 </div>
                 <div class="col-sm-3">
-                    <a rel="tooltip" href="#" id="fish3" title="<p class='tooltip_title'>Мойва</p>
+                    <a href="send_3.html" rel="tooltip" href="#" id="fish3" title="<p class='tooltip_title'>Мойва</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/mojva.jpg'/>
 						<p>Мойва - морская, холодноводная (арктическая) рыба. По образу жизни — пелагическая, населяет верхние слои и толщу вод. Мойва живет в открытой части моря, на глубине до 200 м.  Длина рыбы 14-20 см. Мойва питается мелкими рачками и другими планктонными организмами. Пища ее по составу очень сходна с пищей сельди. В уловах встречается в мае, июне и июле.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/mojva.jpg"/>Мойва
 					</a>
                 </div>
                 <div class="col-sm-3">
-                    <a rel="tooltip" href="#" id="fish4" title="<p class='tooltip_title'>Путассу</p>
+                    <a href="send_4.html" rel="tooltip" href="#" id="fish4" title="<p class='tooltip_title'>Путассу</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/putasu.jpg'/>
 						<p>Путассу́  — род рыб семейства тресковых, может достигать длины 47 см, но обычная длина ее 30—35 см. Она распространена преимущественно в северо-восточных водах Атлантического океана от западной части Средиземного моря до Исландии, Шпицбергена и западных частей Баренцева моря. Питается планктонными ракообразными, а также личинками и молодью рыб — светящихся анчоусов, сельди, трески и других видов.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/putasu.jpg"/>Путассу
@@ -599,21 +515,21 @@
             </div>
             <div class="row fish_row">
                 <div class="col-sm-4">
-                    <a rel="tooltip" href="#" id="fish5" title="<p class='tooltip_title'>Горбуша</p>
+                    <a href="send_5.html" rel="tooltip" href="#" id="fish5" title="<p class='tooltip_title'>Горбуша</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/gorbusha.jpg'/>
 						<p>ГОРБУША - рыба рода тихоокеанских лососей. Длина тела около 0,5 м, весит около 1,5 кг (самый мелкий представитель рода тихоокеанских лососей). Чешуя очень мелкая. Распространена Горбуша в северной части Тихого океана на Юге до Владивостока и Сан-Франциско, а также в Северном Ледовитом океане на 3ападе до реки Лены, на Востоке до реки Макензи.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/gorbusha.jpg"/>Горбуша
 					</a>
                 </div>
                 <div class="col-sm-4">
-                    <a rel="tooltip" href="#" id="fish6" title="<p class='tooltip_title'>Минтай</p>
+                    <a href="send_6.html" rel="tooltip" href="#" id="fish6" title="<p class='tooltip_title'>Минтай</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/mintay.jpg'/>
 						<p>Минтай — пелагическая холодолюбивая рыба семейства тресковых. Наиболее распространённая рыба в северной части Тихого океана. Максимальная длина тела 91 см, а масса — 3,85 кг; максимальная продолжительность жизни — 15 лет. Эта рыба живёт в холодных водах (от 2 до 9 °C), предпочитая глубины от 200 до 300 метров, хотя может совершать миграции, опускаясь на глубины 500—700 метров и глубже.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/mintay.jpg"/>Минтай
 					</a>
                 </div>
                 <div class="col-sm-4">
-                    <a rel="tooltip" href="#" id="fish7" title="<p class='tooltip_title'>Килька</p>
+                    <a href="send_7.html" rel="tooltip" href="#" id="fish7" title="<p class='tooltip_title'>Килька</p>
 						<img style='width:300px; float:left; margin:10px' src='./images/kilka.jpg'/>
 						<p>Одной из любимых закусок практически каждого советского человека являлась рыба килька, которая в России считается одной из самых дешевых рыб, а на Западе - деликатесом. Кстати, не всем известно, что под словом “килька” скрывается не какой-то определенный вид рыб, а несколько, относящихся к семейству сельдевых. Шпроты и тюльки – эти же самые кильки. В настоящее время самое большое распространение получила балтийская и каспийская килька, а также азовско-черноморская тюлька. Максимальная длина рыбы кильки едва ли превышает 12 сантиметров. Несомненно, внешне она напоминает сельдь, но значительно меньшего размера. В кулинарных целях свежезамороженную рыбу кильку нередко маринуют, солят, а также изготавливают из нее шпроты, так же коптят.</p>" class='fish tooltip'>
 						<img class="fish-thumb" src="./images/kilka.jpg"/>Килька

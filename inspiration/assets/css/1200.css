@@ -1,8 +1,10 @@
-@media only screen and (max-width: 1200px) and (min-width: 993px){
+@media only screen and (max-width: 1125px) and (min-width: 993px){
 	body, .footer, .main, .header, .section{
 		width: 100%;
 	}
-
+	.header-wrapper, .footer-wrapper, .navigation{
+		width: 100%;
+	}
 }
 
 

@@ -164,7 +164,9 @@ header.clone.active {
     left: 0;
     right: 0;
 }
-
+.header{
+    position: relative;
+}
 .adress--text,
 .logo--menu {
     float: left;
@@ -333,7 +335,7 @@ header .number span {
 
 
 .title {
-    height: 954px;
+    height: 100vh;
     
 }
 

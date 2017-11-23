@@ -8,6 +8,7 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
  <link rel="stylesheet" href="css/jquery-ui.min.css">
  <link rel="stylesheet" href="css/jquery-ui.min.css">
  <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -266,7 +267,7 @@ $("#send_mail").click(function(){
 	$.ajax({
 		type: "POST",
 		url: "ajax.php",
-		data: { name: $("#full-name").val(), tel: $("#teleph1").val(), area:$("#area").val(), call: $("#call_input").val(), source: getCookie("utm_source"), myemail: $("#myemail").val()},
+		data: { name: $("#full-name").val(), tel: $("#teleph1").val(), area:$("#area").val(), call: $("#call_input").val(), source: getCookie("utm_source"), myemail: $("#myemail").val(), fishname: $("#fishname").val()},
 	})
 	.done(function( msg ) {
             window.location = "success.html"
@@ -896,7 +897,7 @@ $("#send_mail").click(function(){
 	<p> Введите Вашу область<br>
 		<input type="text" name="area" id="area" value="" size="45" placeholder="">
 	</p>
-	<input type="text" name="fishname" id="fishname" value="клиент сделал заказ с общей формы" size="45" placeholder="" class="input__hide">
+		<input type="text" name="fishname" id="fishname" value="Минтай" size="45" placeholder="" class="input__hide">
 	
 	<div class="small_button" id="send_mail"></div>
 	<input type="hidden" id="call_input" value="" >
