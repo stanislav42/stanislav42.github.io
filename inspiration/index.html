@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile_menu.css">
     <link rel="stylesheet" href="assets/css/1200.css">
     <link rel="stylesheet" href="assets/css/992.css">
     <link rel="stylesheet" href="assets/css/768.css">
@@ -20,6 +21,15 @@
 </head>
 
 <body>
+  <div class="overlay">
+  <div class="link-wrapper">
+    <a href="#" class="link__wrapper-item" onclick="scroll_to_elem('novelties')"><span>Новинки</span></a>
+    <a href="#" class="link__wrapper-item" onclick="scroll_to_elem('bestsellers')"><span>Бесцеллеры</span></a>
+    <a href="#" class="link__wrapper-item" onclick="scroll_to_elem('school')"><span>Школа</span></a>
+    <a href="assets/pages/basket.html" class="link__wrapper-item"><span>Доставка и оплата</span></a>
+    <a href="assets/pages/contacts.html" class="link__wrapper-item"><span>Контакты</span></a>
+  </div> <!-- //link-wrapper -->
+</div> <!-- //overlay -->
     <div class="navigation-wrapper">
         <nav class="navigation">
             <a class="logo__link"><img src="assets/img/logo.png" alt="" class="header__logo header__logo-link"></a>
@@ -38,6 +48,13 @@
                 <li class="navigation__icon-list-item"><a href=href="assets/img/presentation.jpg" rel="lightbox" class="navigation__icon-list-link"><img src="assets/img/icon/man-user.svg" alt="" class="navigation__icon-list-img"></a></li>
             </ul>
         </nav>
+        <div class="navigation__menu">
+            <div class="burger_deluxe">
+                <span class="burger_global top_bun"></span>
+                <span class="burger_global patty"></span>
+                <span class="burger_global bottom_bun"></span>
+            </div>
+        </div>
     </div>
     <div class="navigation-wrapper clon">
         <nav class="navigation">
@@ -122,7 +139,6 @@
                         <a href="assets/img/presentation.jpg" rel="lightbox" class="book-item__autor-link">Глуховский Д.</a>
                         <p class="book-item__price">590 &#8381;<span class="book-item__price-sale"></span></p>
                         <a href="assets/img/presentation.jpg" class="item-book__button" rel="lightbox">В корзину</a>
-
                     </div>
                     <div class="section--book-item-carousel">
                         <a href="assets/pages/card_product_one.html" class="section-three-item-book__link"><img src="assets/img/book.png" alt="" class="section-three-item-book"></a>
@@ -458,6 +474,7 @@
     <script src="assets/js/index.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/mobile_menu.js"></script>
     <script type="text/javascript">
     (function($) {
         $(window).on("scroll", function() {

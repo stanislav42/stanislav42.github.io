@@ -115,7 +115,9 @@
 
 
 /*________________ HEADER STYLE ________________*/
-
+.navigation__menu{
+    display: none;
+}
 .header {
     position: relative;
     height: auto;

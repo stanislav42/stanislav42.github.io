@@ -1,18 +1,44 @@
-@media only screen and (max-width: 992px) and (min-width: 769px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
-
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
-		margin: auto;
-	}
-
-	.section,.header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-	}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    body,
+    .footer,
+    .main,
+    .header,
+    .section,
+    .header-wrapper,
+    .footer-wrapper,
+    .navigation,
+    .section-wrapper,
+    .slide__wrapper {
+        width: 100%;
+    }
+    .section-wrapper,
+    .footer-wrapper,
+    .navigation-wrapper,
+    .slide {
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+    }
+    .navigation__menu {
+        top: 17px;
+        display: block;
+        right: 1.25%;
+    }
+    .navigation__list,
+    .section--one/*				Исправить				*/
+    {
+        display: none;
+    }
+    .navigation__icon-list {
+        right: 8%;
+    }
+    .section--book-item {
+        width: 19.5%;
+    }
+    .section--book-item:nth-child(6){
+				margin-left: 	6.3%;
+    }
+    .section--book-item:nth-child(5), .section--book-item:nth-child(9){
+				margin-left: 0px;	
+    }
 }
-
-

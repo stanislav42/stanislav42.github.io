@@ -1,13 +1,35 @@
-@media only screen and (max-width: 1125px) and (min-width: 993px){
-	body, .footer, .main, .header, .section, .header-wrapper, .footer-wrapper, .navigation, .section-wrapper, .slide__wrapper{
-		width: 100%;
-	}
-	.section-wrapper, .footer-wrapper, .navigation-wrapper, .slide{
-		padding-left: 2%;
-		padding-right: 2%;
-		box-sizing: border-box;
-	}
-
+@media only screen and (max-width: 1125px) and (min-width: 993px) {
+    body,
+    .footer,
+    .main,
+    .header,
+    .section,
+    .header-wrapper,
+    .footer-wrapper,
+    .navigation,
+    .section-wrapper,
+    .slide__wrapper {
+        width: 100%;
+    }
+    .section-wrapper,
+    .footer-wrapper,
+    .navigation-wrapper,
+    .slide {
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+    }
+    .navigation__menu {
+        top: 17px;
+        display: block;
+        right: 1.25%;
+    }
+    .navigation__list,
+    .section--one/*				Исправить				*/
+    {
+        display: none;
+    }
+    .navigation__icon-list {
+        right: 8%;
+    }
 }
-
-
