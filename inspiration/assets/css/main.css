@@ -23,7 +23,8 @@
 .footer {
     position: relative;
 }
-.main{
+
+.main {
     min-height: 90%;
 }
 
@@ -43,6 +44,7 @@
     top: 40%;
     left: 62%;
 }
+
 
 
 /*________________ Navigation menu ________________*/
@@ -90,7 +92,8 @@
     opacity: 0.5;
     transition: 0.5s all;
 }
-.navigation__icon-list:hover{
+
+.navigation__icon-list:hover {
     opacity: 1;
 }
 
@@ -100,7 +103,8 @@
     transition: 1s all;
     opacity: 0.25;
 }
-.navigation__icon-list-item:hover{
+
+.navigation__icon-list-item:hover {
     opacity: 1;
 }
 
@@ -114,10 +118,13 @@
 
 
 
+
 /*________________ HEADER STYLE ________________*/
-.navigation__menu{
+
+.navigation__menu {
     display: none;
 }
+
 .header {
     position: relative;
     height: auto;
@@ -246,6 +253,7 @@
 
 
 
+
 /*________________ SECTION STYLE ________________*/
 
 .section {
@@ -261,14 +269,20 @@
 .section--one {
     height: auto;
     box-sizing: border-box;
-    display: table;
+    display: flex;
     position: relative;
 }
 
+.section-wrapper--one {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 .section--one__article {
-    float: left;
     padding-top: 40px;
-    margin-left: 4.2%;
+    margin-left: 3%;
 }
 
 .section--one__article:nth-child(1) {
@@ -501,6 +515,7 @@
 
 
 
+
 /*________________ FOOTER STYLE ________________*/
 
 .footer {
@@ -560,6 +575,7 @@
 .footer-box__list-item:nth-child(1) {
     margin-left: 0px;
 }
+
 
 
 
@@ -818,6 +834,7 @@
 
 
 
+
 /*________________ STARS STYLE ________________*/
 
 a[href*="intent"] {
@@ -866,6 +883,7 @@ a[href*="intent"] {
 .rating2 a {
     float: none
 }
+
 
 
 
@@ -1139,46 +1157,56 @@ label~label {
     transform: translateY(4px);
 }
 
+
 /*________________ CONTACTS STYLE ________________*/
 
-.section__contacts-subtitle{
+.section__contacts-subtitle {
     font-family: Roboto-Bold;
     font-size: 18px;
     color: #252525;
     margin-top: 20px;
 }
-.section__contacts-text{
+
+.section__contacts-text {
     margin-top: 5px;
     font-size: 12;
     font-family: Roboto-Regular;
     color: #252525;
 }
-.section__contacts-map{
+
+.section__contacts-map {
     margin-top: 20px;
     width: 100%;
     border: 1px #919191 solid;
 }
-.contacts__form{
+
+.contacts__form {
     width: 80%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.contacts__input{
+
+.contacts__input {
     padding: 11px;
     margin-left: 15px;
 }
-.contacts__input:nth-child(2){
+
+.contacts__input:nth-child(2) {
     margin-left: 0px;
 }
-.contacts__input-button{
+
+.contacts__input-button {
     top: -3px;
 }
-.contacts__input, .contacts__input-button{
+
+.contacts__input,
+.contacts__input-button {
     display: inline-block;
     width: 30%;
 }
-.basket__input-caption{
+
+.basket__input-caption {
     margin-bottom: 15px;
     font-family: Roboto-Regular;
     text-align: center;

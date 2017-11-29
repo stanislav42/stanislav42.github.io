@@ -24,8 +24,7 @@
         display: block;
         right: 1.25%;
     }
-    .navigation__list,
-    .section--one/*				Исправить				*/
+    .navigation__list/*             Исправить               */
     {
         display: none;
     }
@@ -35,21 +34,38 @@
     .section--book-item {
         width: 19.5%;
     }
-    .section--book-item:nth-child(6){
-				margin-left: 6.3%;
+    .section--book-item:nth-child(6) {
+        margin-left: 6.3%;
     }
-    .section--book-item:nth-child(5), .section--book-item:nth-child(9){
-				margin-left: 0px;	
+    .section--book-item:nth-child(5),
+    .section--book-item:nth-child(9) {
+        margin-left: 0px;
+    }
+    .section--one__article {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 170px;
+        min-width: 170px;
+        text-align: center;
+        align-items: space-around;
+        flex-wrap: wrap;
     }
 }
-@media only screen and (max-width: 922px) and (min-width: 769px){
-	.footer-box{
-		width: 30%;
-	}
-	.footer-box:nth-child(1){
-		width: 38%;
-	}
-	.footer-box__text{
-		font-size: 12px;
-	}
+
+@media only screen and (max-width: 800px) and (min-width: 769px) {
+    .footer-box {
+        width: 30%;
+    }
+    .footer-box:nth-child(1) {
+        width: 38%;
+    }
+    .footer-box__text {
+        font-size: 12px;
+    }
 }
