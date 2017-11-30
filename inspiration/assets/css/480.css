@@ -26,7 +26,7 @@
         display: block;
         right: 0.5%;
     }
-    .navigation__list {
+    .navigation__list, .section--two{
         display: none;
     }
     .navigation__icon-list {
@@ -52,6 +52,9 @@
     .footer-box__text {
         font-size: 12px;
     }
+    .section--one__article--caption{
+        margin-left: 0px;
+    }
     .section--one__article {
         display: -webkit-flex;
         display: -moz-flex;
@@ -72,6 +75,7 @@
         flex-direction: column;
         max-width: 170px;
         min-width: 170px;
+        margin-left: 0px;
         text-align: center;
         -webkit-box-align: space-around;
         -webkit-align-items: space-around;

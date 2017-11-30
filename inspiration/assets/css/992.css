@@ -43,6 +43,9 @@
     .section--book-item:nth-child(9) {
         margin-left: 0;
     }
+    .section--one__article--caption{
+        margin-left: 0px;
+    }
     .section--one__article {
         display: -webkit-flex;
         display: -moz-flex;
@@ -55,6 +58,7 @@
 
         min-width: 170px;
         max-width: 170px;
+        margin-left: 0px;
 
         text-align: center;
 

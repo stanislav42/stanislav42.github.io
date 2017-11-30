@@ -32,6 +32,9 @@
     .navigation__icon-list {
         right: 8%;
     }
+    .section--one__article--caption{
+        margin-left: 0px;
+    }
     .section--one__article {
         display: -webkit-flex;
         display: -moz-flex;
@@ -43,6 +46,7 @@
         flex-direction: column;
 
         max-width: 170px;
+        margin-left: 0px;
 
         text-align: center;
 

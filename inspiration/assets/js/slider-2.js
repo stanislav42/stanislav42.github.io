@@ -22,15 +22,6 @@ $('.autoplay').slick({
         autoplay: true,
   		autoplaySpeed: 2000
       }
-    },
-    {
-      breakpoint: 481,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-  		autoplaySpeed: 2000
-      }
     }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
