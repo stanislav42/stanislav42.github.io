@@ -15,6 +15,7 @@
 .navigation-wrapper {
     width: 100%;
     height: 90px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: white;
 }
@@ -32,6 +33,8 @@
     position: fixed;
     z-index: 100;
     top: -100px;
+    -webkit-transition: all 0.75s;
+    -o-transition: all 0.75s;
     transition: all 0.75s;
 }
 
@@ -44,6 +47,7 @@
     top: 40%;
     left: 62%;
 }
+
 
 
 
@@ -90,6 +94,8 @@
     position: absolute;
     right: 0;
     opacity: 0.5;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 
@@ -100,6 +106,8 @@
 .navigation__icon-list-item {
     display: inline-block;
     margin-left: 15px;
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
     transition: 1s all;
     opacity: 0.25;
 }
@@ -119,6 +127,7 @@
 
 
 
+
 /*________________ HEADER STYLE ________________*/
 
 .navigation__menu {
@@ -134,6 +143,8 @@
     position: absolute;
     top: 20px;
     display: inline-block;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
     transition: 0.3s all;
 }
 
@@ -150,6 +161,8 @@
     content: '';
     opacity: 0;
     background: url(../img/logo-1.png);
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
     transition: 0.3s all;
     top: 20px;
     left: 0px;
@@ -189,6 +202,8 @@
     display: inline-block;
     color: white;
     text-decoration: none;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
     font-size: 18px;
     font-family: Roboto-light;
@@ -254,6 +269,7 @@
 
 
 
+
 /*________________ SECTION STYLE ________________*/
 
 .section {
@@ -268,15 +284,28 @@
 
 .section--one {
     height: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
 
 .section-wrapper--one {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
@@ -357,6 +386,7 @@
 
 .section--book-item-carousel {
     padding-left: 25px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 27px;
     outline: none;
@@ -422,6 +452,8 @@
     font-family: Roboto-Thin;
     text-decoration: none;
     border: 1px solid #47bbf8;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
     color: #47bbf8;
 }
@@ -472,6 +504,7 @@
 
 .section--promo__box {
     width: 300px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: auto;
     margin-top: 30px;
@@ -480,6 +513,7 @@
 .section--promo__box-item {
     width: 130px;
     display: inline-block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -501,9 +535,11 @@
     font-family: Roboto-Light;
     border: 1px solid white;
     text-align: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
 }
+
 
 
 
@@ -520,6 +556,7 @@
 
 .footer {
     padding-top: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 60px;
     border-top: solid 1px #f2f1f1;
@@ -548,6 +585,8 @@
 
 .footer-box__icon {
     width: 25px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -575,6 +614,7 @@
 .footer-box__list-item:nth-child(1) {
     margin-left: 0px;
 }
+
 
 
 
@@ -621,6 +661,7 @@
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -681,6 +722,8 @@
     position: absolute;
     content: '';
     top: 15px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -720,19 +763,26 @@
     font-family: Roboto-Bold;
     color: white;
     padding: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #48b4ed;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(76, 153, 195, 1);
     box-shadow: 0px 4px 0px 0px rgba(76, 153, 195, 1);
     letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
     margin: auto;
     margin-top: 40px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .data__item-link:hover {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
     transform: translateY(4px);
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -774,6 +824,8 @@
     position: absolute;
     content: '';
     top: 15px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -835,6 +887,7 @@
 
 
 
+
 /*________________ STARS STYLE ________________*/
 
 a[href*="intent"] {
@@ -860,7 +913,6 @@ a[href*="intent"] {
     color: #aaa;
     text-decoration: none;
     -webkit-transition: color .4s;
-    -moz-transition: color .4s;
     -o-transition: color .4s;
     transition: color .4s;
 }
@@ -889,6 +941,7 @@ a[href*="intent"] {
 
 
 
+
 /*________________ BASKET STYLE ________________*/
 
 .wrapper__basket-item {
@@ -905,6 +958,8 @@ a[href*="intent"] {
 .flexbox-wrapper {
     display: -webkit-flex;
     display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -1015,10 +1070,14 @@ a[href*="intent"] {
 }
 
 .close:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .close:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -1030,52 +1089,71 @@ a[href*="intent"] {
     border: 1px solid #c9c8c8;
     padding: 11px;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
     margin-bottom: 10px;
 }
 
 .basket__input::-webkit-input-placeholder {
     opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     color: #979695;
 }
 
 .basket__input::-moz-placeholder {
     opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     color: #979695;
 }
 
 .basket__input:-moz-placeholder {
     opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     color: #979695;
 }
 
 .basket__input:-ms-input-placeholder {
     opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     color: #979695;
 }
 
 .basket__input:focus::-webkit-input-placeholder {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
 .basket__input:focus::-moz-placeholder {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
 .basket__input:focus:-moz-placeholder {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
 .basket__input:focus:-ms-input-placeholder {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
@@ -1100,10 +1178,13 @@ label {
     border: 1px solid #c9c8c8;
     color: #979695;
     backgorund-color: #fff;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
     width: 47%;
     font-family: Roboto-Light;
     font-size: 14px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
@@ -1146,16 +1227,23 @@ label~label {
     font-family: Roboto-Bold;
     font-size: 16px;
     color: white;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(76, 153, 195, 1);
     box-shadow: 0px 4px 0px 0px rgba(76, 153, 195, 1);
     letter-spacing: 0.5px;
     position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .basket__input-button:hover {
+    -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
     transform: translateY(4px);
 }
+
 
 
 /*________________ CONTACTS STYLE ________________*/

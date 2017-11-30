@@ -1,16 +1,23 @@
-@media only screen and (max-width: 320px){
-	body, .footer, .main, .header, .section{
-		width: 100%
-	}
-	.header-wrapper, .section-wrapper, .footer-wrapper{
-		width: 90%;
-		margin: auto;
-	}
+@media only screen and (max-width: 320px) {
+    body,
+    .footer,
+    .main,
+    .header,
+    .section {
+        width: 100%
+    }
+    .header-wrapper,
+    .section-wrapper,
+    .footer-wrapper {
+        width: 90%;
+        margin: auto;
+    }
 
-	.section,.header{
-		padding-left: 15px;
-		padding-right: 15px;
-		box-sizing: border-box;
-	}
-
+    .section,
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
