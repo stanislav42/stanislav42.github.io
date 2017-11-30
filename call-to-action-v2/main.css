@@ -36,7 +36,7 @@
 
     background-image: url(bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 0px auto;
     -ms-align-items: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
