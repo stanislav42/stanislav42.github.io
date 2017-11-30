@@ -16,15 +16,16 @@
     .footer-wrapper,
     .navigation-wrapper,
     .slide {
-        padding-left: 2%;
-        padding-right: 2%;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
+        padding-right: 2%;
+        padding-left: 2%;
     }
     .navigation__menu {
         top: 17px;
+        right: .5%;
+
         display: block;
-        right: 0.5%;
     }
     .navigation__list {
         display: none;
@@ -41,7 +42,7 @@
     .section--book-item:nth-child(4),
     .section--book-item:nth-child(7),
     .section--book-item:nth-child(10) {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .footer-box {
         width: 30%;
@@ -60,6 +61,13 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        flex-direction: column;
+
+        min-width: 170px;
+        max-width: 170px;
+
+        text-align: center;
+
         -ms-align-items: center;
         -webkit-box-align: center;
         -webkit-align-items: center;
@@ -69,10 +77,6 @@
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column;
-        max-width: 170px;
-        min-width: 170px;
-        text-align: center;
         -webkit-box-align: space-around;
         -webkit-align-items: space-around;
         -ms-flex-align: space-around;

@@ -9,5 +9,4 @@ $('.link__wrapper-item').on('click',function() {
 
   $('.burger_deluxe').toggleClass('open');
   $('.overlay').toggleClass('open');
-  
 });
