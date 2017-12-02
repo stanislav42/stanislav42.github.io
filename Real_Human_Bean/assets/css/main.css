@@ -28,7 +28,7 @@
 	align-items: center;
 	background-color: black;
 	position: absolute;
-	animation: opacity_main 52s ease;
+	animation: opacity_main 70s ease;
 	opacity: 0;
 }
 .main__text{
@@ -48,8 +48,11 @@
 		line-height: 1.6;
 	}
 }
+@media only screen and (max-width: 1200px) and (min-width: 320px){
+	
+}
 .span_1{
-	animation: opacity_span_1 105s ease; 
+	animation: opacity_span_1 56s ease; 
 }
 .span_2{
 	animation: opacity_span_2 56s ease; 
