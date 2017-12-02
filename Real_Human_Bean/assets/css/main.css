@@ -28,7 +28,7 @@
 	align-items: center;
 	background-color: black;
 	position: absolute;
-	animation: opacity_main 70s ease;
+	animation: opacity_main 100s ease;
 	opacity: 0;
 }
 .main__text{
