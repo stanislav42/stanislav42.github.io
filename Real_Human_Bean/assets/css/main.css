@@ -49,7 +49,7 @@
 	}
 }
 .span_1{
-	animation: opacity_span_1 88s ease; 
+	animation: opacity_span_1 105s ease; 
 }
 .span_2{
 	animation: opacity_span_2 56s ease; 
@@ -80,7 +80,7 @@
 	0%{
 		opacity: 1;
 	}
-	95%{
+	90%{
 		opacity: 1;
 	}
 	100%{
