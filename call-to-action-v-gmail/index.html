@@ -6,113 +6,31 @@
     <title>Узнать о 17-ти видах рекламы</title>
     <style>
     * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         font-family: helvetica;
+        box-sizing: border-box;
     }
-
-    @-webkit-keyframes forms {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        20% {
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-        30% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-
-    @keyframes forms {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        20% {
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-        30% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-
     .main {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
         width: 650px;
         height: 650px;
         background-image: url(images/650x650.jpg);
-        background-size: cover;
-        background-position: top center;
-        -ms-align-items: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-align-content: space-between;
-        -ms-flex-line-pack: justify;
-        align-content: space-between;
         position: relative;
-        z-index: 100;
         overflow: hidden;
     }
 
     .section__info {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         width: 100%;
-        margin-top: 10vh;
-        height: 80vh;
-        -ms-align-items: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        margin-top: 70px;
         position: relative;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        z-index: 100;
+        text-align: center;
     }
-
+    .logo__link{
+        margin: auto;
+        display: inline-block;
+    }
     .logo {
         opacity: 0.5;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
     }
 
     .logo:hover {
@@ -120,145 +38,100 @@
     }
 
     .info__caption {
-        font-size: 76px;
+        font-size: 30px;
         text-align: center;
         /*text-shadow: 0px 8px 0px rgba(0, 0, 1, 0.15);*/
         /*font-family: GraphikLCG-Bold;*/
         color: white;
-        line-height: 1.1;
-        letter-spacing: 1px;
-        max-width: 1200px;
+        line-height: 1;
+        letter-spacing: 0.55px;
+        max-width: 550px;
+        font-weight: 900;
+        margin: auto;
+        margin-top: 5%;
     }
 
     .info__subtitle {
-        font-size: 32px;
+        font-size: 16px;
         text-align: center;
         /*text-shadow: 0px 4px 0px rgba(0, 0, 1, 0.15);*/
         /*font-family: GraphikLCG-Medium;*/
         color: white;
         line-height: 1.1;
-        margin-top: 3%;
-        max-width: 670px;
-        letter-spacing: 1px
+        
+        max-width: 600px;
+        letter-spacing: 1px;
+        font-weight: 100;  
+        margin: auto; 
+        margin-top: 5%;
     }
 
     .info__form {
-        margin-top: 3%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-align-items: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
+        margin-top: 12%;
         position: relative;
-        z-index: 200;
-        -webkit-animation: forms 1.5s ease;
-        animation: forms 7s ease infinite;
-        -webkit-animation-delay: 9s;
-        animation-delay: 9s;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
     }
 
     .info__form:hover {
-        -webkit-animation: none;
-        animation: none;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
     }
 
     .input {
         border: none;
-        font-size: 30px;
-        padding: 25px;
+        font-size: 24px;
+        padding: 20px;
         color: white;
         outline: none;
+        display: inline-block;
+        margin: 0px;
     }
 
     .input:nth-child(1) {
         /* font-family: GraphikLCG-Light;*/
         background-color: #a4d0e8;
         border-radius: 6px 0px 0px 6px;
-        min-width: 500px;
+        min-width: 300px;
     }
 
     .input:nth-child(1)::-webkit-input-placeholder {
         opacity: 1;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
         color: white;
     }
 
     .input:nth-child(1)::-moz-placeholder {
         opacity: 1;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
         color: white;
     }
 
     .input:nth-child(1):-moz-placeholder {
         opacity: 1;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
         color: white;
     }
 
     .input:nth-child(1):-ms-input-placeholder {
         opacity: 1;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
         color: white;
     }
 
     .input:nth-child(1):focus::-webkit-input-placeholder {
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
     }
 
     .input:nth-child(1):focus::-moz-placeholder {
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
     }
 
     .input:nth-child(1):focus:-moz-placeholder {
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
     }
 
     .input:nth-child(1):focus:-ms-input-placeholder {
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
     }
-
-
     .input:nth-child(2) {
         /*font-family: GraphikLCG-Bold;*/
         background-color: #f75c6e;
         border-radius: 0px 6px 6px 0px;
         cursor: pointer;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 1s;
+        margin-left: -4px;
     }
 
     .input:nth-child(2):hover {
@@ -266,58 +139,31 @@
     }
 
     .info__text {
-        font-size: 18px;
+        font-size: 14px;
         /*font-family: GraphikLCG-Light;*/
         color: white;
         margin-top: 1%;
         opacity: 0.5;
+        letter-spacing: 0.5px;
+        position: relative;
+        font-weight: 100; 
+        font-family: helvetica;
     }
 
     .section__footer {
+        margin-top: 18%;
         width: 100%;
         position: relative;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        height: 10vh;
-        -ms-align-items: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
+        height: 100px;
+        text-align: center;
     }
 
     .footer__list {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-
         list-style-type: none;
-
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
         opacity: 0.5;
         margin-left: 30px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
+        margin: auto;
+        display: inline-block;
     }
 
     .footer__list:hover {
@@ -331,9 +177,6 @@
         position: relative;
         display: inline-block;
         text-decoration: none;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
     }
 
     .footer__list--link:hover {
@@ -356,9 +199,6 @@
         height: 1px;
         content: '';
         left: 0px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
         opacity: 0.5;
     }
 
@@ -369,27 +209,26 @@
 </head>
 
 <body>
-    <main class="main">
-        <section class="section__info">
-            <a href="http://mgroup5.ru/" target="_blank" class="logo__link"><img src="logo.png" alt="" class="logo"></a>
+    <div class="main">
+        <div class="section__info">
+            <a href="http://mgroup5.ru/" target="_blank" class="logo__link"><img src="images/logo.png" alt="" class="logo"></a>
             <p class="info__caption">Скачай брошюру про 17 видов платного трафика в рунете</p>
             <p class="info__subtitle">Время от времени звуки прекращались. Время от времени прекращался он.</p>
-            <form action="mail.php" class="info__form" method="POST">
-                <input type="email" class="input__email input" value="" placeholder="Ваш E-mail" required mame="user__email">
+            <form action="" class="info__form" method="POST">
+                <input type="email" class="input__email input" value="" placeholder="Ваш E-mail" required mame="user__email" autocompletetype="email">
                 <input type="submit" class="input__submit input" value="Скачать">
             </form>
             <p class="info__text">Вам на почту придет письмо с PDF файлом</p>
-        </section>
-        <section class="section__footer">
+        </div>
+        <div class="section__footer">
             <ul class="footer__list">
                 <li class="footer__list--item"><a href="http://mgroup5.ru/" target="_blank" class="footer__list--link">Ссылка на сайт</a></li>
-                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="1.png" alt="vk" class="icon"></a></li>
-                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="2.png" alt="fb" class="icon"></a></li>
-                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="3.png" alt="telegram" class="icon"></a></li>
-                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="4.png" alt="phone" class="icon"></a></li>
+                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="images/1.png" alt="vk" class="icon"></a></li>
+                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="images/2.png" alt="fb" class="icon"></a></li>
+                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="images/3.png" alt="telegram" class="icon"></a></li>
+                <li class="footer__list--item"><a href="" class="footer__list--link"><img src="images/4.png" alt="phone" class="icon"></a></li>
             </ul>
-        </section>
-    </main>
+        </div>
+    </div>  
 </body>
-
 </html>

@@ -116,6 +116,7 @@ a {
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
@@ -213,19 +214,29 @@ header.clone {
     top: -150px;
     left: 0;
     right: 0;
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
     transition: 0.3s all ease-in;
+    -webkit-transform: translateZ(1px);
     transform: translateZ(1px);
     border-bottom: 1px solid #75716f;
     -o-box-shadow: 0px 0px 6px #222;
+    -webkit-box-shadow: 0px 0px 6px #222;
     box-shadow: 0px 0px 6px #222;
 }
 
 header.clone .wrap {
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -240,10 +251,16 @@ header {
     position: relative;
     overflow: hidden;
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -321,12 +338,16 @@ header .number span {
     position: relative;
     top: 0;
     margin-bottom: 5px;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
     transition: 0.1s linear;
+    -webkit-box-shadow: 0px 3px 0px #95b3ca;
     box-shadow: 0px 3px 0px #95b3ca;
 }
 
 .btn:hover {
     top: 2px;
+    -webkit-box-shadow: 0px 1px 0px #95b3ca;
     box-shadow: 0px 1px 0px #95b3ca;
 }
 
@@ -353,6 +374,7 @@ header .number span {
     background: rgba(3, 26, 46, .6);
     color: #fff;
     margin-top: 20px;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -405,6 +427,8 @@ header .number span {
     margin: 170px auto 0;
     opacity: .6;
     cursor: pointer;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
     transition: 0.1s linear;
 }
 
@@ -433,13 +457,19 @@ header .number span {
 
 .clients .logos .slide {
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
 .clients .logos .slide.small {
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -532,6 +562,7 @@ header .number span {
 .clients-button{
     margin-top: 50px;   
     width: 200px;
+    -webkit-animation: none!important;
     animation: none!important;
     font-size: 12px;
     letter-spacing: 0px;
@@ -556,12 +587,13 @@ header .number span {
 
 /* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
 
-@supports (object-fit: cover) {
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
     #video-box>video {
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 }
@@ -582,16 +614,23 @@ header .number span {
     background: url(../img/settings.jpg) no-repeat center;
     background-size: cover;
     color: #1c2b3a;
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333;
 }
 
 .settings .laurels {
     margin: 30px auto 0;
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
     width: 580px;
 }
@@ -642,15 +681,22 @@ header .number span {
 
 .settings .boolets .top {
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
 .settings .boolets .bottom {
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     margin-top: 40px;
 }
@@ -770,11 +816,16 @@ header .number span {
 .mark .serts a img {
     padding: 4px;
     background: #b1d2ec;
+    -webkit-box-shadow: 5px 5px 0px 0px #495f70;
     box-shadow: 5px 5px 0px 0px #495f70;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .mark .serts a img:hover {
+    -webkit-transform: scale(1.05) rotate(3deg);
+    -ms-transform: scale(1.05) rotate(3deg);
     transform: scale(1.05) rotate(3deg);
 }
 
@@ -790,6 +841,7 @@ header .number span {
     padding-bottom: 45px;
     background: #f5f6f4;
     color: #1c2b3a;
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
@@ -833,6 +885,7 @@ form .btn {
 
 input.clientPhone {
     font-size: 16px;
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -840,6 +893,7 @@ input.clientPhone {
     width: 835px;
     text-align: center;
     margin: 15px auto;
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.15);
     border-radius: 100px;
     background-image: url(../img/percentage.svg),
@@ -881,8 +935,12 @@ input.clientPhone {
 
 .sites .icons {
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     margin-top: 70px;
 }
@@ -919,6 +977,7 @@ input.clientPhone {
 }
 
 .reviews {
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333;
     background-position: center;
     background-size: cover;
@@ -1060,6 +1119,7 @@ input.clientPhone {
 
 .map {
     height: 720px;
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
@@ -1115,10 +1175,16 @@ footer {
 footer .wrap {
     height: 100px;
     display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -1255,6 +1321,7 @@ footer .btn {
 }
 
 .clientPhone.error {
+    -webkit-animation: error linear .4s 3;
     animation: error linear .4s 3;
 }
 
@@ -1269,12 +1336,26 @@ footer .btn {
 .clientPhone.error:-ms-input-placeholder      {color:red;}
 */
 
-@keyframes error {
+@-webkit-keyframes error {
     0% {
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 1);
         box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 1);
     }
 
     100% {
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 0);
+        box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 0);
+    }
+}
+
+@keyframes error {
+    0% {
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 1);
+        box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 0);
         box-shadow: 0px 0px 35px 0px rgba(217, 21, 21, 0);
     }
 }
@@ -1332,6 +1413,8 @@ footer .btn {
     top: 26px;
     display: block;
     content: "";
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     opacity: 1;
 }
@@ -1362,6 +1445,8 @@ footer .btn {
     top: 40px;
     display: block;
     content: "";
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     opacity: 1;
 }
@@ -1392,6 +1477,8 @@ footer .btn {
     top: 26px;
     display: block;
     content: "";
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     opacity: 1;
 }
@@ -1402,10 +1489,14 @@ footer .btn {
     background-image: url(../img/glare.svg);
     background-position: -150%;
     background-color: #b1d2ec;
+    -webkit-animation: glare ease-in 4s infinite;
     animation: glare ease-in 4s infinite;
     background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 4px 0px #95b3ca;
     box-shadow: 0px 4px 0px #95b3ca;
     position: relative;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 .buttun__link--header{
@@ -1415,6 +1506,14 @@ footer .btn {
 }
 .buttun__link--header:hover{
     top:104px;
+}
+@-webkit-keyframes glare {
+    45% {
+        background-position: 250%;
+    }
+    100% {
+        background-position: 1500%;
+    }
 }
 @keyframes glare {
     45% {
@@ -1430,6 +1529,7 @@ footer .btn {
     height: 60px;
     line-height: 40px;
     background-color: #b1d2ec;
+    -webkit-box-shadow: 0px 4px 0px #95b3ca;
     box-shadow: 0px 4px 0px #95b3ca;
     border-radius: 30px;
     text-transform: uppercase;
@@ -1437,13 +1537,22 @@ footer .btn {
     color: #000;
     font-weight: bold;
     letter-spacing: 2px;
+    -webkit-animation: ripple 2s infinite;
     animation: ripple 2s infinite;
     position: relative;
     top: -60px;
 }
 
+@-webkit-keyframes ripple {
+    50% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
 @keyframes ripple {
     50% {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
     }
 }
@@ -1573,6 +1682,7 @@ footer .btn {
 .email--box {
     height: 435px;
     background: #f5f6f4;
+    -webkit-box-shadow: inset 0 -7px 7px  -7px #333;
     box-shadow: inset 0 -7px 7px  -7px #333;
 }
 .email--box h1{
@@ -1588,12 +1698,19 @@ footer .btn {
 }
 
 .slide--img {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
     transform: scale(0.85);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .slide--img:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -1615,6 +1732,7 @@ footer .btn {
     height: auto;
     width: 100%;
     padding-bottom: 50px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: url(../img/animate/bg.jpg);
     background-size: cover;
@@ -1623,6 +1741,7 @@ footer .btn {
 
 .animation-box--wrapper {
     width: 900px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: auto;
 }
@@ -1632,6 +1751,7 @@ footer .btn {
     float: left;
     width: 200px;
     height: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: 16%;
 }
@@ -1644,6 +1764,7 @@ footer .btn {
     height: 240px;
     border: solid 2px #b1d2ec;
     position: relative;
+    -webkit-box-shadow: 3px 3px 0px 0px #495f70;
     box-shadow: 3px 3px 0px 0px #495f70;
 }
 
@@ -1652,6 +1773,8 @@ footer .btn {
     height: 100%;
     background-color: white;
     opacity: 1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     position: absolute;
 }
@@ -1692,6 +1815,7 @@ footer .btn {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 160px;
+    -webkit-animation: sites 6s infinite ease;
     animation: sites 6s infinite ease;
 }
 
@@ -1700,6 +1824,7 @@ footer .btn {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 160px;
+    -webkit-animation: sites 6s infinite ease;
     animation: sites 6s infinite ease;
 }
 
@@ -1715,6 +1840,7 @@ footer .btn {
     width: 70px;
     top: 40px;
     left: 35px;
+    -webkit-animation: docsOne infinite 6s ease;
     animation: docsOne infinite 6s ease;
 }
 
@@ -1722,6 +1848,7 @@ footer .btn {
     width: 105px;
     top: 100px;
     left: 30px;
+    -webkit-animation: docsTwo infinite 6s ease;
     animation: docsTwo infinite 6s ease;
 }
 
@@ -1729,32 +1856,72 @@ footer .btn {
     width: 185px;
     top: 30px;
     left: -15px;
+    -webkit-animation: docsThree infinite 6s ease;
     animation: docsThree infinite 6s ease;
+}
+
+@-webkit-keyframes docsOne {
+    40% {
+        -webkit-transform: translate(-10px, -15px);
+        transform: translate(-10px, -15px);
+    }
+    70% {
+        -webkit-transform: translate(-10px, -15px);
+        transform: translate(-10px, -15px);
+    }
 }
 
 @keyframes docsOne {
     40% {
+        -webkit-transform: translate(-10px, -15px);
         transform: translate(-10px, -15px);
     }
     70% {
+        -webkit-transform: translate(-10px, -15px);
         transform: translate(-10px, -15px);
+    }
+}
+
+@-webkit-keyframes docsTwo {
+    40% {
+        -webkit-transform: translate(60px, 0px) rotate(3deg);
+        transform: translate(60px, 0px) rotate(3deg);
+    }
+    70% {
+        -webkit-transform: translate(60px, 0px) rotate(3deg);
+        transform: translate(60px, 0px) rotate(3deg);
     }
 }
 
 @keyframes docsTwo {
     40% {
+        -webkit-transform: translate(60px, 0px) rotate(3deg);
         transform: translate(60px, 0px) rotate(3deg);
     }
     70% {
+        -webkit-transform: translate(60px, 0px) rotate(3deg);
         transform: translate(60px, 0px) rotate(3deg);
+    }
+}
+
+@-webkit-keyframes docsThree {
+    40% {
+        -webkit-transform: translate(-10px, -0px);
+        transform: translate(-10px, -0px);
+    }
+    70% {
+        -webkit-transform: translate(-10px, -0px);
+        transform: translate(-10px, -0px);
     }
 }
 
 @keyframes docsThree {
     40% {
+        -webkit-transform: translate(-10px, -0px);
         transform: translate(-10px, -0px);
     }
     70% {
+        -webkit-transform: translate(-10px, -0px);
         transform: translate(-10px, -0px);
     }
 }
@@ -1765,6 +1932,7 @@ footer .btn {
     background-color: #9de1ff;
     background-repeat: no-repeat;
     background-size: 30px, 40px, 25px, 30px;
+    -webkit-animation: clouds 4s infinite ease;
     animation: clouds 4s infinite ease;
 }
 
@@ -1789,6 +1957,7 @@ footer .btn {
     position: absolute;
     top: 50px;
     left: 20px;
+    -webkit-animation: cars 2s infinite;
     animation: cars 2s infinite;
 }
 
@@ -1798,6 +1967,7 @@ footer .btn {
     position: absolute;
     height: 100%;
     background-repeat: no-repeat;
+    -webkit-animation: mountss 3s infinite linear;
     animation: mountss 3s infinite linear;
     background-size: 75px;
 }
@@ -1810,17 +1980,21 @@ footer .btn {
     position: absolute;
     left: 40px;
     top: 190px;
+    -webkit-box-shadow: 0px 3px 0px #a72929;
     box-shadow: 0px 3px 0px #a72929;
+    -webkit-animation: buttons 2s infinite ease;
     animation: buttons 2s infinite ease;
     text-align: center;
     color: white;
     font-size: 12px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 7px;
 }
 
 .item--three-button--mask {
     background: #8fa1a8;
+    -webkit-box-shadow: 0px 3px 0px #707070;
     box-shadow: 0px 3px 0px #707070;
 }
 
@@ -1834,6 +2008,15 @@ footer .btn {
     background-size: 75px;
 }
 
+@-webkit-keyframes mountss {
+    0% {
+        background-position: 300px 55px;
+    }
+    100% {
+        background-position: -100px 55px;
+    }
+}
+
 @keyframes mountss {
     0% {
         background-position: 300px 55px;
@@ -1843,16 +2026,47 @@ footer .btn {
     }
 }
 
+@-webkit-keyframes buttons {
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+        -webkit-box-shadow: 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+    }
+}
+
 @keyframes buttons {
     50% {
+        -webkit-transform: translateY(3px);
         transform: translateY(3px);
+        -webkit-box-shadow: 0px 0px 0px;
         box-shadow: 0px 0px 0px;
+    }
+}
+
+@-webkit-keyframes cars {
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
     }
 }
 
 @keyframes cars {
     50% {
+        -webkit-transform: translateY(10px);
         transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes sites {
+    0% {
+        background-position: 18px 10px;
+    }
+    50% {
+        background-position: 18px -220px;
+    }
+    100% {
+        background-position: 18px 10px;
     }
 }
 
@@ -1865,6 +2079,15 @@ footer .btn {
     }
     100% {
         background-position: 18px 10px;
+    }
+}
+
+@-webkit-keyframes clouds {
+    0% {
+        background-position: 400px 60px, 260px 20px;
+    }
+    100% {
+        background-position: -100px 60px, -100px 20px;
     }
 }
 
@@ -1885,16 +2108,19 @@ footer .btn {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 40px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-size: cover;
     display: table;
     background-image: url(../img/cifra.jpg);
     background-color: #f5f6f4;
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333;
 }
 
 .ytp-box--wrapper {
     width: 900px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: auto;
 }
@@ -1904,6 +2130,7 @@ footer .btn {
     float: left;
     width: 28%;
     height: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: 8%;
 }
@@ -2011,6 +2238,8 @@ footer .btn {
     display: block;
     text-shadow: 0px 2px 2px rgba(0, 1, 6, 0.25);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 .header--box-caption:hover{
@@ -2056,14 +2285,17 @@ footer .btn {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
     position: relative;
+    -webkit-box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
     box-shadow: inset 0 7px 7px  -7px #333 , inset 0 -7px 7px  -7px #333;
 }
 
 .brending-box--wrapper {
     width: 485px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
     left: 50%;
@@ -2114,13 +2346,32 @@ footer .btn {
 }
 
 /*                      yandex                         */
-
+.sert-box{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.google__box{
+    width: 137px;
+    height: 56px;
+}
 .yandex-sert-box{
-    margin: auto;
-    display: inline-block;
-    margin-top: 30px;  
+    display: inline-block; 
     position: relative; 
-
 }
 .yandex-sert-box::after{
     content: 'Ссылка на сертификат'; /* Выводим текст */
@@ -2133,8 +2384,11 @@ footer .btn {
     font-size: 11px; /* Размер текста подсказки */
     padding: 5px 10px; /* Поля */
     border: 1px solid #333; /* Параметры рамки */
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0;
+    -webkit-box-shadow: 2px 2px 0px 0px #495f70;
     box-shadow: 2px 2px 0px 0px #495f70;
 }
 .yandex-sert-box:hover::after {
@@ -2281,6 +2535,8 @@ footer .btn {
     margin-bottom: 50px;
     margin-left: 50px;
     opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     outline: none;
 }
@@ -2294,6 +2550,7 @@ footer .btn {
   left: 50%;
   top: 50%;
   -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
@@ -2324,15 +2581,19 @@ footer .btn {
 
 .arrows:before {
   -webkit-transform: rotate(135deg) translateX(-76%);
+          -ms-transform: rotate(135deg) translateX(-76%);
           transform: rotate(135deg) translateX(-76%);
   -webkit-transform-origin: top left;
+          -ms-transform-origin: top left;
           transform-origin: top left;
 }
 
 .arrows:after {
   -webkit-transform: rotate(-135deg) translateX(76%);
+          -ms-transform: rotate(-135deg) translateX(76%);
           transform: rotate(-135deg) translateX(76%);
   -webkit-transform-origin: top right;
+          -ms-transform-origin: top right;
           transform-origin: top right;
 }
 
