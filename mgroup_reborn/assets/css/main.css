@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: #253e4a;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*						NAVIGATION 					  */
+
+.navigation {
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navigation__wrapper {
+    width: 1200px;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.nav__logo--box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav__list--item {
+    padding: 10px;
+}
+
+.nav__logo {
+    height: 45px
+}
+
+
+
+/*						HEADER					  */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/bg/header__bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__wrapper {
+    text-align: center;
+    width: 1200px;
+    padding-top: 80px;
+}
+
+.header__logo {
+    width: 40vh;
+}
+
+.header__caption {
+    font-family: OpenSans-ExtraBold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 62px;
+}
+
+.header__box {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.header__box--item {
+    -ms-text-align-last: left;
+    text-align-last: left;
+}
+
+.header__box--caption {
+    font-size: 26px;
+    color: white;
+    font-family: OpenSans-Bold;
+}
+.arrow__down{
+	margin-top: 2vh;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg);
+	animation: arrow__down 1.5s ease infinite;
+}
+@keyframes arrow__down{
+	50%{
+		transform: translateY(10px) rotate(45deg);	
+	}
+}
+
+
+/*						SECTION					  */
+
+.section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+.section:nth-child(2){
+	background-color: #201946;
+}
+
+.section__wrapper {
+    width: 1200px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+/*						Заголовки секций						*/
+
+.section__caption {
+    text-align: center;
+    font-size: 32px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section__subtitle {
+    text-align: center;
+    font-size: 22px;
+    font-family: OpenSans-Regular;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.caption--black,
+.subtitle--black {
+    color: #253e4a;
+}
+
+.caption--white,
+.subtitle--white {
+    color: white;
+}
+
+
+/*						O T H E R					  */
+
+.button {
+    background-image: url(../img/glare.svg);
+    background-position: -150%;
+    background-color: #b1d2ec;
+    color: #253e4a;
+    font-size: 16px;
+    padding: 15px;
+    width: 500px;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    display: inline-block;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 4px 0px #95b3ca;
+    box-shadow: 0px 4px 0px #95b3ca;
+}
+.section-one__button{
+	width: 250px;
+	animation: none;
+}
