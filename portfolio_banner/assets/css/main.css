@@ -118,6 +118,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d93ec', endColorstr='#005d93ec', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
+.section__caption{
+	
+}
 
 
 /*________________ FOOTER STYLE ________________*/
