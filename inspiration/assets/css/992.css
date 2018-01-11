@@ -79,8 +79,22 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+    .wrapper__basket-item{
+        width: 100%!important;
+        margin-left:0px!important;
+    }
 }
-
+@media only screen and (max-width: 930px) and (min-width: 769px){
+    .footer-box {
+        width: 30%;
+    }
+    .footer-box:nth-child(1) {
+        width: 38%;
+    }
+    .footer-box__text {
+        font-size: 12px;
+    }
+}
 @media only screen and (max-width: 800px) and (min-width: 769px) {
     .footer-box {
         width: 30%;

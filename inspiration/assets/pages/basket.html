@@ -10,12 +10,28 @@
     <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile_menu.css">
+    <link rel="stylesheet" href="../css/1200.css">
+    <link rel="stylesheet" href="../css/992.css">
+    <link rel="stylesheet" href="../css/768.css">
+    <link rel="stylesheet" href="../css/480.css">
+    <link rel="stylesheet" href="../css/320.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
 
 <body>
+  <div class="overlay">
+  <div class="link-wrapper">
+    <a href="../../index.html" class="link__wrapper-item"><span>Главная</span></a>
+    <a href="../../index.html#noveltie" class="link__wrapper-item"><span>Новинки</span></a>
+    <a href="../../index.html#bestsellers" class="link__wrapper-item"><span>Бесцеллеры</span></a>
+    <a href="../../index.html#school" class="link__wrapper-item"><span>Школа</span></a>
+    <a href="basket.html" class="link__wrapper-item"><span>Доставка и оплата</span></a>
+    <a href="contacts.html" class="link__wrapper-item"><span>Контакты</span></a>
+  </div> <!-- //link-wrapper -->
+</div> <!-- //overlay -->
     <div class="navigation-wrapper">
         <nav class="navigation">
             <a href="../../index.html" class="logo__link"><img src="../img/logo.png" alt="" class="header__logo header__logo-link"></a>
@@ -34,6 +50,13 @@
                 <li class="navigation__icon-list-item"><a href="../img/presentation.jpg" rel="lightbox" class="navigation__icon-list-link"><img src="../img/icon/man-user.svg" alt="" class="navigation__icon-list-img"></a></li>
             </ul>
         </nav>
+                <div class="navigation__menu">
+            <div class="burger_deluxe">
+                <span class="burger_global top_bun"></span>
+                <span class="burger_global patty"></span>
+                <span class="burger_global bottom_bun"></span>
+            </div>
+        </div>
     </div>
     <div class="navigation-wrapper clon">
         <nav class="navigation">
@@ -65,7 +88,7 @@
                             <p class="basket__article--name-book">Название большое в две строки</p>
                             <a href="#" class="basket__article--autor-book">Дмитрий Глуховский</a>
                         </div>
-                        <span class="article--box__price">590  &#8381;</span>
+                        <span class="article--box__price">590&nbsp;&#8381;</span>
                         <a href="#" class="close"></a>
                     </article>
                     <article class="basket__article flexbox-wrapper">
@@ -74,7 +97,7 @@
                             <p class="basket__article--name-book">Название большое в две строки</p>
                             <a href="#" class="basket__article--autor-book">Дмитрий Глуховский</a>
                         </div>
-                        <span class="article--box__price">590  &#8381;</span>
+                        <span class="article--box__price">590&nbsp;&#8381;</span>
                         <a href="#" class="close"></a>
                     </article>
                     <article class="basket__article flexbox-wrapper">
@@ -83,7 +106,7 @@
                             <p class="basket__article--name-book">Название большое в две строки</p>
                             <a href="#" class="basket__article--autor-book">Дмитрий Глуховский</a>
                         </div>
-                        <span class="article--box__price">590  &#8381;</span>
+                        <span class="article--box__price">590&nbsp;&#8381;</span>
                         <a href="#" class="close"></a>
                     </article>
                     <article class="basket__article flexbox-wrapper">
@@ -92,7 +115,7 @@
                             <p class="basket__article--name-book">Название большое в две строки</p>
                             <a href="#" class="basket__article--autor-book basket__article--autor-book-final">Дмитрий Глуховский</a>
                         </div>
-                        <span class="article--box__price article--box__price-final">1770  &#8381;</span>
+                        <span class="article--box__price article--box__price-final">1770&nbsp;&#8381;</span>
                     </article>
                 </div>
                 <div class="wrapper__basket-item">
@@ -148,6 +171,7 @@
     <script src="../js/index.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/scroll.js"></script>
+    <script src="../js/mobile_menu.js"></script>
     <script type="text/javascript">
     (function($) {
         $(window).on("scroll", function() {

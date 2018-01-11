@@ -124,4 +124,14 @@
     .slide_viewer{
         height: 400px;
     }
+        .footer-box {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .footer-box:nth-child(1),
+    .footer-box:nth-child(2) {
+        display: none;  
+    }
 }

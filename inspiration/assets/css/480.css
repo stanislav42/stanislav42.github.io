@@ -112,6 +112,20 @@
     .header__caption {
         font-size: 54px;
     }
+        .footer-box {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .footer-box:nth-child(1),
+    .footer-box:nth-child(2) {
+        display: none;  
+    }
+        .wrapper__basket-item{
+        width: 100%!important;
+        margin-left:0px!important;
+    }
 }
 @media only screen and (max-width: 350px) and (min-width: 321px){
     .section--book-item {
