@@ -1,0 +1,147 @@
+.overlay {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #47bbf8;
+    -webkit-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
+}
+
+.overlay.open {
+    height: 100%;
+}
+
+.overlay.open .link-wrapper {
+    opacity: 1;
+}
+
+.overlay .link-wrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease 300ms;
+    -o-transition: opacity 300ms ease 300ms;
+    transition: opacity 300ms ease 300ms;
+}
+
+.overlay .link-wrapper a {
+    position: relative;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.overlay .link-wrapper a span {
+    display: inline-block;
+}
+
+.overlay .link-wrapper a span:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 0px;
+    background: transparent;
+    -webkit-transition: width 300ms ease, background-color 300ms ease;
+    -o-transition: width 300ms ease, background-color 300ms ease;
+    transition: width 300ms ease, background-color 300ms ease;
+}
+
+.overlay .link-wrapper a:hover {
+    color: white;
+}
+
+.overlay .link-wrapper a:hover span:after {
+    width: 100%;
+    background-color: white;
+}
+
+.navigation__menu {
+    height: 40px;
+    z-index: 400;
+    display: inline-block;
+}
+
+.burger_deluxe {
+    position: absolute;
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    z-index: 3;
+}
+
+.burger_deluxe .burger_global {
+    position: absolute;
+    border-top: 5px solid white;
+    width: 100%;
+}
+
+.burger_deluxe .burger_global.top_bun {
+    top: 0;
+    -webkit-transition: border 500ms ease, -webkit-transform 500ms ease;
+    transition: border 500ms ease, -webkit-transform 500ms ease;
+    -o-transition: transform 500ms ease, border 500ms ease;
+    transition: transform 500ms ease, border 500ms ease;
+    transition: transform 500ms ease, border 500ms ease, -webkit-transform 500ms ease;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.burger_deluxe .burger_global.patty {
+    top: 12px;
+    -webkit-transition: opacity 500ms ease;
+    -o-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+}
+
+.burger_deluxe .burger_global.bottom_bun {
+    top: 24px;
+    -webkit-transition: border 500ms ease, -webkit-transform 500ms ease;
+    transition: border 500ms ease, -webkit-transform 500ms ease;
+    -o-transition: transform 500ms ease, border 500ms ease;
+    transition: transform 500ms ease, border 500ms ease;
+    transition: transform 500ms ease, border 500ms ease, -webkit-transform 500ms ease;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.burger_deluxe.open span {
+    border-color: white;
+}
+
+.burger_deluxe.open .top_bun {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger_deluxe.open .patty {
+    opacity: 0;
+}
+
+.burger_deluxe.open .bottom_bun {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
