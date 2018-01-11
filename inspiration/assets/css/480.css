@@ -26,7 +26,8 @@
         display: block;
         right: 0.5%;
     }
-    .navigation__list, .section--two{
+    .navigation__list,
+    .section--two {
         display: none;
     }
     .navigation__icon-list {
@@ -52,7 +53,7 @@
     .footer-box__text {
         font-size: 12px;
     }
-    .section--one__article--caption{
+    .section--one__article--caption {
         margin-left: 0px;
     }
     .section--one__article {
@@ -84,5 +85,50 @@
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+    .section--book-item {
+        text-align: center;
+        width: 45%;
+    }
+    .section--book-item:nth-child(3),
+    .section--book-item:nth-child(5),
+    .section--book-item:nth-child(9) {
+        margin-left: 0;
+    }
+    .section--book-item:nth-child(10),
+    .section--book-item:nth-child(4) {
+        margin-left: 6.3%;
+    }
+    .overlay .link-wrapper a {
+        font-size: 28px;
+    }
+    .footer-box__text {
+        font-size: 10px;
+    }
+    .section--two,
+    .navigation__icon-list {
+        display: none;
+    }
+    .header__caption {
+        font-size: 54px;
+    }
+}
+@media only screen and (max-width: 350px) and (min-width: 321px){
+    .section--book-item {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px!important;   
+    }
+    .section-caption-book,.slide__wrapper, .header__caption-three,.header__subtitle-three,.header__button-three{
+        text-align: center;
+        float: none;
+    }
+    .header__button-one{
+        background-color: white;
+        color: #47bbf8;
+        width: 200px;
+    }
+    .slide{
+        padding-top: 70px;  
     }
 }

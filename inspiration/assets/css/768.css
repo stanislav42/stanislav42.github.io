@@ -95,7 +95,28 @@
     .footer-box__text {
         font-size: 10px;
     }
-    .section--two{
+    .section--two, .navigation__icon-list{
         display: none;
+    }
+    .header__caption{
+        font-size: 54px;    
+    }
+}
+@media only screen and (max-width: 550px) and (min-width: 481px){
+    .section--book-item{
+        text-align: center;
+        width: 45%;
+    }
+    .section--book-item:nth-child(3),
+    .section--book-item:nth-child(5),
+    .section--book-item:nth-child(9) {
+        margin-left: 0;
+    }
+    .section--book-item:nth-child(10),
+    .section--book-item:nth-child(4) {
+        margin-left: 6.3%;
+    }
+    .overlay .link-wrapper a{
+        font-size: 32px;    
     }
 }
