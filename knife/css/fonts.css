@@ -1,0 +1,19 @@
+@font-face {font-family: GraphikLCG-Black;
+ src: url(../fonts/GraphikLCG-Black.otf);
+}
+
+@font-face {font-family: GraphikLCG-Bold;
+ src: url(../fonts/GraphikLCG-Bold.otf);
+}
+
+@font-face {font-family: GraphikLCG-Light;
+ src: url(../fonts/GraphikLCG-Light.otf);
+}
+
+@font-face {font-family: GraphikLCG-Regular;
+ src: url(../fonts/GraphikLCG-Regular.otf);
+}
+
+@font-face {font-family: Proxima_Nova_Condensed_Regular;
+ src: url(../fonts/Proxima_Nova_Condensed_Regular.otf);
+}

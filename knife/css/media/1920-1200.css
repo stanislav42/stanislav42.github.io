@@ -1,0 +1,151 @@
+@media only screen and (max-width: 1920px) and (min-width: 1801px) {
+
+    .page-spark canvas {
+        left: -7%;
+    }
+    .fair{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1800px) and (min-width: 320px) {
+
+    .page-spark {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1601px) {
+    .page-spark canvas {
+        left: -10%;
+    }
+
+    .header__caption {
+        font-size: 8em;
+    }
+
+    .header__caption:nth-child(1) {
+        margin-top: 70px;
+    }
+
+    .header__knife {
+        width: 90%;
+        height: 90%;
+    }
+
+    .header__knife-link {
+        top: -30px;
+        left: 570px;
+        transform: rotate(53deg);
+        height: 1000px;
+    }
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {
+
+
+    .header__caption {
+        font-size: 6em;
+    }
+
+    .header__caption:nth-child(1) {
+        margin-top: 60px;
+    }
+
+    .header__knife {
+        width: 85%;
+        height: 85%;
+    }
+
+    .header__knife-link {
+        top: -20px;
+        left: 575px;
+        transform: rotate(53deg);
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) {
+    .header__caption {
+        font-size: 6em;
+    }
+
+    .header__caption:nth-child(1) {
+        margin-top: 40px;
+    }
+
+    .header__knife {
+        width: 80%;
+        height: 80%;
+    }
+
+    .header__knife-link {
+        top: -25px;
+        left: 550px;
+        transform: rotate(54deg);
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .page-spark canvas {
+        top: -15%;
+    }
+    .header__caption {
+        font-size: 5.8em;
+    }
+
+    .header__caption:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .header__knife {
+        width: 75%;
+        height: 75%;
+    }
+
+    .header__knife-link {
+        top: -35px;
+        left: 525px;
+        transform: rotate(53deg);
+        height: 800px;
+    }
+    .header__icon-box {
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1201px) {
+
+
+    .page-spark canvas {
+        top: -15%;
+    }
+
+    .header__caption {
+        font-size: 5.5em;
+    }
+
+    .header__caption:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .header__knife {
+        width: 70%;
+        height: 70%;
+        left: -5%;
+    }
+
+    .header__knife-link {
+        top: -25px;
+        left: 550px;
+        transform: rotate(54deg);
+        height: 850px;
+    }
+    .header__icon-box {
+        margin-top: 10px;
+    }
+}
