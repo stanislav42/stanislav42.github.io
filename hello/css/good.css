@@ -1,8 +1,0 @@
-.link__blog:nth-child(1){
-	background: url(../img/bg-article-2-one.jpg);
-	background-size: cover;
-}
-.link__blog:nth-child(2){
-	background: url(../img/bg-article-2-two.jpg);
-	background-size: cover;
-}

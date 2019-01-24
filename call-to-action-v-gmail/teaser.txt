@@ -1,4 +1,0 @@
-Advertiser: Business Name
-Subject: Everything 20% Off at Business Name
-Description: Buy new products at low prices!
-Display Url: http://mgroup5.ru
