@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roistat / Стоп-слова</title>
+    <link href="src/sticky.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="src/highlight-ta.css">
+</head>
+
+<body>
+    <div id="highlight-div" class="comment-box">
+        <textarea id="highlight-ta" autofocus>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</textarea>
+    </div>
+    <span id="caunt">2</span>
+    <script type="text/javascript" src="src/highlight-ta.js"></script>
+    <script type="text/javascript" src="src/highlight-ta-demo.js"></script> <!-- стоп слова -->
+    <script>
+    var inp = document.getElementById('highlight-ta');
+    var chars = document.getElementById('caunt');
+    inp.onkeyup = function() {
+        chars.innerHTML = inp.value.length;
+    }
+    </script> <!-- Подсчет символов в строке -->
+    
+    <script>
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        document.cookie = name + '=; Max-Age=-99999999;';
+    }
+    </script> <!-- Куки сейв -->
+</body>
+
+</html>
