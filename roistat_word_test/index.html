@@ -12,7 +12,7 @@
 
 <body>
     <div id="highlight-div" class="comment-box">
-        <textarea id="highlight-ta" autofocus>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</textarea>
+        <textarea id="highlight-ta" autofocus>К сожалению</textarea>
     </div>
     <span id="caunt">2</span>
     <script type="text/javascript" src="src/highlight-ta.js"></script>
@@ -24,7 +24,6 @@
         chars.innerHTML = inp.value.length;
     }
     </script> <!-- Подсчет символов в строке -->
-    
     <script>
     function setCookie(name, value, days) {
         var expires = "";
@@ -49,6 +48,18 @@
 
     function eraseCookie(name) {
         document.cookie = name + '=; Max-Age=-99999999;';
+    }
+    var area = document.querySelector('textarea');
+    if (area.addEventListener) {
+        area.addEventListener('input', function() {
+            textValue = document.querySelector('textarea').value
+            eraseCookie('textValue')
+            setCookie('textValue', textValue, 30)
+        }, false);
+    }
+    window.onload = function() {
+        textValue = getCookie('textValue')
+        document.querySelector('textarea').value = textValue
     }
     </script> <!-- Куки сейв -->
 </body>
