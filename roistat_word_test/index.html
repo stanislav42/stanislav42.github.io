@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    <div id="highlight-div" class="comment-box">
-        <textarea id="highlight-ta" autofocus>К сожалению</textarea>
+    <div class="main">
+        <center> <img src="src/logo.png" alt="Roistat" class="logo">
+            <div id="highlight-div" class="comment-box">
+                <textarea id="highlight-ta" autofocus placeholder="Введи свой тикет сюда"></textarea>
+            </div>
+        </center>
+        <script type="text/javascript" src="src/highlight-ta.js"></script>
+        <script type="text/javascript" src="src/highlight-ta-demo.js"></script> <!-- стоп слова -->
     </div>
-    <span id="caunt">2</span>
-    <script type="text/javascript" src="src/highlight-ta.js"></script>
-    <script type="text/javascript" src="src/highlight-ta-demo.js"></script> <!-- стоп слова -->
+    <!--
+	<span id="caunt">2</span>
     <script>
     var inp = document.getElementById('highlight-ta');
     var chars = document.getElementById('caunt');
     inp.onkeyup = function() {
         chars.innerHTML = inp.value.length;
     }
-    </script> <!-- Подсчет символов в строке -->
-    <script>
+    </script>  Подсчет символов в строке -->
+    <!-- <script>
     function setCookie(name, value, days) {
         var expires = "";
         if (days) {
@@ -61,7 +66,7 @@
         textValue = getCookie('textValue')
         document.querySelector('textarea').value = textValue
     }
-    </script> <!-- Куки сейв -->
+    </script>  Куки сейв -->
 </body>
 
 </html>
